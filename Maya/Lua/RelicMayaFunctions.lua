@@ -1,0 +1,4 @@
+-- RelicMayaFunctions
+-- Author: Ethan Yao
+-- DateCreated: 8/17/2017 2:33:59 PM
+--------------------------------------------------------------
