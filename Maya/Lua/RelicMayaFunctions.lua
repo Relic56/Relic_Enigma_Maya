@@ -67,8 +67,8 @@ function SCC_Ash_EurekaHunting(pPlayerTechs, iEra)
     end
 end
 --Some variables to define
-local sTraitCalenderRounds = "TRAIT_CIVILIZATION_REL_ENIG_MAYA_CALENDER_ROUNDS"
-local sTraitGreatPaw = "TRAIT_LEADER_REL_ENIG_GREAT_PAW"
+local sTraitCalenderRounds = "TRAIT_CIVILIZATION_RELIC_ENIG_MAYA_CALENDER_ROUNDS"
+local sTraitGreatPaw = "TRAIT_LEADER_RELIC_ENIG_GREAT_PAW"
 
 --Eureka on project completion
 local iDistrictCaracolID = GameInfo.Districts["DISTRICT_RELIC_ENIG_CARACOL"]
