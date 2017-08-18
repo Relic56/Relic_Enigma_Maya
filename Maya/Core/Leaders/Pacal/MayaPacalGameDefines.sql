@@ -28,12 +28,6 @@ INSERT INTO HistoricalAgendas
 		(LeaderType,				AgendaType)
 VALUES	('LEADER_RELIC_ENIG_PAKAL',	'AGENDA_RELIC_ENIG_SUN_SHIELD');
 --------------------------------------------------------------------------------------------------------------------------
--- AgendaPreferredLeaders
---------------------------------------------------------------------------------------------------------------------------	
-INSERT INTO AgendaPreferredLeaders	
-		(LeaderType,				AgendaType)
-VALUES	('LEADER_RELIC_ENIG_PAKAL',	'AGENDA_DARWINIST');	
---------------------------------------------------------------------------------------------------------------------------
 -- LeaderTraits
 --------------------------------------------------------------------------------------------------------------------------	
 INSERT INTO LeaderTraits	
@@ -52,15 +46,15 @@ AND EXISTS (SELECT * FROM RELIC_ENIG_GlobalUserSettings WHERE Type = 'RELIC_ENIG
 UPDATE FavoredReligions
 SET ReligionType = 'RELIGION_PUATA_TUPUNA'
 WHERE LeaderType = 'LEADER_RELIC_ENIG_PAKAL' 
-AND EXISTS (SELECT ReligionType FROM Religions WHERE ReligionType = 'RELIGION_PUATA_TUPUNA');
+AND EXISTS (SELECT ReligionType FROM Religions WHERE ReligionType = 'RELIGION_TZOLKIN');
 
-CREATE TRIGGER RELIC_ENIG_Maori_HongiHika_FavoredReligions 
-AFTER INSERT ON Religions WHEN 'RELIGION_PUATA_TUPUNA' = NEW.ReligionType 
+CREATE TRIGGER RELIC_ENIG_Maya_Pakal_FavoredReligions 
+AFTER INSERT ON Religions WHEN 'RELIGION_TZOLKIN' = NEW.ReligionType 
 AND EXISTS (SELECT * FROM RELIC_ENIG_GlobalUserSettings WHERE Type = 'RELIC_ENIG_MAYA_PAKAL' AND Value = 1)	
 BEGIN 
 INSERT OR REPLACE INTO FavoredReligions 
 		(LeaderType, 		 		ReligionType) 
-VALUES 	('LEADER_RELIC_ENIG_PAKAL',	'RELIGION_PUATA_TUPUNA'); 
+VALUES 	('LEADER_RELIC_ENIG_PAKAL',	'RELIGION_TZOLKIN'); 
 END;
 --==========================================================================================================================
 -- LEADERS: AI
