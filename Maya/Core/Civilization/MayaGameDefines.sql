@@ -240,3 +240,152 @@ VALUES	('TRAIT_CIVILIZATION_UNIT_RELIC_ENIG_MACUAHUITL',	'KIND_TRAIT');
 INSERT INTO Traits				
 		(TraitType,								Name,							Description)
 VALUES	('TRAIT_CIVILIZATION_UNIT_RELIC_ENIG_MACUAHUITL',	'LOC_UNIT_RELIC_ENIG_MACUAHUITL_NAME',		null);
+--==========================================================================================================================
+-- CIVILIZATIONS
+--==========================================================================================================================
+-- Types
+----------------------------------------------------------------------------------------------------------------------------	
+INSERT INTO Types	
+		(Type,						Kind)
+VALUES	('CIVILIZATION_RELIC_ENIG_MAYA',	'KIND_CIVILIZATION');
+----------------------------------------------------------------------------------------------------------------------------
+-- Civilizations
+----------------------------------------------------------------------------------------------------------------------------	
+INSERT INTO Civilizations	
+		(CivilizationType,			Name,								Description,								Adjective,								StartingCivilizationLevelType,	RandomCityNameDepth,	Ethnicity)
+VALUES	('CIVILIZATION_RELIC_ENIG_MAYA',	'LOC_CIVILIZATION_RELIC_ENIG_MAYA_NAME',	'LOC_CIVILIZATION_RELIC_ENIG_MAYA_DESCRIPTION',	'LOC_CIVILIZATION_RELIC_ENIG_MAYA_ADJECTIVE',	'CIVILIZATION_LEVEL_FULL_CIV',	10,						'ETHNICITY_SOUTHAM');	
+----------------------------------------------------------------------------------------------------------------------------			
+-- CityNames			
+----------------------------------------------------------------------------------------------------------------------------		
+--------------------------------------------------------------------	
+-- Cities	
+--------------------------------------------------------------------	
+----------------------------------------------------------------------------------------------------------------------------
+-- CivilizationCitizenNames
+----------------------------------------------------------------------------------------------------------------------------	
+INSERT INTO CivilizationCitizenNames	
+		(CivilizationType,			CitizenName,								Female,		Modern)
+VALUES	('CIVILIZATION_RELIC_ENIG_MAYA',	'LOC_CITIZEN_RELIC_ENIG_MAYA_MALE_1',				0,			0),
+		('CIVILIZATION_RELIC_ENIG_MAYA',	'LOC_CITIZEN_RELIC_ENIG_MAYA_MALE_2',				0,			0),
+		('CIVILIZATION_RELIC_ENIG_MAYA',	'LOC_CITIZEN_RELIC_ENIG_MAYA_MALE_3',				0,			0),
+		('CIVILIZATION_RELIC_ENIG_MAYA',	'LOC_CITIZEN_RELIC_ENIG_MAYA_MALE_4',				0,			0),
+		('CIVILIZATION_RELIC_ENIG_MAYA',	'LOC_CITIZEN_RELIC_ENIG_MAYA_MALE_5',				0,			0),
+		('CIVILIZATION_RELIC_ENIG_MAYA',	'LOC_CITIZEN_RELIC_ENIG_MAYA_MALE_6',				0,			0),
+		('CIVILIZATION_RELIC_ENIG_MAYA',	'LOC_CITIZEN_RELIC_ENIG_MAYA_MALE_7',				0,			0),
+		('CIVILIZATION_RELIC_ENIG_MAYA',	'LOC_CITIZEN_RELIC_ENIG_MAYA_MALE_8',				0,			0),
+		('CIVILIZATION_RELIC_ENIG_MAYA',	'LOC_CITIZEN_RELIC_ENIG_MAYA_MALE_9',				0,			0),
+		('CIVILIZATION_RELIC_ENIG_MAYA',	'LOC_CITIZEN_RELIC_ENIG_MAYA_MALE_10',				0,			0),
+		('CIVILIZATION_RELIC_ENIG_MAYA',	'LOC_CITIZEN_RELIC_ENIG_MAYA_FEMALE_1',			1,			0),
+		('CIVILIZATION_RELIC_ENIG_MAYA',	'LOC_CITIZEN_RELIC_ENIG_MAYA_FEMALE_2',			1,			0),
+		('CIVILIZATION_RELIC_ENIG_MAYA',	'LOC_CITIZEN_RELIC_ENIG_MAYA_FEMALE_3',			1,			0),
+		('CIVILIZATION_RELIC_ENIG_MAYA',	'LOC_CITIZEN_RELIC_ENIG_MAYA_FEMALE_4',			1,			0),
+		('CIVILIZATION_RELIC_ENIG_MAYA',	'LOC_CITIZEN_RELIC_ENIG_MAYA_FEMALE_5',			1,			0),
+		('CIVILIZATION_RELIC_ENIG_MAYA',	'LOC_CITIZEN_RELIC_ENIG_MAYA_FEMALE_6',			1,			0),
+		('CIVILIZATION_RELIC_ENIG_MAYA',	'LOC_CITIZEN_RELIC_ENIG_MAYA_FEMALE_7',			1,			0),
+		('CIVILIZATION_RELIC_ENIG_MAYA',	'LOC_CITIZEN_RELIC_ENIG_MAYA_FEMALE_8',			1,			0),
+		('CIVILIZATION_RELIC_ENIG_MAYA',	'LOC_CITIZEN_RELIC_ENIG_MAYA_FEMALE_9',			1,			0),
+		('CIVILIZATION_RELIC_ENIG_MAYA',	'LOC_CITIZEN_RELIC_ENIG_MAYA_FEMALE_10',			1,			0),
+		('CIVILIZATION_RELIC_ENIG_MAYA',	'LOC_CITIZEN_RELIC_ENIG_MAYA_MODERN_MALE_1',		0,			1),
+		('CIVILIZATION_RELIC_ENIG_MAYA',	'LOC_CITIZEN_RELIC_ENIG_MAYA_MODERN_MALE_2',		0,			1),
+		('CIVILIZATION_RELIC_ENIG_MAYA',	'LOC_CITIZEN_RELIC_ENIG_MAYA_MODERN_MALE_3',		0,			1),
+		('CIVILIZATION_RELIC_ENIG_MAYA',	'LOC_CITIZEN_RELIC_ENIG_MAYA_MODERN_MALE_4',		0,			1),
+		('CIVILIZATION_RELIC_ENIG_MAYA',	'LOC_CITIZEN_RELIC_ENIG_MAYA_MODERN_MALE_5',		0,			1),
+		('CIVILIZATION_RELIC_ENIG_MAYA',	'LOC_CITIZEN_RELIC_ENIG_MAYA_MODERN_MALE_6',		0,			1),
+		('CIVILIZATION_RELIC_ENIG_MAYA',	'LOC_CITIZEN_RELIC_ENIG_MAYA_MODERN_MALE_7',		0,			1),
+		('CIVILIZATION_RELIC_ENIG_MAYA',	'LOC_CITIZEN_RELIC_ENIG_MAYA_MODERN_MALE_8',		0,			1),
+		('CIVILIZATION_RELIC_ENIG_MAYA',	'LOC_CITIZEN_RELIC_ENIG_MAYA_MODERN_MALE_9',		0,			1),
+		('CIVILIZATION_RELIC_ENIG_MAYA',	'LOC_CITIZEN_RELIC_ENIG_MAYA_MODERN_MALE_10',		0,			1),
+		('CIVILIZATION_RELIC_ENIG_MAYA',	'LOC_CITIZEN_RELIC_ENIG_MAYA_MODERN_FEMALE_1',		1,			1),
+		('CIVILIZATION_RELIC_ENIG_MAYA',	'LOC_CITIZEN_RELIC_ENIG_MAYA_MODERN_FEMALE_2',		1,			1),
+		('CIVILIZATION_RELIC_ENIG_MAYA',	'LOC_CITIZEN_RELIC_ENIG_MAYA_MODERN_FEMALE_3',		1,			1),
+		('CIVILIZATION_RELIC_ENIG_MAYA',	'LOC_CITIZEN_RELIC_ENIG_MAYA_MODERN_FEMALE_4',		1,			1),
+		('CIVILIZATION_RELIC_ENIG_MAYA',	'LOC_CITIZEN_RELIC_ENIG_MAYA_MODERN_FEMALE_5',		1,			1),
+		('CIVILIZATION_RELIC_ENIG_MAYA',	'LOC_CITIZEN_RELIC_ENIG_MAYA_MODERN_FEMALE_6',		1,			1),
+		('CIVILIZATION_RELIC_ENIG_MAYA',	'LOC_CITIZEN_RELIC_ENIG_MAYA_MODERN_FEMALE_7',		1,			1),
+		('CIVILIZATION_RELIC_ENIG_MAYA',	'LOC_CITIZEN_RELIC_ENIG_MAYA_MODERN_FEMALE_8',		1,			1),
+		('CIVILIZATION_RELIC_ENIG_MAYA',	'LOC_CITIZEN_RELIC_ENIG_MAYA_MODERN_FEMALE_9',		1,			1),
+		('CIVILIZATION_RELIC_ENIG_MAYA',	'LOC_CITIZEN_RELIC_ENIG_MAYA_MODERN_FEMALE_10',	1,			1);	
+----------------------------------------------------------------------------------------------------------------------------			
+-- CivilizationInfo			
+----------------------------------------------------------------------------------------------------------------------------		
+INSERT INTO CivilizationInfo	
+		(CivilizationType,				Header,						Caption,								SortIndex)	
+VALUES	('CIVILIZATION_RELIC_ENIG_MAYA',		'LOC_CIVINFO_LOCATION',		'LOC_CIVINFO_RELIC_ENIG_MAYA_LOCATION',		10),	
+		('CIVILIZATION_RELIC_ENIG_MAYA',		'LOC_CIVINFO_SIZE',			'LOC_CIVINFO_RELIC_ENIG_MAYA_SIZE',			20),	
+		('CIVILIZATION_RELIC_ENIG_MAYA',		'LOC_CIVINFO_POPULATION',	'LOC_CIVINFO_RELIC_ENIG_MAYA_POPULATION',		30),	
+		('CIVILIZATION_RELIC_ENIG_MAYA',		'LOC_CIVINFO_CAPITAL', 		'LOC_CIVINFO_RELIC_ENIG_MAYA_CAPITAL',		40);
+----------------------------------------------------------------------------------------------------------------------------
+-- CivilizationTraits
+----------------------------------------------------------------------------------------------------------------------------	
+INSERT INTO CivilizationTraits	
+		(TraitType,													CivilizationType)
+VALUES	('TRAIT_CIVILIZATION_RELIC_ENIG_CALENDAR_ROUNDS',						'CIVILIZATION_RELIC_ENIG_MAYA'),
+		('TRAIT_CIVILIZATION_DISTRICT_RELIC_ENIG_CARACOL',						'CIVILIZATION_RELIC_ENIG_MAYA'),
+		('TRAIT_CIVILIZATION_UNIT_RELIC_ENIG_MACUAHUITL',						'CIVILIZATION_RELIC_ENIG_MAYA');
+--==========================================================================================================================
+-- CIVILIZATIONS: TRAITS
+--==========================================================================================================================
+-- Types
+--------------------------------------------------------------------------------------------------------------------------	
+INSERT INTO Types	
+		(Type,											Kind)
+VALUES	('TRAIT_CIVILIZATION_RELIC_ENIG_CALENDAR_ROUNDS',					'KIND_TRAIT');	
+--------------------------------------------------------------------------------------------------------------------------			
+-- Traits			
+--------------------------------------------------------------------------------------------------------------------------				
+INSERT INTO Traits				
+		(TraitType,										Name,												Description)
+VALUES	('TRAIT_CIVILIZATION_RELIC_ENIG_CALENDAR_ROUNDS',					'LOC_TRAIT_CIVILIZATION_RELIC_ENIG_CALENDAR_ROUNDS_NAME',				'LOC_TRAIT_CIVILIZATION_RELIC_ENIG_CALENDAR_ROUNDS_DESCRIPTION');	
+--------------------------------------------------------------------------------------------------------------------------		
+-- TraitModifiers		
+--------------------------------------------------------------------------------------------------------------------------			
+INSERT INTO TraitModifiers			
+		(TraitType,										ModifierId)
+VALUES	('TRAIT_CIVILIZATION_RELIC_ENIG_CALENDAR_ROUNDS',					'RELIC_ENIG_CALENDAR_ROUNDS_HOLY_SITE_FREE'),	
+		('TRAIT_CIVILIZATION_RELIC_ENIG_CALENDAR_ROUNDS',					'RELIC_ENIG_CALENDAR_ROUNDS_HEAL_FROM_KILLS');
+--------------------------------------------------------------------------------------------------------------------------
+-- Modifiers
+--------------------------------------------------------------------------------------------------------------------------
+INSERT INTO Modifiers	
+		(ModifierId,									ModifierType,										SubjectRequirementSetId)
+VALUES	('RELIC_ENIG_CALENDAR_ROUNDS_HOLY_SITE_FREE',		'MODIFIER_SINGLE_CITY_EXTRA_DISTRICT',					'RELIC_ENIG_CALENDAR_ROUNDS_HOLY_SITE_FREE_REQ_SET'),
+		('RELIC_ENIG_CALENDAR_ROUNDS_SHRINE_SCIENCE',		'MODIFIER_PLAYER_CITIES_ADJUST_BUILDING_YIELD_CHANGE',							null),
+		('RELIC_ENIG_CALENDAR_ROUNDS_TEMPLE_SCIENCE',		'MODIFIER_PLAYER_CITIES_ADJUST_BUILDING_YIELD_CHANGE',							null);
+--------------------------------------------------------------------------------------------------------------------------
+-- ModifierArguments
+--------------------------------------------------------------------------------------------------------------------------
+INSERT INTO ModifierArguments
+		(ModifierId,									Name,												Value)
+VALUES	('RELIC_ENIG_CALENDAR_ROUNDS_HOLY_SITE_FREE',		'Amount',										1),
+		('RELIC_ENIG_CALENDAR_ROUNDS_SHRINE_SCIENCE',						'BuildingType',																	'BUILDING_SHRINE'),
+		('RELIC_ENIG_CALENDAR_ROUNDS_SHRINE_SCIENCE',						'YieldType',																	'YIELD_SCIENCE'),
+		('RELIC_ENIG_CALENDAR_ROUNDS_SHRINE_SCIENCE',						'Amount',																		1),
+		('RELIC_ENIG_CALENDAR_ROUNDS_TEMPLE_SCIENCE',						'BuildingType',																	'BUILDING_TEMPLE'),
+		('RELIC_ENIG_CALENDAR_ROUNDS_TEMPLE_SCIENCE',						'YieldType',																	'YIELD_SCIENCE'),
+		('RELIC_ENIG_CALENDAR_ROUNDS_TEMPLE_SCIENCE',						'Amount',																		2);	
+--------------------------------------------------------------------------------------------------------------------------
+-- Requirements
+--------------------------------------------------------------------------------------------------------------------------	
+INSERT INTO Requirements 			
+		(RequirementId,											RequirementType)
+VALUES	('RELIC_ENIG_CALENDAR_ROUNDS_HOLY_SITE_FREE_REQ',			'REQUIREMENT_CITY_HAS_DISTRICT');
+--------------------------------------------------------------------------------------------------------------------------
+-- RequirementArguments
+--------------------------------------------------------------------------------------------------------------------------
+INSERT INTO RequirementArguments
+		(RequirementId,											Name,																			Value)
+VALUES	('RELIC_ENIG_CALENDAR_ROUNDS_HOLY_SITE_FREE_REQ',				'DistrictType',																	'DISTRICT_HOLY_SITE');	
+--------------------------------------------------------------------------------------------------------------------------
+-- RequirementSets
+--------------------------------------------------------------------------------------------------------------------------
+INSERT INTO RequirementSets
+		(RequirementSetId,										RequirementSetType)
+VALUES	('RELIC_ENIG_CALENDAR_ROUNDS_HOLY_SITE_FREE_REQ_SET',		'REQUIREMENTSET_TEST_ALL');
+--------------------------------------------------------------------------------------------------------------------------
+-- RequirementSetRequirements
+--------------------------------------------------------------------------------------------------------------------------
+INSERT INTO RequirementSetRequirements
+		(RequirementSetId,										RequirementId)
+VALUES	('RELIC_ENIG_CALENDAR_ROUNDS_HOLY_SITE_FREE_REQ_SET',			'RELIC_ENIG_CALENDAR_ROUNDS_HOLY_SITE_FREE_REQ');	
+--==========================================================================================================================
+--==========================================================================================================================
