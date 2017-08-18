@@ -24,5 +24,57 @@
   <ItemGroup>
     <None Include="Mod.Art.xml" />
   </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Core" />
+    <Folder Include="Core\Civilization" />
+    <Folder Include="Core\Leaders" />
+    <Folder Include="Core\Leaders\Great Paw" />
+    <Folder Include="Core\Leaders\Pacal" />
+    <Folder Include="Lua" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Core\Civilization\MayaGameDefines.sql">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Core\Civilization\MayaIconDefinitions.sql">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Core\Civilization\MayaText.xml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Core\Leaders\Great Paw\MayaGreatPawConfig.sql">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Core\Leaders\Great Paw\MayaGreatPawGameDefines.sql">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Core\Leaders\Great Paw\MayaGreatPawIconDefinitions.sql">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Core\Leaders\Great Paw\MayaGreatPawModSupport.sql">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Core\Leaders\Great Paw\MayaGreatPawText.xml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Core\Leaders\Pacal\MayaPacalConfig.sql">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Core\Leaders\Pacal\MayaPacalGameDefines.sql">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Core\Leaders\Pacal\MayaPacalIconDefinitions.sql">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Core\Leaders\Pacal\MayaPacalModSupport.sql">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Core\Leaders\Pacal\MayaPacalPawText.xml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Lua\RelicMayaFunctions.lua">
+      <SubType>Content</SubType>
+    </Content>
+  </ItemGroup>
   <Import Project="$(MSBuildLocalExtensionPath)Civ6.targets" />
 </Project>
