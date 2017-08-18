@@ -112,3 +112,91 @@ Events.TechBoostTriggered(RelicGSPOnNewEraOrEureka)
 -----------------------------------------------------------------------------------------------
 --Great Paw
 -----------------------------------------------------------------------------------------------
+--Utility bcuz am lazy ty stackoverflow
+local function has_value (tab, val)
+    for index, value in ipairs(tab) do
+        if value == val then
+            return true
+        end
+    end
+    return false
+end
+
+function RelicCityCaptureBoostProduction(iVictoriousPlayer)
+	local pPlayer = Players[playerID]
+	local pPlayerConfig = PlayerConfigurations[playerID]
+	local sLeaderType = pPlayerConfig:GetLeaderTypeName()
+	if (not HasLeaderTrait(sLeaderType, sTraitGreatPaw)) then
+		return
+	end
+	tWonders = DB.Query("SELECT BuildingType FROM Buildings WHERE PrereqDistrict IS NULL")
+	tProjects = DB.Query("SELECT ProjectType FROM Projects")
+	for key, pCity in pPlayer:GetCities() do
+		sCurrentProduction = pCity:CurrentlyBuilding()
+		if has_value(tWonders, sCurrentProduction) or has_value(tProjects, sCurrentProduction) then
+			--do nothing
+		else
+			pCity:GetBuildQueue():FinishProgress()
+		end
+	end
+end
+GameEvents.CityConquered.Add(RelicCityCaptureBoostProduction)
+
+local tCSs = {}
+for row in GameInfo.C15_REL_CityStateGPLinkage() do
+    local tQuery = DB.Query("SELECT Type FROM TypeProperties WHERE Value = '" .. row.CSType .. "'")
+    for k, v in pairs(tQuery) do
+		if (not tCSs[GameInfo.Civilizations[v.Type].Index]) then do
+			tCSs[GameInfo.Civilizations[v.Type].Index] = {GameInfo.GreatPersonClasses[row.GreatPersonClassType].Index}
+		else
+			table.insert(GameInfo.Civilizations[v.Type].Index,GameInfo.GreatPersonClasses[row.GreatPersonClassType].Index)
+		end
+    end
+end
+
+local iPoints = 100 -- Make this scale off something you twat
+
+function C15_OnMayaCapture(iVictoriousPlayer, iDefeatedPlayer, iNewCityID, iCityPlotX, iCityPlotY)
+    local pPlayer = Players[iVictoriousPlayer]
+    local pPlayerConfig = PlayerConfigurations[iVictoriousPlayer]
+    local sLeaderType = pPlayerConfig:GetLeaderTypeName()
+    if HasLeaderTrait(sLeaderType, sTraitGreatPaw) then
+        local pPlayerCities = pPlayer:GetCities()
+        local pCity = pPlayerCities:FindID(iNewCityID)
+        local pOldPlayer = Players[iDefeatedPlayer]
+        local pOldPlayerConfig = PlayerConfigurations[iDefeatedPlayer]
+        local iOldPlayerCivType = pOldPlayerConfig:GetCivilizationTypeID()
+        if tCSs[iOldPlayerCivType] then
+			for iGPClass in tCSs[iOldPlayerCivType] do 
+				local pPlayerGPP = pPlayer:GetGreatPeoplePoints()
+				iPoints = pPlayerGPP:CalculatePointsPerTurn(iGPClass) * 5
+				pPlayerGPP:ChangePointsTotal(iGPClass, iPoints)
+				-- Do some text or something
+			end
+        end
+    end
+end
+
+GameEvents.CityConquered.Add(C15_OnMayaCapture)
+
+function Relic_Maya_New_Turn(playerID)
+	local pPlayer = Players[playerID]
+	local pPlayerConfig = PlayerConfigurations[playerID]
+	local sLeaderType = pPlayerConfig:GetLeaderTypeName()
+	if HasLeaderTrait(sLeaderType, sTraitGreatPaw) then
+		local pPlayerCities = pPlayer:GetCities()
+		for k, v in pPlayerCities
+			local pOriginalOwner = Players[v:GetOriginalOwner()]
+			local pOriginalOwnerConfig = PlayerConfigurations([v:GetOriginalOwner()]
+			local iOriginalPlayerCivType = pOriginalOwnerConfig:GetCivilizationTypeID()
+			if tCSs[iOriginalPlayerCivType] then
+				for iGPClass in tCSs[iOriginalPlayerCivType] do
+					local pPlayerGPP = pPlayer:GetGreatPeoplePoints()
+					iPoints = 5
+					pPlayerGPP:ChangePountsTotal(iGPClass, iPoints)
+				end
+			end
+		end
+	end
+end
+Events.PlayerTurnActivated.Add(Relic_Maya_New_Turn)
