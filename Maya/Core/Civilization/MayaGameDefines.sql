@@ -116,7 +116,7 @@ VALUES	('UNIT_RELIC_ENIG_MACUAHUITL',		'KIND_UNIT');
 --------------------------------------------------------------------------------------------------------------------------	
 INSERT INTO Units	
 		(UnitType,				BaseMoves, Cost, AdvisorType, BaseSightRange, ZoneOfControl, Domain, FormationClass, Name,						Description,					 MandatoryObsoleteTech, PurchaseYield, PromotionClass, Maintenance, Combat,   PrereqCivic, 				  TraitType)
-SELECT  'UNIT_RELIC_ENIG_MACUAHUITL',		BaseMoves, Cost, AdvisorType, BaseSightRange, ZoneOfControl, Domain, FormationClass, 'LOC_UNIT_RELIC_ENIG_MACUAHUITL_NAME',	'LOC_UNIT_RELIC_ENIG_MACUAHUITL_DESCRIPTION', MandatoryObsoleteTech, PurchaseYield, PromotionClass, Maintenance, Combat-5, 'CIVIC_MILITARY_TRADITION',  'TRAIT_CIVILIZATION_UNIT_RELIC_ENIG_MACUAHUITL'		
+SELECT  'UNIT_RELIC_ENIG_MACUAHUITL',		BaseMoves, Cost-20, AdvisorType, BaseSightRange, ZoneOfControl, Domain, FormationClass, 'LOC_UNIT_RELIC_ENIG_MACUAHUITL_NAME',	'LOC_UNIT_RELIC_ENIG_MACUAHUITL_DESCRIPTION', MandatoryObsoleteTech, PurchaseYield, PromotionClass, Maintenance, Combat-5, 'CIVIC_MILITARY_TRADITION',  'TRAIT_CIVILIZATION_UNIT_RELIC_ENIG_MACUAHUITL'		
 FROM Units WHERE UnitType = 'UNIT_SWORDSMAN';
 --------------------------------------------------------------------------------------------------------------------------
 -- UnitReplaces
