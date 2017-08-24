@@ -104,6 +104,21 @@ INSERT INTO Traits
 		(TraitType,									Name,												Description)
 VALUES	('TRAIT_CIVILIZATION_DISTRICT_RELIC_ENIG_CARACOL',		'LOC_TRAIT_CIVILIZATION_DISTRICT_RELIC_ENIG_CARACOL_NAME',		null);
 --==========================================================================================================================
+-- PROJECTS
+--==========================================================================================================================
+-- Types
+------------------------------------------------------------------------------------------------------------------------	
+INSERT INTO Types	
+		(Type,							Kind)
+VALUES	('PROJECT_RELIC_ENIG_VENUS',		'KIND_PROJECT');		
+------------------------------------------------------------------------------------------------------------------------
+-- Projects
+------------------------------------------------------------------------------------------------------------------------	
+INSERT INTO Projects	
+		(ProjectType,					ShortName,								 Name,								Description,								PrereqDistrict, 	  	 PrereqTech,				 Cost, AdvisorType, CostProgressionModel, CostProgressionParam1, AmenitiesWhileActive,  PrereqResource)
+SELECT  'PROJECT_RELIC_ENIG_VENUS',		'LOC_PROJECT_RELIC_ENIG_VENUS_SHORT_NAME', 'LOC_PROJECT_RELIC_ENIG_VENUS_NAME',	'LOC_PROJECT_RELIC_ENIG_VENUS_DESCRIPTION',	'DISTRICT_RELIC_ENIG_CARACOL',  'TECH_WRITING', Cost, AdvisorType, CostProgressionModel, CostProgressionParam1		
+FROM Projects WHERE ProjectType = 'PROJECT_CAMPUS';
+--==========================================================================================================================
 -- UNITS
 --==========================================================================================================================
 -- Types
