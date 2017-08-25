@@ -250,7 +250,7 @@ VALUES	('RELIC_ENIG_WHITE_SKIN_WONDER_HOLY_REQ_SET',		'RELIC_ENIG_WHITE_SKIN_WON
 ----------------------------------------------------------------------------------------------------------------------------	
 INSERT INTO CivilizationLeaders	
 		(CivilizationType,			LeaderType,					CapitalName)
-SELECT	'CIVILIZATION_RELIC_ENIG_MAYA',	'LEADER_RELIC_ENIG_PAKAL',	'LOC_CITY_NAME_RELIC_ENIG_KAIKOHE'
+SELECT	'CIVILIZATION_RELIC_ENIG_MAYA',	'LEADER_RELIC_ENIG_PAKAL',	'LOC_CITY_NAME_RELIC_ENIG_PALENQUE'
 WHERE EXISTS (SELECT * FROM RELIC_ENIG_GlobalUserSettings WHERE Type = 'RELIC_ENIG_MAYA_PAKAL' AND Value = 1);	
 --==========================================================================================================================
 --==========================================================================================================================
