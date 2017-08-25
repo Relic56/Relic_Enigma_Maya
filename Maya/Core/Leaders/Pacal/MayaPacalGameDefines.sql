@@ -165,8 +165,8 @@ WHERE EXISTS (SELECT * FROM RELIC_ENIG_GlobalUserSettings WHERE Type = 'RELIC_EN
 --------------------------------------------------------------------------------------------------------------------------	
 INSERT INTO Colors 
 		(Type, 												Red, 	Green, 	Blue, 	Alpha)
-VALUES	('COLOR_PLAYER_RELIC_ENIG_MAYA_PAKAL_PRIMARY', 		0.823,	0.784,	0.705,	1),
-		('COLOR_PLAYER_RELIC_ENIG_MAYA_PAKAL_SECONDARY', 	0.372,	0,		0.250,	1);
+VALUES	('COLOR_PLAYER_RELIC_ENIG_MAYA_PAKAL_PRIMARY', 		0.824,	0.652,	0.484,	1),
+		('COLOR_PLAYER_RELIC_ENIG_MAYA_PAKAL_SECONDARY', 	0.164,	0.332,		0.344,	1);
 --==========================================================================================================================
 -- LEADERS: LOADING INFO
 --==========================================================================================================================
