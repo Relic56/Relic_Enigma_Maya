@@ -461,7 +461,7 @@
 
 		-<Row Language="en_US" Tag="LOC_DISTRICT_RELIC_ENIG_CARACOL_DESCRIPTION">
 
-			<Text>A district unique to the Māori for military facilities and growth. Replaces the Encampment.[NEWLINE][NEWLINE]+1 [ICON_FOOD] Food when built adjacent to a Farm or Plantation. +15% combat experience for all melee and ranged Units trained in this city.</Text>
+			<Text>A district unique to the Maya for science and faith. Replaces the Campus.[NEWLINE][NEWLINE]Gains standard adjacency from Holy Sites and the City Center.  Buildings in it may be purchased with faith.</Text>
 
 		</Row>
 
