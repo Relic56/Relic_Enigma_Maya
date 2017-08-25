@@ -218,7 +218,7 @@ VALUES	('TRAIT_LEADER_RELIC_ENIG_DARK_SKY',					'LOC_TRAIT_LEADER_RELIC_ENIG_DAR
 ----------------------------------------------------------------------------------------------------------------------------
 INSERT INTO CivilizationLeaders
 (CivilizationType,			LeaderType,					CapitalName)
-SELECT	'CIVILIZATION_RELIC_ENIG_MAYA',	'LEADER_RELIC_ENIG_YAXCHIN',	'LOC_CITY_NAME_RELIC_ENIG_PALENQUE'
+SELECT	'CIVILIZATION_RELIC_ENIG_MAYA',	'LEADER_RELIC_ENIG_YAXCHIN',	'LOC_CITY_NAME_RELIC_ENIG_TIKAL'
 WHERE EXISTS (SELECT * FROM RELIC_ENIG_GlobalUserSettings WHERE Type = 'RELIC_ENIG_MAYA_YAXCHIN' AND Value = 1);
 --==========================================================================================================================
 --==========================================================================================================================
