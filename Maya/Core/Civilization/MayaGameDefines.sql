@@ -118,6 +118,18 @@ INSERT INTO Projects
 		(ProjectType,					ShortName,								 Name,								Description,								PrereqDistrict, 	  	 PrereqTech,				 Cost, AdvisorType, CostProgressionModel, CostProgressionParam1, AmenitiesWhileActive,  PrereqResource)
 SELECT  'PROJECT_RELIC_ENIG_VENUS',		'LOC_PROJECT_RELIC_ENIG_VENUS_SHORT_NAME', 'LOC_PROJECT_RELIC_ENIG_VENUS_NAME',	'LOC_PROJECT_RELIC_ENIG_VENUS_DESCRIPTION',	'DISTRICT_RELIC_ENIG_CARACOL',  'TECH_WRITING', Cost, AdvisorType, CostProgressionModel, CostProgressionParam1		
 FROM Projects WHERE ProjectType = 'PROJECT_CAMPUS';
+------------------------------------------------------------------------------------------------------------------------
+-- Project_YieldConversions
+------------------------------------------------------------------------------------------------------------------------	
+INSERT INTO Project_YieldConversions	
+		 (ProjectType,					YieldType,			PercentOfProductionRate)
+VALUES	('PROJECT_RELIC_ENIG_VENUS',		'YIELD_FAITH', 		5);
+------------------------------------------------------------------------------------------------------------------------
+-- Project_GreatPersonPoints
+------------------------------------------------------------------------------------------------------------------------	
+INSERT INTO Project_GreatPersonPoints	
+		(ProjectType,					GreatPersonClassType,			Points,			PointProgressionModel, 				PointProgressionParam1)
+VALUES	('PROJECT_RELIC_ENIG_VENUS',		'GREAT_PERSON_CLASS_PROPHET', 	5,				'COST_PROGRESSION_GAME_PROGRESS',	800);
 --==========================================================================================================================
 -- UNITS
 --==========================================================================================================================
