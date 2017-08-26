@@ -1,4 +1,594 @@
-<?xml version="1.0" encoding="utf-8"?>
-<GameData>
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by Ed Beach (Firaxis Games) -->
+
+-<GameData>
+
+
+	-<LocalizedText>
+
+		<!--LEADER-->
+
+
+
+		-<Row Language="en_US" Tag="LOC_LEADER_RELIC_ENIG_YAXCHIN_NAME">
+
+		<Text>Yaxkin Caan Chac</Text>
+
+	</Row>
+
+
+			<!--Agenda-->
+
+
+
+			-<Row Language="en_US" Tag="LOC_AGENDA_RELIC_ENIG_AJAW_TIKAL_NAME">
+
+				<Text>Ajaw of Tikal</Text>
+
+			</Row>
+
+
+			-<Row Language="en_US" Tag="LOC_AGENDA_RELIC_ENIG_AJAW_TIKAL_DESCRIPTION">
+
+				<Text>Likes those who have large militaries and high production.  Dislikes those who choose to focus on Wonders instead.</Text>
+
+			</Row>
+
+
+			-<Row Language="en_US" Tag="LOC_DIPLO_KUDO_LEADER_RELIC_ENIG_AJAW_TIKAL_REASON_LEADS_WONDERS">
+
+				<Text>(You have numerous Wonders.)</Text>
+
+			</Row>
+
+
+			-<Row Language="en_US" Tag="LOC_DIPLO_MODIFIER_AGENDA_RELIC_ENIG_AJAW_TIKAL_LEADS_WONDERS">
+
+				<Text>Leopold II believes your investment in Wonders is well-placed</Text>
+
+			</Row>
+
+			<!--DOM-->
+
+
+
+			-<Row Language="en_US" Tag="LOC_LOADING_INFO_LEADER_RELIC_ENIG_YAXCHIN">
+
+				<Text>2012 is the end of the world confirmed Mayans stronk.</Text>
+
+			</Row>
+
+			<!--Traits-->
+
+
+
+			-<Row Language="en_US" Tag="LOC_TRAIT_LEADER_RELIC_ENIG_DARK_SKY_NAME">
+
+				<Text>Darkens the Sky</Text>
+
+			</Row>
+
+
+			-<Row Language="en_US" Tag="LOC_TRAIT_LEADER_RELIC_ENIG_DARK_SKY_DESCRIPTION">
+
+				<Text>Upon conquering an enemy city, production in all cities is boosted (excluding wonders and yields). Conquering a city state provides Great Person Points depending on type upon capture and a passive yield afterwards.</Text>
+
+			</Row>
+
+			<!--Civilopedia-->
+
+
+
+			-<Row Language="en_US" Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_RELIC_ENIG_YAXCHIN_TITLE">
+
+				<Text>Yaxkin Caan Chac</Text>
+
+			</Row>
+
+
+			-<Row Language="en_US" Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_RELIC_ENIG_YAXCHIN_SUBTITLE">
+
+				<Text>Ajaw of Tikal</Text>
+
+			</Row>
+
+
+			-<Row Language="en_US" Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_RELIC_ENIG_YAXCHIN_QUOTE">
+
+				<Text>I do not want to miss a good chance of getting us a slice of this magnificent African cake.</Text>
+
+			</Row>
+
+
+			-<Row Language="en_US" Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_RELIC_ENIG_YAXCHIN_CHAPTER_HISTORY_PARA_1">
+
+				<Text>Leopold II (9 April 1835 – 17 December 1909) reigned as the second King of the Belgians from 1865 to 1909. He became known for the founding and exploitation of the Congo Free State as a private venture. Born in Brussels as the second (but eldest surviving) son of Leopold I and Louise of Orléans, he succeeded his father to the Belgian throne in 1865 and reigned for 44 years until his death - the longest reign of any Belgian monarch. He died without surviving male issue; the current Belgian king descends from his nephew and successor, Albert I.</Text>
+
+			</Row>
+
+
+			-<Row Language="en_US" Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_RELIC_ENIG_YAXCHIN_CHAPTER_HISTORY_PARA_2">
+
+				<Text>Leopold became the founder and sole owner of the Congo Free State, a private project undertaken on his own behalf. He used explorer Henry Morton Stanley to help him lay claim to the Congo, the present-day Democratic Republic of the Congo. At the Berlin Conference of 1884–1885 the colonial nations of Europe authorized his claim by committing the Congo Free State to improving the lives of the native inhabitants. From the beginning, however, Leopold essentially ignored these conditions. He ran the Congo using the mercenary Force Publique for his personal enrichment. He used great sums of the money from this exploitation for public and private construction projects in Belgium during this period. He donated the private buildings to the state before his death, to preserve them for Belgium.</Text>
+
+			</Row>
+
+
+			-<Row Language="en_US" Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_RELIC_ENIG_YAXCHIN_CHAPTER_HISTORY_PARA_3">
+
+				<Text>Leopold extracted a fortune from the Congo, initially by the collection of ivory, and - after a rise in the price of rubber in the 1890s - by forced labour from the natives to harvest and process rubber. Under his régime millions of the Congolese people died; modern estimates range from 1 to 15 million, with a consensus growing around 10 million. Human-rights abuses under his régime contributed significantly to these deaths. Reports of deaths and abuse led to a major international scandal in the early 20th century, and the Belgian government ultimately forced Leopold to relinquish control of the colony to Belgian civil administration in 1908.</Text>
+
+			</Row>
+
+
+			-<Row Language="en_US" Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_RELIC_ENIG_YAXCHIN_CHAPTER_HISTORY_PARA_4">
+
+				<Text>After the king's death and transfer of his private colony to Belgium, there occurred a "Great Forgetting". Many Belgians in the 20th and 21st centuries remember Leopold II as the "Builder King" for his extensive public works projects, and many remain unaware of his role in the atrocities in the Congo. In the 1990s, the colonial Royal Museum for Central Africa made no mention of the atrocities committed in the Congo Free State, despite the museum's large collection of colonial objects. On the boardwalk of Blankenberge, a popular coastal resort, a monument shows a pair of colonists as heroes protecting a desperate Congolese woman and child with "civilization". In Ostend, the beach promenade has a 1931 sculptural monument to Leopold II, showing Leopold and grateful Ostend fishermen and Congolese. The inscription accompanying the Congolese group notes: "De dank der Congolezen aan Leopold II om hen te hebben bevrijd van de slavernij onder de Arabieren" ("The gratitude of the Congolese to Leopold II for having liberated them from slavery under the Arabs"). In 2004, an activist group cut off the hand of the leftmost Congolese bronze figure, in protest against the atrocities committed in the Congo. The city council decided to keep the statue in its new form, without the hand.[NEWLINE][NEWLINE]Leopold II remains a controversial figure in the Democratic Republic of Congo. His statue in the capital Kinshasa was removed after independence. Congolese culture minister Christophe Muzungu decided to reinstate the statue in 2005. He noted that the beginning of the Free State had been a time of some economic and social progress. He argued that people should recognize some positive aspects of the king as well as the negative; but hours after the six-metre (20 ft) statue was installed near Kinshasa's central station, it was officially removed. The same workers took it down.</Text>
+
+			</Row>
+
+
+			-<Row Language="en_US" Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_RELIC_ENIG_YAXCHIN_CHAPTER_CAPSULE_BODY">
+
+				<Text>Resting on an industrial bedrock, Leopold II looks outwards toward foreign lands where he can spread Belgium's borders.</Text>
+
+			</Row>
+
+
+			-<Row Language="en_US" Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_RELIC_ENIG_YAXCHIN_CHAPTER_DETAILED_BODY">
+
+				<Text>Like the historical Belgium, the UA "Industrial Furrow" allows Belgium to support densely populated and highly industrialized cities, which they'll keep satisfied with their Chocolaterie building. Then they can turn outward with the Chasseur and, combined with Leopold II's "Congo Free State" ability, can aim to colonize foreign lands and spread their borders far.</Text>
+
+			</Row>
+
+			<!--Diplomacy-->
+
+
+			<!--FIRST MEET-->
+
+
+			<!--First AI line-->
+
+
+
+			-<Row Language="en_US" Tag="LOC_DIPLO_FIRST_MEET_LEADER_RELIC_ENIG_YAXCHIN_ANY">
+
+				<Text>Welcome. I am Leopold II, King of the Belgians. You'll notice that, though small, my country has a great entrepreneurial spirit. I hope you'll do business with us.</Text>
+
+			</Row>
+
+			<!--AI invitation to visit nearby City-->
+
+
+
+			-<Row Language="en_US" Tag="LOC_DIPLO_FIRST_MEET_VISIT_RECIPIENT_LEADER_RELIC_ENIG_YAXCHIN_ANY">
+
+				<Text>We have a nearby city. Won't you come and we shall talk of our future ventures together.</Text>
+
+			</Row>
+
+			<!--AI accepts Human invitation-->
+
+
+
+			-<Row Language="en_US" Tag="LOC_DIPLO_FIRST_MEET_NEAR_INITIATOR_POSITIVE_LEADER_RELIC_ENIG_YAXCHIN_ANY">
+
+				<Text>Yes, very good.</Text>
+
+			</Row>
+
+			<!--AI invitation to exchange Capital Information-->
+
+
+
+			-<Row Language="en_US" Tag="LOC_DIPLO_FIRST_MEET_NO_MANS_INFO_EXCHANGE_LEADER_RELIC_ENIG_YAXCHIN_ANY">
+
+				<Text>I've been meaning to ask you about capital. Shall we exchange information about it?</Text>
+
+			</Row>
+
+			<!--GREETINGS-->
+
+
+
+			-<Row Language="en_US" Tag="LOC_DIPLO_GREETING_LEADER_RELIC_ENIG_YAXCHIN_ANY">
+
+				<Text>Welcome back.</Text>
+
+			</Row>
+
+			<!--DELEGATION-->
+
+
+			<!--AI Accepts-->
+
+
+
+			-<Row Language="en_US" Tag="LOC_DIPLO_ACCEPT_DELEGATION_FROM_HUMAN_LEADER_RELIC_ENIG_YAXCHIN_ANY">
+
+				<Text>Very good then.</Text>
+
+			</Row>
+
+			<!--AI Rejects-->
+
+
+
+			-<Row Language="en_US" Tag="LOC_DIPLO_REJECT_DELEGATION_FROM_HUMAN_LEADER_RELIC_ENIG_YAXCHIN_ANY">
+
+				<Text>I am much too busy, you understand.</Text>
+
+			</Row>
+
+			<!--AI Requests -->
+
+
+
+			-<Row Language="en_US" Tag="LOC_DIPLO_DELEGATION_FROM_AI_LEADER_RELIC_ENIG_YAXCHIN_ANY">
+
+				<Text>Belgium has much to offer. I hope you'll enjoy the pralines that I have sent along with my delegation to you.</Text>
+
+			</Row>
+
+			<!--OPEN BORDERS-->
+
+
+			<!--AI accepts from human-->
+
+
+
+			-<Row Language="en_US" Tag="LOC_DIPLO_ACCEPT_OPEN_BORDERS_FROM_HUMAN_LEADER_RELIC_ENIG_YAXCHIN_ANY">
+
+				<Text>That is agreeable.</Text>
+
+			</Row>
+
+			<!--AI rejects from human-->
+
+
+
+			-<Row Language="en_US" Tag="LOC_DIPLO_REJECT_OPEN_BORDERS_FROM_HUMAN_LEADER_RELIC_ENIG_YAXCHIN_ANY">
+
+				<Text>Perhaps if you had more to offer.</Text>
+
+			</Row>
+
+			<!--AI requests from human-->
+
+
+
+			-<Row Language="en_US" Tag="LOC_DIPLO_OPEN_BORDERS_FROM_AI_LEADER_RELIC_ENIG_YAXCHIN_ANY">
+
+				<Text>Belgium resides at an important crossroads. I believe it would be in our mutual interest to open our borders to one another.</Text>
+
+			</Row>
+
+			<!--DECLARE FRIENDSHIP-->
+
+
+			<!--AI accepts from human-->
+
+
+
+			-<Row Language="en_US" Tag="LOC_DIPLO_ACCEPT_DECLARE_FRIEND_FROM_HUMAN_LEADER_RELIC_ENIG_YAXCHIN_ANY">
+
+				<Text>It is agreed.</Text>
+
+			</Row>
+
+			<!--AI Rejects from human -->
+
+
+
+			-<Row Language="en_US" Tag="LOC_DIPLO_REJECT_DECLARE_FRIEND_FROM_HUMAN_LEADER_RELIC_ENIG_YAXCHIN_ANY">
+
+				<Text>No, I think not.</Text>
+
+			</Row>
+
+			<!--AI Requests friendship from human-->
+
+
+
+			-<Row Language="en_US" Tag="LOC_DIPLO_DECLARE_FRIEND_FROM_AI_LEADER_RELIC_ENIG_YAXCHIN_ANY">
+
+				<Text>There are some difficulties, no doubt, in establishing ourselves as a world power. So, I move to ask for your help, to call yourself our friend. Will you accept?</Text>
+
+			</Row>
+
+			<!--Human accepts AI requests, AI responds-->
+
+
+
+			-<Row Language="en_US" Tag="LOC_DIPLO_ACCEPT_DECLARE_FRIEND_FROM_AI_LEADER_RELIC_ENIG_YAXCHIN_ANY">
+
+				<Text>Good to hear.</Text>
+
+			</Row>
+
+			<!--Human rejects AI requests, AI responds-->
+
+
+
+			-<Row Language="en_US" Tag="LOC_DIPLO_REJECT_DECLARE_FRIEND_FROM_AI_LEADER_RELIC_ENIG_YAXCHIN_ANY">
+
+				<Text>I will look elsewhere then.</Text>
+
+			</Row>
+
+			<!--ALLIANCE-->
+
+
+			<!--AI Requests an alliance from human-->
+
+
+
+			-<Row Language="en_US" Tag="LOC_DIPLO_MAKE_ALLIANCE_FROM_AI_LEADER_RELIC_ENIG_YAXCHIN_ANY">
+
+				<Text>There is no doubt Belgium lies in a strategic position. We are offering you an alliance to make use of this position, though on condition that you guarantee us.</Text>
+
+			</Row>
+
+			<!--KUDOS & WARNINGS-->
+
+
+			<!--AI Kudos-->
+
+
+
+			-<Row Language="en_US" Tag="LOC_DIPLO_KUDO_EXIT_LEADER_RELIC_ENIG_YAXCHIN_ANY">
+
+				<Text>Your cities are quite impressive, I must admit.</Text>
+
+			</Row>
+
+			<!--AI Warnings-->
+
+
+
+			-<Row Language="en_US" Tag="LOC_DIPLO_WARNING_EXIT_LEADER_RELIC_ENIG_YAXCHIN_ANY">
+
+				<Text>...</Text>
+
+			</Row>
+
+			<!--AI warns player for border troops-->
+
+
+
+			-<Row Language="en_US" Tag="LOC_DIPLO_WARNING_TOO_MANY_TROOPS_NEAR_ME_LEADER_RELIC_ENIG_YAXCHIN_ANY">
+
+				<Text>We are accustomed to armies marching through our borders unwanted... I would ask you to move your troops elsewhere.</Text>
+
+			</Row>
+
+			<!--TRADE-->
+
+
+			<!--AI Accepts Deal-->
+
+
+
+			-<Row Language="en_US" Tag="LOC_DIPLO_ACCEPT_MAKE_DEAL_FROM_AI_LEADER_RELIC_ENIG_YAXCHIN_ANY">
+
+				<Text>{LOC_DIPLO_ACCEPT_DECLARE_FRIEND_FROM_AI_LEADER_RELIC_ENIG_YAXCHIN_ANY}</Text>
+
+			</Row>
+
+			<!--AI Rejects Deal-->
+
+
+
+			-<Row Language="en_US" Tag="LOC_DIPLO_REJECT_MAKE_DEAL_FROM_AI_LEADER_RELIC_ENIG_YAXCHIN_ANY">
+
+				<Text>{LOC_DIPLO_REJECT_DECLARE_FRIEND_FROM_AI_LEADER_RELIC_ENIG_YAXCHIN_ANY}</Text>
+
+			</Row>
+
+			<!--DENOUNCE-->
+
+
+			<!--From Human-->
+
+
+
+			-<Row Language="en_US" Tag="LOC_DIPLO_DENOUNCE_FROM_HUMAN_LEADER_RELIC_ENIG_YAXCHIN_ANY">
+
+				<Text>Absurd. I've never been so insulted.</Text>
+
+			</Row>
+
+			<!--From AI-->
+
+
+
+			-<Row Language="en_US" Tag="LOC_DIPLO_DENOUNCE_FROM_AI_LEADER_RELIC_ENIG_YAXCHIN_ANY">
+
+				<Text>My government has begged that I speak out against you. And so I am. (Denounces You)</Text>
+
+			</Row>
+
+			<!--Rationale-->
+
+
+
+			-<Row Language="en_US" Tag="LOC_DIPLO_DENOUNCE_REASON_FROM_AI_LEADER_ANY_REASON_RELIC_ENIG_AJAW_TIKAL_HIGH_CITY_STATE_AGGRESSION">
+
+				<Text>(You are very aggressive toward City-States.)</Text>
+
+			</Row>
+
+
+			-<Row Language="en_US" Tag="LOC_DIPLO_DENOUNCE_REASON_FROM_AI_LEADER_ANY_REASON_RELIC_ENIG_AJAW_TIKAL_MED_CITY_STATE_AGGRESSION">
+
+				<Text>(You are aggressive toward City-States.)</Text>
+
+			</Row>
+
+			<!--DECLARE WAR-->
+
+
+			<!--Human Declares War-->
+
+
+
+			-<Row Language="en_US" Tag="LOC_DIPLO_DECLARE_WAR_FROM_HUMAN_LEADER_RELIC_ENIG_YAXCHIN_ANY">
+
+				<Text>So here we are then. We march to war.</Text>
+
+			</Row>
+
+			<!--AI Declares War-->
+
+
+
+			-<Row Language="en_US" Tag="LOC_DIPLO_DECLARE_WAR_FROM_AI_LEADER_RELIC_ENIG_YAXCHIN_ANY">
+
+				<Text>May your defeat be swift and uncomplicated.</Text>
+
+			</Row>
+
+			<!--MAKE PEACE-->
+
+
+			<!--AI accepts from human-->
+
+
+
+			-<Row Language="en_US" Tag="LOC_DIPLO_MAKE_PEACE_AI_ACCEPT_DEAL_LEADER_RELIC_ENIG_YAXCHIN_ANY">
+
+				<Text>Agreed. Let's get back to business.</Text>
+
+			</Row>
+
+			<!--AI refuses human-->
+
+
+
+			-<Row Language="en_US" Tag="LOC_DIPLO_MAKE_PEACE_AI_REFUSE_DEAL_LEADER_RELIC_ENIG_YAXCHIN_ANY">
+
+				<Text>And why do you think I would agree to such a thing?</Text>
+
+			</Row>
+
+			<!--AI requests from human-->
+
+
+
+			-<Row Language="en_US" Tag="LOC_DIPLO_MAKE_PEACE_FROM_AI_LEADER_RELIC_ENIG_YAXCHIN_ANY">
+
+				<Text>This war has been a drain upon our businesses. I behoove you to agree to peace.</Text>
+
+			</Row>
+
+			<!--DEFEAT-->
+
+
+			<!--AI is Defeated-->
+
+
+
+			-<Row Language="en_US" Tag="LOC_DIPLO_DEFEAT_FROM_AI_LEADER_RELIC_ENIG_YAXCHIN_ANY">
+
+				<Text>Will you treat my savages kindly, as I have done?</Text>
+
+			</Row>
+
+			<!--Human is Defeated (will see this in hotseat)-->
+
+
+
+			-<Row Language="en_US" Tag="LOC_DIPLO_DEFEAT_FROM_HUMAN_LEADER_RELIC_ENIG_YAXCHIN_ANY">
+
+				<Text>[LOC_DIPLO_DEFEAT_FROM_AI_LEADER_RELIC_ENIG_YAXCHIN_ANY]</Text>
+
+			</Row>
+
+
+			<!--MOD SUPPORT-->
+
+
+			<!--RELIC_ENIG Rule with Faith-->
+
+
+
+			-<Row Language="en_US" Tag="LOC_GOVERNMENT_RELIC_ENIG_CHIEFDOM_LEADER_TITLE_RELIC_ENIG_YAXCHIN">
+
+				<Text>Duke</Text>
+
+			</Row>
+
+
+			-<Row Language="en_US" Tag="LOC_GOVERNMENT_RELIC_ENIG_AUTOCRACY_LEADER_TITLE_RELIC_ENIG_YAXCHIN">
+
+				<Text>Despot</Text>
+
+			</Row>
+
+
+			-<Row Language="en_US" Tag="LOC_GOVERNMENT_RELIC_ENIG_CLASSICAL_DEMOCRACY_LEADER_TITLE_RELIC_ENIG_YAXCHIN">
+
+				<Text>Speaker</Text>
+
+			</Row>
+
+
+			-<Row Language="en_US" Tag="LOC_GOVERNMENT_RELIC_ENIG_OLIGARCHY_LEADER_TITLE_RELIC_ENIG_YAXCHIN">
+
+				<Text>Lord Mayor</Text>
+
+			</Row>
+
+
+			-<Row Language="en_US" Tag="LOC_GOVERNMENT_RELIC_ENIG_MERCHANT_REPUBLIC_LEADER_TITLE_RELIC_ENIG_YAXCHIN">
+
+				<Text>Chancellor</Text>
+
+			</Row>
+
+
+			-<Row Language="en_US" Tag="LOC_GOVERNMENT_RELIC_ENIG_MONARCHY_LEADER_TITLE_RELIC_ENIG_YAXCHIN">
+
+				<Text>King</Text>
+
+			</Row>
+
+
+			-<Row Language="en_US" Tag="LOC_GOVERNMENT_RELIC_ENIG_NOBLE_REPUBLIC_LEADER_TITLE_RELIC_ENIG_YAXCHIN">
+
+				<Text>Grand Chancellor</Text>
+
+			</Row>
+
+
+			-<Row Language="en_US" Tag="LOC_GOVERNMENT_RELIC_ENIG_PEOPLES_REPUBLIC_LEADER_TITLE_RELIC_ENIG_YAXCHIN">
+
+				<Text>General-Secretary</Text>
+
+			</Row>
+
+
+			-<Row Language="en_US" Tag="LOC_GOVERNMENT_RELIC_ENIG_LIBERAL_DEMOCRACY_LEADER_TITLE_RELIC_ENIG_YAXCHIN">
+
+				<Text>King</Text>
+
+			</Row>
+
+
+			-<Row Language="en_US" Tag="LOC_GOVERNMENT_RELIC_ENIG_MILITARY_GUARDIANSHIP_LEADER_TITLE_RELIC_ENIG_YAXCHIN">
+
+				<Text>Commander-in-Chief</Text>
+
+			</Row>
+
+
+			-<Row Language="en_US" Tag="LOC_GOVERNMENT_RELIC_ENIG_EMPIRE_LEADER_TITLE_RELIC_ENIG_YAXCHIN">
+
+				<Text>Emperor</Text>
+
+			</Row>
+
+		</LocalizedText>
 
 </GameData>
