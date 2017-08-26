@@ -485,6 +485,27 @@
 			<Text>+{1_num} [ICON_SCIENCE] Food from the adjacent City Center.</Text>
 
 		</Row>
+	
+	
+		-<Row Language="en_US" Tag="LOC_PROJECT_RELIC_ENIG_VENUS_NAME">
+
+			<Text>Venus Observations</Text>
+
+		</Row>
+
+
+		-<Row Language="en_US" Tag="LOC_PROJECT_RELIC_ENIG_VENUS_SHORT_NAME">
+
+			<Text>Venus Observations</Text>
+
+		</Row>
+
+
+		-<Row Language="en_US" Tag="LOC_PROJECT_JFD_ROYAL_TOUR_DESCRIPTION">
+
+			<Text>Mayan Caracol district unique project.  Provides [ICON_GREATPROPHET] Great Prophet points, [ICON_FAITH[ Faith, and a Eureka when completed.</Text>
+
+		</Row>
 
 	</LocalizedText>
 
