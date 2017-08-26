@@ -1,5 +1,5 @@
 --Utility
-
+print("lua loaded")
 --HasCivilizationTrait
 function HasCivilizationTrait(civilizationType, traitType)
 	for row in GameInfo.CivilizationTraits() do
@@ -108,7 +108,7 @@ function RelicGSPOnNewEraOrEureka(playerID)
 	pPlayer:GetGreatPeoplePoints():ChangePointsTotal(GameInfo.GreatPersonClasses["GREAT_PERSON_CLASS_SCIENTIST"].Index,iGSP)
 end
 Events.PlayerEraChanged.Add(RelicGSPOnNewEraOrEureka)
-Events.TechBoostTriggered(RelicGSPOnNewEraOrEureka)
+Events.TechBoostTriggered.Add(RelicGSPOnNewEraOrEureka)
 -----------------------------------------------------------------------------------------------
 --Great Paw
 -----------------------------------------------------------------------------------------------
@@ -146,7 +146,7 @@ local tCSs = {}
 for row in GameInfo.C15_REL_CityStateGPLinkage() do
     local tQuery = DB.Query("SELECT Type FROM TypeProperties WHERE Value = '" .. row.CSType .. "'")
     for k, v in pairs(tQuery) do
-		if (not tCSs[GameInfo.Civilizations[v.Type].Index]) then do
+		if (not tCSs[GameInfo.Civilizations[v.Type].Index]) then
 			tCSs[GameInfo.Civilizations[v.Type].Index] = {GameInfo.GreatPersonClasses[row.GreatPersonClassType].Index}
 		else
 			table.insert(GameInfo.Civilizations[v.Type].Index,GameInfo.GreatPersonClasses[row.GreatPersonClassType].Index)
@@ -170,6 +170,7 @@ function C15_OnMayaCapture(iVictoriousPlayer, iDefeatedPlayer, iNewCityID, iCity
 			for iGPClass in tCSs[iOldPlayerCivType] do 
 				local pPlayerGPP = pPlayer:GetGreatPeoplePoints()
 				iPoints = pPlayerGPP:CalculatePointsPerTurn(iGPClass) * 5
+				if iPoints == 0 then iPoints = 5 end
 				pPlayerGPP:ChangePointsTotal(iGPClass, iPoints)
 				-- Do some text or something
 			end
@@ -185,9 +186,9 @@ function Relic_Maya_New_Turn(playerID)
 	local sLeaderType = pPlayerConfig:GetLeaderTypeName()
 	if HasLeaderTrait(sLeaderType, sTraitGreatPaw) then
 		local pPlayerCities = pPlayer:GetCities()
-		for k, v in pPlayerCities
+		for k, v in pPlayerCities do
 			local pOriginalOwner = Players[v:GetOriginalOwner()]
-			local pOriginalOwnerConfig = PlayerConfigurations([v:GetOriginalOwner()]
+			local pOriginalOwnerConfig = PlayerConfigurations[v:GetOriginalOwner()]
 			local iOriginalPlayerCivType = pOriginalOwnerConfig:GetCivilizationTypeID()
 			if tCSs[iOriginalPlayerCivType] then
 				for iGPClass in tCSs[iOriginalPlayerCivType] do

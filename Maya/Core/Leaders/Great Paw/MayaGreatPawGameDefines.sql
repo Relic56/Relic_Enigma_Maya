@@ -1,9 +1,9 @@
 --UA Stuff for the lua code
 CREATE TABLE C15_REL_CityStateGPLinkage
-(Value TEXT, GreatPersonClassType TEXT DEFAULT 'GREATPERSONCLASS_GENERAL',
-PRIMARY KEY (Value, GreatPersonClassType),
-FOREIGN KEY (Value) REFERENCES TypeProperties  (Value) ,
-FOREIGN KEY (GreatPersonClassType) REFERENCES GreatPersonClasses (GreatPersonClassType));
+(Value TEXT, GreatPersonClassType TEXT DEFAULT 'GREATPERSONCLASS_GENERAL');--,
+--PRIMARY KEY (Value, GreatPersonClassType),
+--FOREIGN KEY (Value) REFERENCES TypeProperties  (Value) ,
+--FOREIGN KEY (GreatPersonClassType) REFERENCES GreatPersonClasses (GreatPersonClassType));
 
 INSERT INTO C15_REL_CityStateGPLinkage
 (Value, 			GreatPersonClassType)
@@ -27,22 +27,19 @@ VALUES	('CULTURAL',		'GREAT_PERSON_CLASS_ARTIST'),
 --------------------------------------------------------------------------------------------------------------------------
 INSERT INTO Types
 (Type,						Kind)
-SELECT	'LEADER_RELIC_ENIG_YAXCHIN',	'KIND_LEADER'
-WHERE EXISTS (SELECT * FROM RELIC_ENIG_GlobalUserSettings WHERE Type = 'RELIC_ENIG_MAYA_YAXCHIN' AND Value = 1);
+VALUES	('LEADER_RELIC_ENIG_YAXCHIN',	'KIND_LEADER');
 --------------------------------------------------------------------------------------------------------------------------
 -- Leaders
 --------------------------------------------------------------------------------------------------------------------------
 INSERT INTO Leaders
 (LeaderType,				Name,								InheritFrom,		SceneLayers)
-SELECT	'LEADER_RELIC_ENIG_YAXCHIN',	'LOC_LEADER_RELIC_ENIG_YAXCHIN_NAME',	'LEADER_DEFAULT',	4
-WHERE EXISTS (SELECT * FROM RELIC_ENIG_GlobalUserSettings WHERE Type = 'RELIC_ENIG_MAYA_YAXCHIN' AND Value = 1);
+VALUES ('LEADER_RELIC_ENIG_YAXCHIN',	'LOC_LEADER_RELIC_ENIG_YAXCHIN_NAME',	'LEADER_DEFAULT',	4);
 --------------------------------------------------------------------------------------------------------------------------
 -- LeaderQuotes
 --------------------------------------------------------------------------------------------------------------------------
 INSERT INTO LeaderQuotes
 (LeaderType,				Quote)
-SELECT	'LEADER_RELIC_ENIG_YAXCHIN',	'LOC_PEDIA_LEADERS_PAGE_LEADER_RELIC_ENIG_YAXCHIN_QUOTE'
-WHERE EXISTS (SELECT * FROM RELIC_ENIG_GlobalUserSettings WHERE Type = 'RELIC_ENIG_MAYA_YAXCHIN' AND Value = 1);
+VALUES ('LEADER_RELIC_ENIG_YAXCHIN',	'LOC_PEDIA_LEADERS_PAGE_LEADER_RELIC_ENIG_YAXCHIN_QUOTE');
 --------------------------------------------------------------------------------------------------------------------------
 -- HistoricalAgendas
 --------------------------------------------------------------------------------------------------------------------------
@@ -54,16 +51,14 @@ VALUES	('LEADER_RELIC_ENIG_YAXCHIN',	'AGENDA_RELIC_ENIG_AJAW_TIKAL');
 --------------------------------------------------------------------------------------------------------------------------
 INSERT INTO LeaderTraits
 (LeaderType,				TraitType)
-SELECT	'LEADER_RELIC_ENIG_YAXCHIN',	'TRAIT_LEADER_RELIC_ENIG_DARK_SKY'
-WHERE EXISTS (SELECT * FROM RELIC_ENIG_GlobalUserSettings WHERE Type = 'RELIC_ENIG_MAYA_YAXCHIN' AND Value = 1);
+VALUES ('LEADER_RELIC_ENIG_YAXCHIN',	'TRAIT_LEADER_RELIC_ENIG_DARK_SKY');
 --------------------------------------------------------------------------------------------------------------------------
 -- FavoredReligions
 --------------------------------------------------------------------------------------------------------------------------
 INSERT OR REPLACE INTO FavoredReligions
 (LeaderType,				ReligionType)
 SELECT	'LEADER_RELIC_ENIG_YAXCHIN',	ReligionType
-FROM Religions WHERE ReligionType = 'RELIGION_CATHOLICISM'
-AND EXISTS (SELECT * FROM RELIC_ENIG_GlobalUserSettings WHERE Type = 'RELIC_ENIG_MAYA_YAXCHIN' AND Value = 1);
+FROM Religions WHERE ReligionType = 'RELIGION_CATHOLICISM';
 
 UPDATE FavoredReligions
 SET ReligionType = 'RELIGION_TZOLKIN'
@@ -72,7 +67,6 @@ AND EXISTS (SELECT ReligionType FROM Religions WHERE ReligionType = 'RELIGION_TZ
 
 CREATE TRIGGER RELIC_ENIG_Maya_Yaxchin_FavoredReligions
 AFTER INSERT ON Religions WHEN 'RELIGION_TZOLKIN' = NEW.ReligionType
-AND EXISTS (SELECT * FROM RELIC_ENIG_GlobalUserSettings WHERE Type = 'RELIC_ENIG_MAYA_YAXCHIN' AND Value = 1)
 BEGIN
 INSERT OR REPLACE INTO FavoredReligions
 (LeaderType, 		 		ReligionType)
@@ -155,22 +149,21 @@ VALUES	('TRAIT_AGENDA_RELIC_ENIG_AJAW_TIKAL',					'RELIC_ENIG_AJAW_TIKAL_WONDER_
 --------------------------------------------------------------------------------------------------------------------------
 INSERT INTO Modifiers
 (ModifierId,										ModifierType,										SubjectRequirementSetId)
-VALUES	('RELIC_ENIG_AJAW_TIKAL_WONDER_WHORE',					'MODIFIER_PLAYER_DIPLOMACY_SIMPLE_MODIFIER',		'PLAYER_BUILT_WONDER'),
-('RELIC_ENIG_AJAW_TIKAL_MILITARY_THREAT',				'MODIFIER_PLAYER_DIPLOMACY_SIMPLE_MODIFIER',		'PLAYER_MILITARY_STRENGTH_LEAD'),
-('RELIC_ENIG_AJAW_TIKAL_PRODUCTION_LEADER',				'MODIFIER_PLAYER_DIPLOMACY_SIMPLE_MODIFIER',		'PLAYER_YIELD_LEAD');
+VALUES	('RELIC_ENIG_AJAW_TIKAL_WONDER_WHORE',					'MODIFIER_PLAYER_DIPLOMACY_SIMPLE_MODIFIER',		'PLAYER_LEADS_WONDERS'),
+('RELIC_ENIG_AJAW_TIKAL_MILITARY_THREAT',				'MODIFIER_PLAYER_DIPLOMACY_SIMPLE_MODIFIER',		'PLAYER_HAS_HIGH_STANDING_ARMY'),
+('RELIC_ENIG_AJAW_TIKAL_PRODUCTION_LEADER',				'MODIFIER_PLAYER_DIPLOMACY_SIMPLE_MODIFIER',		'PLAYER_HAS_HIGH_SCIENCE');
 --------------------------------------------------------------------------------------------------------------------------
 -- ModifierArguments
 --------------------------------------------------------------------------------------------------------------------------
 INSERT INTO ModifierArguments
 (ModifierId,										Name,												Value,																		Type)
-VALUES	('RELIC_ENIG_AJAW_TIKAL_WONDER_WHORE',					'InitialValue',										-6,																			'ARGTYPE_IDENTITY'),
+VALUES	('RELIC_ENIG_AJAW_TIKAL_WONDER_WHORE',			'InitialValue',										-6,																			'ARGTYPE_IDENTITY'),
 ('RELIC_ENIG_AJAW_TIKAL_WONDER_WHORE',					'StatementKey',										'LOC_DIPLO_WARNING_LEADER_RELIC_ENIG_YAXCHIN_ATTACKED_CONTINENT',				'ARGTYPE_IDENTITY'),
 ('RELIC_ENIG_AJAW_TIKAL_WONDER_WHORE',					'SimpleModifierDescription',						'LOC_DIPLO_MODIFIER_RELIC_ENIG_AJAW_TIKAL_ATTACKED_CONTINENT',					'ARGTYPE_IDENTITY'),
-('RELIC_ENIG_AJAW_TIKAL_MILITARY_THREAT',				'InitialValue',										10,																			'ARGTYPE_IDENTITY'),
+('RELIC_ENIG_AJAW_TIKAL_MILITARY_THREAT',				'InitialValue',										6,																			'ARGTYPE_IDENTITY'),
 ('RELIC_ENIG_AJAW_TIKAL_MILITARY_THREAT',				'StatementKey',										'LOC_DIPLO_KUDO_LEADER_RELIC_ENIG_YAXCHIN_DECLARED_FRIEND',						'ARGTYPE_IDENTITY'),
 ('RELIC_ENIG_AJAW_TIKAL_MILITARY_THREAT',				'SimpleModifierDescription',						'LOC_DIPLO_MODIFIER_RELIC_ENIG_AJAW_TIKAL_DECLARED_FRIEND',						'ARGTYPE_IDENTITY'),
-('RELIC_ENIG_AJAW_TIKAL_PRODUCTION_LEADER',				'InitialValue',										15,																			'ARGTYPE_IDENTITY'),
-('RELIC_ENIG_AJAW_TIKAL_PRODUCTION_LEADER',				'YieldType',										'YIELD_PRODUCTION'),
+('RELIC_ENIG_AJAW_TIKAL_PRODUCTION_LEADER',				'InitialValue',										6,																				'ARGTYPE_IDENTITY'),
 ('RELIC_ENIG_AJAW_TIKAL_PRODUCTION_LEADER',				'StatementKey',										'LOC_DIPLO_KUDO_LEADER_RELIC_ENIG_YAXCHIN_REASON_RELIGION_RECEIVED',			'ARGTYPE_IDENTITY'),
 ('RELIC_ENIG_AJAW_TIKAL_PRODUCTION_LEADER',				'SimpleModifierDescription',						'LOC_DIPLO_MODIFIER_AGENDA_RELIC_ENIG_AJAW_TIKAL_RELIGION_RECEIVED',			'ARGTYPE_IDENTITY');
 --==========================================================================================================================
@@ -180,15 +173,14 @@ VALUES	('RELIC_ENIG_AJAW_TIKAL_WONDER_WHORE',					'InitialValue',										-6,		
 --------------------------------------------------------------------------------------------------------------------------
 INSERT INTO PlayerColors
 (Type,							Usage,				PrimaryColor, 									SecondaryColor,									 TextColor)
-SELECT	'LEADER_RELIC_ENIG_YAXCHIN',		'Unique',			'COLOR_PLAYER_RELIC_ENIG_MAYA_YAXCHIN_PRIMARY',	'COLOR_PLAYER_RELIC_ENIG_MAYA_YAXCHIN_SECONDARY', 	 'COLOR_PLAYER_WHITE_TEXT'
-WHERE EXISTS (SELECT * FROM RELIC_ENIG_GlobalUserSettings WHERE Type = 'RELIC_ENIG_MAYA_YAXCHIN' AND Value = 1);
+VALUES ('LEADER_RELIC_ENIG_YAXCHIN',		'Unique',			'COLOR_PLAYER_RELIC_ENIG_MAYA_YAXCHIN_PRIMARY',	'COLOR_PLAYER_RELIC_ENIG_MAYA_YAXCHIN_SECONDARY', 	 'COLOR_PLAYER_WHITE_TEXT');
 --------------------------------------------------------------------------------------------------------------------------
 -- Colors
 --------------------------------------------------------------------------------------------------------------------------
 INSERT INTO Colors
-(Type, 												Red, 	Green, 	Blue, 	Alpha)
-VALUES	('COLOR_PLAYER_RELIC_ENIG_MAYA_YAXCHIN_PRIMARY', 		0,	0.266,	0,	1),
-('COLOR_PLAYER_RELIC_ENIG_MAYA_YAXCHIN_SECONDARY', 	0.433,	0.726,		0.402,	1);
+(Type, 															Red, 	Green, 	Blue, 	Alpha)
+VALUES	('COLOR_PLAYER_RELIC_ENIG_MAYA_YAXCHIN_PRIMARY', 		0,	0.266,		0,		1),
+		('COLOR_PLAYER_RELIC_ENIG_MAYA_YAXCHIN_SECONDARY',	 	0.433,	0.726,	0.402,	1);
 --==========================================================================================================================
 -- LEADERS: LOADING INFO
 --==========================================================================================================================
@@ -218,7 +210,6 @@ VALUES	('TRAIT_LEADER_RELIC_ENIG_DARK_SKY',					'LOC_TRAIT_LEADER_RELIC_ENIG_DAR
 ----------------------------------------------------------------------------------------------------------------------------
 INSERT INTO CivilizationLeaders
 (CivilizationType,			LeaderType,					CapitalName)
-SELECT	'CIVILIZATION_RELIC_ENIG_MAYA',	'LEADER_RELIC_ENIG_YAXCHIN',	'LOC_CITY_NAME_RELIC_ENIG_TIKAL'
-WHERE EXISTS (SELECT * FROM RELIC_ENIG_GlobalUserSettings WHERE Type = 'RELIC_ENIG_MAYA_YAXCHIN' AND Value = 1);
+VALUES	('CIVILIZATION_RELIC_ENIG_MAYA',	'LEADER_RELIC_ENIG_YAXCHIN',	'LOC_CITY_NAME_RELIC_ENIG_TIKAL');
 --==========================================================================================================================
 --==========================================================================================================================

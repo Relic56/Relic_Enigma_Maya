@@ -58,7 +58,7 @@ VALUES	('DISTRICT_RELIC_ENIG_CARACOL',			'Caracol_Holy_Site'),
 INSERT INTO Adjacency_YieldChanges			
 		(ID,						Description,							YieldType,		YieldChange,	TilesRequired,	AdjacentDistrict)
 VALUES	('Caracol_Holy_Site', 		'LOC_DISTRICT_RELIC_ENIG_CARACOL_HOLY_SITE',		'YIELD_SCIENCE', 	1, 				1, 				'DISTRICT_HOLY_SITE'),		
-		('Pa_City_Center', 			'LOC_DISTRICT_RELIC_ENIG_CARACOL_CITY_CENTER',		'YIELD_SCIENCE', 	1, 				1, 				'DISTRICT_CITY_CENTER');		
+		('Caracol_City_Center', 			'LOC_DISTRICT_RELIC_ENIG_CARACOL_CITY_CENTER',		'YIELD_SCIENCE', 	1, 				1, 				'DISTRICT_CITY_CENTER');		
 --------------------------------------------------------------------------------------------------------------------------
 -- District_CitizenYieldChanges
 --------------------------------------------------------------------------------------------------------------------------
@@ -116,8 +116,8 @@ VALUES	('PROJECT_RELIC_ENIG_VENUS',		'KIND_PROJECT');
 ------------------------------------------------------------------------------------------------------------------------	
 INSERT INTO Projects	
 		(ProjectType,					ShortName,								 Name,								Description,								PrereqDistrict, 	  	 PrereqTech,				 Cost, AdvisorType, CostProgressionModel, CostProgressionParam1, AmenitiesWhileActive,  PrereqResource)
-SELECT  'PROJECT_RELIC_ENIG_VENUS',		'LOC_PROJECT_RELIC_ENIG_VENUS_SHORT_NAME', 'LOC_PROJECT_RELIC_ENIG_VENUS_NAME',	'LOC_PROJECT_RELIC_ENIG_VENUS_DESCRIPTION',	'DISTRICT_RELIC_ENIG_CARACOL',  'TECH_WRITING', Cost, AdvisorType, CostProgressionModel, CostProgressionParam1		
-FROM Projects WHERE ProjectType = 'PROJECT_CAMPUS';
+SELECT  'PROJECT_RELIC_ENIG_VENUS',		'LOC_PROJECT_RELIC_ENIG_VENUS_SHORT_NAME', 'LOC_PROJECT_RELIC_ENIG_VENUS_NAME',	'LOC_PROJECT_RELIC_ENIG_VENUS_DESCRIPTION',	'DISTRICT_RELIC_ENIG_CARACOL',  'TECH_WRITING', Cost, AdvisorType, CostProgressionModel, CostProgressionParam1,	AmenitiesWhileActive, PrereqResource		
+FROM Projects WHERE ProjectType = 'PROJECT_ENHANCE_DISTRICT_CAMPUS'; 
 ------------------------------------------------------------------------------------------------------------------------
 -- Project_YieldConversions
 ------------------------------------------------------------------------------------------------------------------------	
@@ -231,7 +231,7 @@ INSERT INTO ModifierArguments
 VALUES	('RELIC_ENIG_MACUAHUITL_SCIENCE',		'YieldType',								'YIELD_SCIENCE'),
 		('RELIC_ENIG_MACUAHUITL_SCIENCE',		'Amount',									10),
 		('RELIC_ENIG_MACUAHUITL_FAITH',			'YieldType',								'YIELD_FAITH'),
-		('RELIC_ENIG_MACUAHUITL_FAITH',			'Amount',									10),;
+		('RELIC_ENIG_MACUAHUITL_FAITH',			'Amount',									10);
 --------------------------------------------------------------------------------------------------------------------------
 -- Requirements
 --------------------------------------------------------------------------------------------------------------------------	
@@ -289,102 +289,37 @@ INSERT INTO CityNames
 VALUES		('CIVILIZATION_RELIC_ENIG_MAYA',			'LOC_CITY_NAME_MAYA_PALENQUE'),	
 			('CIVILIZATION_RELIC_ENIG_MAYA',			'LOC_CITY_NAME_MAYA_COPAN'),	
 			('CIVILIZATION_RELIC_ENIG_MAYA',			'LOC_CITY_NAME_MAYA_TIKAL'),	
-			('CIVILIZATION_RELIC_ENIG_MAYA',			'LOC_CITY_NAME_MAYA_Q'UMARKAJ'),	
+			('CIVILIZATION_RELIC_ENIG_MAYA',			'LOC_CITY_NAME_MAYA_Q''UMARKAJ'),	
 			('CIVILIZATION_RELIC_ENIG_MAYA',			'LOC_CITY_NAME_MAYA_CHICHEN_ITZA'),	
 			('CIVILIZATION_RELIC_ENIG_MAYA',			'LOC_CITY_NAME_MAYA_MAYAPAN'),	
 			('CIVILIZATION_RELIC_ENIG_MAYA',			'LOC_CITY_NAME_MAYA_IXIMCHE'),	
-			('CIVILIZATION_RELIC_ENIG_MAYA',			'LOC_CITY_NAME_MAYA_(CALAKMUL)'),	
-			('CIVILIZATION_RELIC_ENIG_MAYA',			'LOC_CITY_NAME_MAYA_YO'K'IB'_(PIEDRAS_NEGRAS)'),	
-			('CIVILIZATION_RELIC_ENIG_MAYA',			'LOC_CITY_NAME_MAYA_TULU'UM'),	
-			('CIVILIZATION_RELIC_ENIG_MAYA',			'LOC_CITY_NAME_MAYA_(YAXCHILAN)'),	
-			('CIVILIZATION_RELIC_ENIG_MAYA',			'LOC_CITY_NAME_MAYA_OXMAL_'),	
+			('CIVILIZATION_RELIC_ENIG_MAYA',			'LOC_CITY_NAME_MAYA_CALAKMUL'),	
+			('CIVILIZATION_RELIC_ENIG_MAYA',			'LOC_CITY_NAME_MAYA_YO''K''IB'),	
+			('CIVILIZATION_RELIC_ENIG_MAYA',			'LOC_CITY_NAME_MAYA_TULU''UM'),	
+			('CIVILIZATION_RELIC_ENIG_MAYA',			'LOC_CITY_NAME_MAYA_YAXCHILAN'),	
+			('CIVILIZATION_RELIC_ENIG_MAYA',			'LOC_CITY_NAME_MAYA_OXMAL'),	
 			('CIVILIZATION_RELIC_ENIG_MAYA',			'LOC_CITY_NAME_MAYA_DZIBILCHALTUN'),	
-			('CIVILIZATION_RELIC_ENIG_MAYA',			'LOC_CITY_NAME_MAYA_CH'EN_CHUN_CHUKUM_'),	
-			('CIVILIZATION_RELIC_ENIG_MAYA',			'LOC_CITY_NAME_MAYA_KAMINALJUYU_'),	
-			('CIVILIZATION_RELIC_ENIG_MAYA',			'LOC_CITY_NAME_MAYA_KAN_'),	
+			('CIVILIZATION_RELIC_ENIG_MAYA',			'LOC_CITY_NAME_MAYA_CH''EN_CHUN_CHUKUM'),	
+			('CIVILIZATION_RELIC_ENIG_MAYA',			'LOC_CITY_NAME_MAYA_KAMINALJUYU'),	
+			('CIVILIZATION_RELIC_ENIG_MAYA',			'LOC_CITY_NAME_MAYA_KAN'),	
 			('CIVILIZATION_RELIC_ENIG_MAYA',			'LOC_CITY_NAME_MAYA_NAKBE'),	
 			('CIVILIZATION_RELIC_ENIG_MAYA',			'LOC_CITY_NAME_MAYA_QUIRIGUA'),	
-			('CIVILIZATION_RELIC_ENIG_MAYA',			'LOC_CITY_NAME_MAYA_BEKAN_'),	
+			('CIVILIZATION_RELIC_ENIG_MAYA',			'LOC_CITY_NAME_MAYA_BEKAN'),	
 			('CIVILIZATION_RELIC_ENIG_MAYA',			'LOC_CITY_NAME_MAYA_YAXHA'),	
-			('CIVILIZATION_RELIC_ENIG_MAYA',			'LOC_CITY_NAME_MAYA_OXWITZA'_'),	
+			('CIVILIZATION_RELIC_ENIG_MAYA',			'LOC_CITY_NAME_MAYA_OXWITZA'),	
 			('CIVILIZATION_RELIC_ENIG_MAYA',			'LOC_CITY_NAME_MAYA_KOBA_'),	
 			('CIVILIZATION_RELIC_ENIG_MAYA',			'LOC_CITY_NAME_MAYA_DOS_PILAS'),	
 			('CIVILIZATION_RELIC_ENIG_MAYA',			'LOC_CITY_NAME_MAYA_SAN_BARTOLO'),	
-			('CIVILIZATION_RELIC_ENIG_MAYA',			'LOC_CITY_NAME_MAYA_WAKA'_'),	
+			('CIVILIZATION_RELIC_ENIG_MAYA',			'LOC_CITY_NAME_MAYA_WAKA'),	
 			('CIVILIZATION_RELIC_ENIG_MAYA',			'LOC_CITY_NAME_MAYA_OXKINTOK'),	
-			('CIVILIZATION_RELIC_ENIG_MAYA',			'LOC_CITY_NAME_MAYA_SA'AAL_'),	
+			('CIVILIZATION_RELIC_ENIG_MAYA',			'LOC_CITY_NAME_MAYA_SA''AAL'),	
 			('CIVILIZATION_RELIC_ENIG_MAYA',			'LOC_CITY_NAME_MAYA_IXKUN'),	
 			('CIVILIZATION_RELIC_ENIG_MAYA',			'LOC_CITY_NAME_MAYA_EL_BAUL'),	
 			('CIVILIZATION_RELIC_ENIG_MAYA',			'LOC_CITY_NAME_MAYA_CEIBAL'),	
 			('CIVILIZATION_RELIC_ENIG_MAYA',			'LOC_CITY_NAME_MAYA_NAACHTUN');	
 ----------------------------------------------------------------------------------	
 ----------------------------------------------------------------------------------	
-INSERT OR REPLACE INTO LocalizedText (Tag,	Language,	Text)	
---------------------------------------------------------------------	
--- Cities	
---------------------------------------------------------------------	
-VALUES		("LOC_CITY_NAME_MAYA_PALENQUE",	"en_US",
-			"Palenque"),	
-			("LOC_CITY_NAME_MAYA_COPAN",	"en_US",
-			"Copan"),	
-			("LOC_CITY_NAME_MAYA_TIKAL",	"en_US",
-			"Tikal"),	
-			("LOC_CITY_NAME_MAYA_Q'UMARKAJ",	"en_US",
-			"Q'umarkaj"),	
-			("LOC_CITY_NAME_MAYA_CHICHEN_ITZA",	"en_US",
-			"Chichen Itza"),	
-			("LOC_CITY_NAME_MAYA_MAYAPAN",	"en_US",
-			"Mayapan"),	
-			("LOC_CITY_NAME_MAYA_IXIMCHE",	"en_US",
-			"Iximche"),	
-			("LOC_CITY_NAME_MAYA_(CALAKMUL)",	"en_US",
-			"(Calakmul)"),	
-			("LOC_CITY_NAME_MAYA_YO'K'IB'_(PIEDRAS_NEGRAS)",	"en_US",
-			"Yo'k'ib' (Piedras Negras)"),	
-			("LOC_CITY_NAME_MAYA_TULU'UM",	"en_US",
-			"Tulu'um"),	
-			("LOC_CITY_NAME_MAYA_(YAXCHILAN)",	"en_US",
-			"(Yaxchilan)"),	
-			("LOC_CITY_NAME_MAYA_OXMAL_",	"en_US",
-			"Oxmal "),	
-			("LOC_CITY_NAME_MAYA_DZIBILCHALTUN",	"en_US",
-			"Dzibilchaltun"),	
-			("LOC_CITY_NAME_MAYA_CH'EN_CHUN_CHUKUM_",	"en_US",
-			"Ch'en Chun Chukum "),	
-			("LOC_CITY_NAME_MAYA_KAMINALJUYU_",	"en_US",
-			"Kaminaljuyu "),	
-			("LOC_CITY_NAME_MAYA_KAN_",	"en_US",
-			"Kan "),	
-			("LOC_CITY_NAME_MAYA_NAKBE",	"en_US",
-			"Nakbe"),	
-			("LOC_CITY_NAME_MAYA_QUIRIGUA",	"en_US",
-			"Quiriguá"),	
-			("LOC_CITY_NAME_MAYA_BEKAN_",	"en_US",
-			"Bekan "),	
-			("LOC_CITY_NAME_MAYA_YAXHA",	"en_US",
-			"Yaxha"),	
-			("LOC_CITY_NAME_MAYA_OXWITZA'_",	"en_US",
-			"Oxwitza' "),	
-			("LOC_CITY_NAME_MAYA_KOBA_",	"en_US",
-			"Koba "),	
-			("LOC_CITY_NAME_MAYA_DOS_PILAS",	"en_US",
-			"Dos Pilas"),	
-			("LOC_CITY_NAME_MAYA_SAN_BARTOLO",	"en_US",
-			"San Bartolo"),	
-			("LOC_CITY_NAME_MAYA_WAKA'_",	"en_US",
-			"Waka' "),	
-			("LOC_CITY_NAME_MAYA_OXKINTOK",	"en_US",
-			"Oxkintok"),	
-			("LOC_CITY_NAME_MAYA_SA'AAL_",	"en_US",
-			"Sa'aal "),	
-			("LOC_CITY_NAME_MAYA_IXKUN",	"en_US",
-			"Ixkun"),	
-			("LOC_CITY_NAME_MAYA_EL_BAUL",	"en_US",
-			"El Baúl"),	
-			("LOC_CITY_NAME_MAYA_CEIBAL",	"en_US",
-			"Ceibal"),	
-			("LOC_CITY_NAME_MAYA_NAACHTUN",	"en_US",
-			"Naachtun");	
+	
 ----------------------------------------------------------------------------------------------------------------------------
 -- CivilizationCitizenNames
 ----------------------------------------------------------------------------------------------------------------------------	

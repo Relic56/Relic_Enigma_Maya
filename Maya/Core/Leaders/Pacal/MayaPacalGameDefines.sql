@@ -5,22 +5,19 @@
 --------------------------------------------------------------------------------------------------------------------------	
 INSERT INTO Types	
 		(Type,						Kind)
-SELECT	'LEADER_RELIC_ENIG_PAKAL',	'KIND_LEADER'
-WHERE EXISTS (SELECT * FROM RELIC_ENIG_GlobalUserSettings WHERE Type = 'RELIC_ENIG_MAYA_PAKAL' AND Value = 1);	
+VALUES	('LEADER_RELIC_ENIG_PAKAL',	'KIND_LEADER');	
 --------------------------------------------------------------------------------------------------------------------------
 -- Leaders
 --------------------------------------------------------------------------------------------------------------------------	
 INSERT INTO Leaders	
 		(LeaderType,				Name,								InheritFrom,		SceneLayers)
-SELECT	'LEADER_RELIC_ENIG_PAKAL',	'LOC_LEADER_RELIC_ENIG_PAKAL_NAME',	'LEADER_DEFAULT',	4
-WHERE EXISTS (SELECT * FROM RELIC_ENIG_GlobalUserSettings WHERE Type = 'RELIC_ENIG_MAYA_PAKAL' AND Value = 1);	
+VALUES ('LEADER_RELIC_ENIG_PAKAL',	'LOC_LEADER_RELIC_ENIG_PAKAL_NAME',	'LEADER_DEFAULT',	4);
 --------------------------------------------------------------------------------------------------------------------------
 -- LeaderQuotes
 --------------------------------------------------------------------------------------------------------------------------	
 INSERT INTO LeaderQuotes	
 		(LeaderType,				Quote)
-SELECT	'LEADER_RELIC_ENIG_PAKAL',	'LOC_PEDIA_LEADERS_PAGE_LEADER_RELIC_ENIG_PAKAL_QUOTE'
-WHERE EXISTS (SELECT * FROM RELIC_ENIG_GlobalUserSettings WHERE Type = 'RELIC_ENIG_MAYA_PAKAL' AND Value = 1);	
+VALUES	('LEADER_RELIC_ENIG_PAKAL',	'LOC_PEDIA_LEADERS_PAGE_LEADER_RELIC_ENIG_PAKAL_QUOTE');
 --------------------------------------------------------------------------------------------------------------------------
 -- HistoricalAgendas
 --------------------------------------------------------------------------------------------------------------------------	
@@ -32,16 +29,14 @@ VALUES	('LEADER_RELIC_ENIG_PAKAL',	'AGENDA_RELIC_ENIG_SUN_SHIELD');
 --------------------------------------------------------------------------------------------------------------------------	
 INSERT INTO LeaderTraits	
 		(LeaderType,				TraitType)
-SELECT	'LEADER_RELIC_ENIG_PAKAL',	'TRAIT_LEADER_RELIC_ENIG_WHITE_SKIN'
-WHERE EXISTS (SELECT * FROM RELIC_ENIG_GlobalUserSettings WHERE Type = 'RELIC_ENIG_MAYA_PAKAL' AND Value = 1);	
+VALUES	('LEADER_RELIC_ENIG_PAKAL',	'TRAIT_LEADER_RELIC_ENIG_WHITE_SKIN');
 --------------------------------------------------------------------------------------------------------------------------
 -- FavoredReligions
 --------------------------------------------------------------------------------------------------------------------------	
 INSERT OR REPLACE INTO FavoredReligions	
 		(LeaderType,				ReligionType)
 SELECT	'LEADER_RELIC_ENIG_PAKAL',	ReligionType
-FROM Religions WHERE ReligionType = 'RELIGION_CATHOLICISM'
-AND EXISTS (SELECT * FROM RELIC_ENIG_GlobalUserSettings WHERE Type = 'RELIC_ENIG_MAYA_PAKAL' AND Value = 1);	
+FROM Religions WHERE ReligionType = 'RELIGION_CATHOLICISM';	
 
 UPDATE FavoredReligions
 SET ReligionType = 'RELIGION_PUATA_TUPUNA'
@@ -49,8 +44,7 @@ WHERE LeaderType = 'LEADER_RELIC_ENIG_PAKAL'
 AND EXISTS (SELECT ReligionType FROM Religions WHERE ReligionType = 'RELIGION_TZOLKIN');
 
 CREATE TRIGGER RELIC_ENIG_Maya_Pakal_FavoredReligions 
-AFTER INSERT ON Religions WHEN 'RELIGION_TZOLKIN' = NEW.ReligionType 
-AND EXISTS (SELECT * FROM RELIC_ENIG_GlobalUserSettings WHERE Type = 'RELIC_ENIG_MAYA_PAKAL' AND Value = 1)	
+AFTER INSERT ON Religions WHEN 'RELIGION_TZOLKIN' = NEW.ReligionType
 BEGIN 
 INSERT OR REPLACE INTO FavoredReligions 
 		(LeaderType, 		 		ReligionType) 
@@ -133,9 +127,10 @@ VALUES	('TRAIT_AGENDA_RELIC_ENIG_SUN_SHIELD',					'RELIC_ENIG_SUN_SHIELD_WONDER_
 --------------------------------------------------------------------------------------------------------------------------
 INSERT INTO Modifiers	
 		(ModifierId,										ModifierType,										SubjectRequirementSetId)
-VALUES	('RELIC_ENIG_SUN_SHIELD_WONDER_WHORE',					'MODIFIER_PLAYER_DIPLOMACY_SIMPLE_MODIFIER',		'PLAYER_BUILT_WONDER'),
-		('RELIC_ENIG_SUN_SHIELD_MILITARY_THREAT',				'MODIFIER_PLAYER_DIPLOMACY_SIMPLE_MODIFIER',		'PLAYER_MILITARY_STRENGTH_LEAD'),
-		('RELIC_ENIG_SUN_SHIELD_SCIENCE_LEADER',				'MODIFIER_PLAYER_DIPLOMACY_SIMPLE_MODIFIER',		'PLAYER_YIELD_LEAD');
+VALUES	('RELIC_ENIG_SUN_SHIELD_WONDER_WHORE',					'MODIFIER_PLAYER_DIPLOMACY_SIMPLE_MODIFIER',		'PLAYER_LEADS_WONDERS'),
+		('RELIC_ENIG_SUN_SHIELD_MILITARY_THREAT',				'MODIFIER_PLAYER_DIPLOMACY_SIMPLE_MODIFIER',		'PLAYER_HAS_HIGH_STANDING_ARMY'),
+		('RELIC_ENIG_SUN_SHIELD_SCIENCE_LEADER',				'MODIFIER_PLAYER_DIPLOMACY_SIMPLE_MODIFIER',		'PLAYER_HAS_HIGH_SCIENCE');
+
 --------------------------------------------------------------------------------------------------------------------------
 -- ModifierArguments
 --------------------------------------------------------------------------------------------------------------------------
@@ -148,7 +143,6 @@ VALUES	('RELIC_ENIG_SUN_SHIELD_WONDER_WHORE',					'InitialValue',										-6,		
 		('RELIC_ENIG_SUN_SHIELD_MILITARY_THREAT',				'StatementKey',										'LOC_DIPLO_KUDO_LEADER_RELIC_ENIG_PAKAL_DECLARED_FRIEND',						'ARGTYPE_IDENTITY'),
 		('RELIC_ENIG_SUN_SHIELD_MILITARY_THREAT',				'SimpleModifierDescription',						'LOC_DIPLO_MODIFIER_RELIC_ENIG_SUN_SHIELD_DECLARED_FRIEND',						'ARGTYPE_IDENTITY'),
 		('RELIC_ENIG_SUN_SHIELD_SCIENCE_LEADER',				'InitialValue',										15,																			'ARGTYPE_IDENTITY'),
-		('RELIC_ENIG_SUN_SHIELD_SCIENCE_LEADER',				'YieldType',										'YIELD_SCIENCE'),
 		('RELIC_ENIG_SUN_SHIELD_SCIENCE_LEADER',				'StatementKey',										'LOC_DIPLO_KUDO_LEADER_RELIC_ENIG_PAKAL_REASON_RELIGION_RECEIVED',			'ARGTYPE_IDENTITY'),
 		('RELIC_ENIG_SUN_SHIELD_SCIENCE_LEADER',				'SimpleModifierDescription',						'LOC_DIPLO_MODIFIER_AGENDA_RELIC_ENIG_SUN_SHIELD_RELIGION_RECEIVED',			'ARGTYPE_IDENTITY');	
 --==========================================================================================================================
@@ -158,8 +152,7 @@ VALUES	('RELIC_ENIG_SUN_SHIELD_WONDER_WHORE',					'InitialValue',										-6,		
 --------------------------------------------------------------------------------------------------------------------------	
 INSERT INTO PlayerColors	
 		(Type,							Usage,				PrimaryColor, 									SecondaryColor,									 TextColor)
-SELECT	'LEADER_RELIC_ENIG_PAKAL',		'Unique',			'COLOR_PLAYER_RELIC_ENIG_MAYA_PAKAL_PRIMARY',	'COLOR_PLAYER_RELIC_ENIG_MAYA_PAKAL_SECONDARY', 	 'COLOR_PLAYER_WHITE_TEXT'
-WHERE EXISTS (SELECT * FROM RELIC_ENIG_GlobalUserSettings WHERE Type = 'RELIC_ENIG_MAYA_PAKAL' AND Value = 1);	
+VALUES	('LEADER_RELIC_ENIG_PAKAL',		'Unique',			'COLOR_PLAYER_RELIC_ENIG_MAYA_PAKAL_PRIMARY',	'COLOR_PLAYER_RELIC_ENIG_MAYA_PAKAL_SECONDARY', 	 'COLOR_PLAYER_WHITE_TEXT');
 --------------------------------------------------------------------------------------------------------------------------			
 -- Colors			
 --------------------------------------------------------------------------------------------------------------------------	
@@ -195,6 +188,7 @@ VALUES	('TRAIT_LEADER_RELIC_ENIG_WHITE_SKIN',					'LOC_TRAIT_LEADER_RELIC_ENIG_W
 INSERT INTO TraitModifiers			
 		(TraitType,												ModifierId)
 VALUES	('TRAIT_LEADER_RELIC_ENIG_WHITE_SKIN',					'RELIC_ENIG_WHITE_SKIN_WONDER_HOLY'),
+		('TRAIT_LEADER_RELIC_ENIG_WHITE_SKIN',					'RELIC_ENIG_WHITE_SKIN_WONDER_SCIENCE'),
 		('TRAIT_LEADER_RELIC_ENIG_WHITE_SKIN',					'RELIC_ENIG_WHITE_SKIN_SETTLER_ZOC');	
 --------------------------------------------------------------------------------------------------------------------------
 -- Modifiers
@@ -242,7 +236,7 @@ INSERT INTO RequirementSetRequirements
 		(RequirementSetId,										RequirementId)
 VALUES	('RELIC_ENIG_WHITE_SKIN_WONDER_HOLY_REQ_SET',		'RELIC_ENIG_WHITE_SKIN_WONDER_HOLY_REQ'),
 		('RELIC_ENIG_WHITE_SKIN_WONDER_SCIENCE_REQ_SET',	'RELIC_ENIG_WHITE_SKIN_WONDER_SCIENCE_REQ'),
-		('RELIC_ENIG_WHITE_SKIN_WONDER_GROWTH_REQ_SET',		'RELIC_ENIG_WHITE_SKIN_WONDER_GROWTH_REQ'),;	
+		('RELIC_ENIG_WHITE_SKIN_WONDER_GROWTH_REQ_SET',		'RELIC_ENIG_WHITE_SKIN_WONDER_GROWTH_REQ');	
 --==========================================================================================================================
 -- CIVILIZATIONS
 --==========================================================================================================================
@@ -250,7 +244,6 @@ VALUES	('RELIC_ENIG_WHITE_SKIN_WONDER_HOLY_REQ_SET',		'RELIC_ENIG_WHITE_SKIN_WON
 ----------------------------------------------------------------------------------------------------------------------------	
 INSERT INTO CivilizationLeaders	
 		(CivilizationType,			LeaderType,					CapitalName)
-SELECT	'CIVILIZATION_RELIC_ENIG_MAYA',	'LEADER_RELIC_ENIG_PAKAL',	'LOC_CITY_NAME_RELIC_ENIG_PALENQUE'
-WHERE EXISTS (SELECT * FROM RELIC_ENIG_GlobalUserSettings WHERE Type = 'RELIC_ENIG_MAYA_PAKAL' AND Value = 1);	
+VALUES	('CIVILIZATION_RELIC_ENIG_MAYA',	'LEADER_RELIC_ENIG_PAKAL',	'LOC_CITY_NAME_RELIC_ENIG_PALENQUE');
 --==========================================================================================================================
 --==========================================================================================================================
