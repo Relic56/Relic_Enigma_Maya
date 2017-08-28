@@ -67,25 +67,29 @@ function SCC_Ash_EurekaHunting(pPlayerTechs, iEra)
     end
 end
 --Some variables to define
-local sTraitCalenderRounds = "TRAIT_CIVILIZATION_RELIC_ENIG_MAYA_CALENDER_ROUNDS"
-local sTraitGreatPaw = "TRAIT_LEADER_RELIC_ENIG_GREAT_PAW"
+local sTraitCalenderRounds = "TRAIT_CIVILIZATION_RELIC_ENIG_CALENDAR_ROUNDS"
+local sTraitGreatPaw = "TRAIT_LEADER_RELIC_ENIG_DARK_SKY"
 
 --Eureka on project completion
-local iDistrictCaracolID = GameInfo.Districts["DISTRICT_RELIC_ENIG_CARACOL"]
-local iProjectVenusObservationsID = GameInfo.Projects["PROJECT_RELIC_ENIG_VENUS_OBSERVATIONS"]
+local iProjectVenusObservationsID = GameInfo.Projects["PROJECT_RELIC_ENIG_VENUS"].Index
 function RelicMayaEurekaOnProjectCompletion(playerID, cityID, orderType, itemType)
 	pPlayer = Players[playerID] --get player pointer
+	print("Production Completed!")
 	--don't need to check if it has a certain trait because no one else is getting access to the venus observations
-	local city = player:GetCities():FindID(cityID)
+	local city = pPlayer:GetCities():FindID(cityID)
+	print(city)
 	if (not city) then --no idea how this would happen but Firaxis
 		return
 	end
+	print(orderType)
 	if orderType ~= 3 then --if not project
 		return
 	end
+	print(GameInfo.Projects[itemType].Index)
 	if GameInfo.Projects[itemType].Index ~= iProjectVenusObservationsID then --was it actually Venus Observations?
 		return
 	end
+	print("Granting boost")
 	iTechBoost = SCC_Ash_EurekaHunting(pPlayer:GetTechs(),pPlayer:GetEra())
 	if iTechBoost ~= nil then
 		pPlayer:GetTechs():TriggerBoost(iTechBoost, 1);
@@ -97,10 +101,13 @@ Events.CityProductionCompleted.Add(RelicMayaEurekaOnProjectCompletion)
 --Calender Rounds
 -----------------------------------------------------------------------------------------------
 function RelicGSPOnNewEraOrEureka(playerID)
+	print("player era changed or eureka")
+	print(playerID)
 	local pPlayer = Players[playerID]
 	local pPlayerConfig = PlayerConfigurations[playerID]
 	local pCivilizationType = pPlayerConfig:GetCivilizationTypeName()
 	if (not HasCivilizationTrait(pCivilizationType, sTraitCalenderRounds)) then
+		print("not maya")
 		return 
 	end
 	iGSP = math.ceil(pPlayer:GetTechs():GetScienceYield()/5)
@@ -123,16 +130,16 @@ local function has_value (tab, val)
 end
 
 function RelicCityCaptureBoostProduction(iVictoriousPlayer)
-	local pPlayer = Players[playerID]
-	local pPlayerConfig = PlayerConfigurations[playerID]
+	local pPlayer = Players[iVictoriousPlayer]
+	local pPlayerConfig = PlayerConfigurations[iVictoriousPlayer]
 	local sLeaderType = pPlayerConfig:GetLeaderTypeName()
 	if (not HasLeaderTrait(sLeaderType, sTraitGreatPaw)) then
 		return
 	end
 	tWonders = DB.Query("SELECT BuildingType FROM Buildings WHERE PrereqDistrict IS NULL")
 	tProjects = DB.Query("SELECT ProjectType FROM Projects")
-	for key, pCity in pPlayer:GetCities() do
-		sCurrentProduction = pCity:CurrentlyBuilding()
+	for key, pCity in pPlayer:GetCities():Members() do
+		sCurrentProduction = pCity:GetBuildQueue():CurrentlyBuilding()
 		if has_value(tWonders, sCurrentProduction) or has_value(tProjects, sCurrentProduction) then
 			--do nothing
 		else
@@ -144,14 +151,23 @@ GameEvents.CityConquered.Add(RelicCityCaptureBoostProduction)
 
 local tCSs = {}
 for row in GameInfo.C15_REL_CityStateGPLinkage() do
-    local tQuery = DB.Query("SELECT Type FROM TypeProperties WHERE Value = '" .. row.CSType .. "'")
+    local tQuery = DB.Query("SELECT Type FROM TypeProperties WHERE Value = '" .. row.Value .. "'")
     for k, v in pairs(tQuery) do
-		if (not tCSs[GameInfo.Civilizations[v.Type].Index]) then
-			tCSs[GameInfo.Civilizations[v.Type].Index] = {GameInfo.GreatPersonClasses[row.GreatPersonClassType].Index}
+		if (not tCSs[v.Type]) then
+			tCSs[v.Type] = {GameInfo.GreatPersonClasses[row.GreatPersonClassType].Index}
 		else
-			table.insert(GameInfo.Civilizations[v.Type].Index,GameInfo.GreatPersonClasses[row.GreatPersonClassType].Index)
+			table.insert(tCSs[v.Type],GameInfo.GreatPersonClasses[row.GreatPersonClassType].Index)
 		end
     end
+end
+print("loop")
+for k, v in pairs(tCSs) do
+	print(k)
+	print(v)
+	--for k1, v1, in ipairs(v) do
+	--	print(k1)
+	--	print(v1)
+	--end
 end
 
 local iPoints = 100 -- Make this scale off something you twat
@@ -161,13 +177,19 @@ function C15_OnMayaCapture(iVictoriousPlayer, iDefeatedPlayer, iNewCityID, iCity
     local pPlayerConfig = PlayerConfigurations[iVictoriousPlayer]
     local sLeaderType = pPlayerConfig:GetLeaderTypeName()
     if HasLeaderTrait(sLeaderType, sTraitGreatPaw) then
+		print("I'm going in")
         local pPlayerCities = pPlayer:GetCities()
         local pCity = pPlayerCities:FindID(iNewCityID)
         local pOldPlayer = Players[iDefeatedPlayer]
+		print(pOldPlayer)
         local pOldPlayerConfig = PlayerConfigurations[iDefeatedPlayer]
-        local iOldPlayerCivType = pOldPlayerConfig:GetCivilizationTypeID()
-        if tCSs[iOldPlayerCivType] then
-			for iGPClass in tCSs[iOldPlayerCivType] do 
+        local iOldPlayerCivName = pOldPlayerConfig:GetCivilizationTypeName()
+		print(iOldPlayerCivName)
+		print(tCSs[iOldPlayerCivName])
+        if tCSs[iOldPlayerCivName] then
+		print("Yay!")
+			for k,iGPClass in ipairs(tCSs[iOldPlayerCivName]) do 
+				print(iGPClass)
 				local pPlayerGPP = pPlayer:GetGreatPeoplePoints()
 				iPoints = pPlayerGPP:CalculatePointsPerTurn(iGPClass) * 5
 				if iPoints == 0 then iPoints = 5 end
@@ -181,20 +203,24 @@ end
 GameEvents.CityConquered.Add(C15_OnMayaCapture)
 
 function Relic_Maya_New_Turn(playerID)
+	print("new turn and stuff")
 	local pPlayer = Players[playerID]
 	local pPlayerConfig = PlayerConfigurations[playerID]
 	local sLeaderType = pPlayerConfig:GetLeaderTypeName()
 	if HasLeaderTrait(sLeaderType, sTraitGreatPaw) then
+		print("mayan turn")
 		local pPlayerCities = pPlayer:GetCities()
-		for k, v in pPlayerCities do
+		for k, v in pPlayerCities:Members() do
 			local pOriginalOwner = Players[v:GetOriginalOwner()]
 			local pOriginalOwnerConfig = PlayerConfigurations[v:GetOriginalOwner()]
-			local iOriginalPlayerCivType = pOriginalOwnerConfig:GetCivilizationTypeID()
-			if tCSs[iOriginalPlayerCivType] then
-				for iGPClass in tCSs[iOriginalPlayerCivType] do
+			local iOriginalPlayerCivName = pOriginalOwnerConfig:GetCivilizationTypeName()
+			print(iOriginalPlayerCivName)
+			if tCSs[iOriginalPlayerCivName] then
+				for k,	iGPClass in ipairs(tCSs[iOriginalPlayerCivName]) do
 					local pPlayerGPP = pPlayer:GetGreatPeoplePoints()
+					print("Granting points of type " .. iGPClass)
 					iPoints = 5
-					pPlayerGPP:ChangePountsTotal(iGPClass, iPoints)
+					pPlayerGPP:ChangePointsTotal(iGPClass, iPoints)
 				end
 			end
 		end
