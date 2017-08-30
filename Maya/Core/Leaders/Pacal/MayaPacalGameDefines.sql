@@ -39,7 +39,7 @@ SELECT	'LEADER_RELIC_ENIG_PAKAL',	ReligionType
 FROM Religions WHERE ReligionType = 'RELIGION_CATHOLICISM';	
 
 UPDATE FavoredReligions
-SET ReligionType = 'RELIGION_PUATA_TUPUNA'
+SET ReligionType = 'RELIGION_TZOLKIN'
 WHERE LeaderType = 'LEADER_RELIC_ENIG_PAKAL' 
 AND EXISTS (SELECT ReligionType FROM Religions WHERE ReligionType = 'RELIGION_TZOLKIN');
 
