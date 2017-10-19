@@ -51,14 +51,14 @@ FROM District_Adjacencies WHERE DistrictType = 'DISTRICT_CAMPUS';
 INSERT INTO District_Adjacencies
 		(DistrictType,				YieldChangeId)
 VALUES	('DISTRICT_RELIC_ENIG_CARACOL',			'Caracol_Holy_Site'),
-		('DISTRICT_RELIC_ENIG_CARACOL',			'Caracol_City_Center');
+		('DISTRICT_RELIC_ENIG_CARACOL',		'Caracol_City_Center');
 --------------------------------------------------------------------------------------------------------------------------
 -- Adjacency_YieldChanges
 --------------------------------------------------------------------------------------------------------------------------
 INSERT INTO Adjacency_YieldChanges			
 		(ID,						Description,							YieldType,		YieldChange,	TilesRequired,	AdjacentDistrict)
-VALUES	('Caracol_Holy_Site', 		'LOC_DISTRICT_RELIC_ENIG_CARACOL_HOLY_SITE',		'YIELD_SCIENCE', 	1, 				1, 				'DISTRICT_HOLY_SITE'),		
-		('Caracol_City_Center', 			'LOC_DISTRICT_RELIC_ENIG_CARACOL_CITY_CENTER',		'YIELD_SCIENCE', 	1, 				1, 				'DISTRICT_CITY_CENTER');		
+VALUES	('Caracol_Holy_Site', 			'LOC_DISTRICT_RELIC_ENIG_CARACOL_HOLY_SITE',		'YIELD_SCIENCE', 	1, 				1, 				'DISTRICT_HOLY_SITE'),		
+	('Caracol_City_Center', 		'LOC_DISTRICT_RELIC_ENIG_CARACOL_CITY_CENTER',		'YIELD_SCIENCE', 	1, 				1, 				'DISTRICT_CITY_CENTER');		
 --------------------------------------------------------------------------------------------------------------------------
 -- District_CitizenYieldChanges
 --------------------------------------------------------------------------------------------------------------------------
@@ -208,50 +208,43 @@ VALUES	('ABILITY_RELIC_ENIG_MACUAHUITL',					'LOC_ABILITY_RELIC_ENIG_MACUAHUITL_
 INSERT INTO UnitAbilityModifiers	
 		(UnitAbilityType,						ModifierId)
 VALUES	('ABILITY_RELIC_ENIG_MACUAHUITL',					'RELIC_ENIG_MACUAHUITL_SCIENCE'),
-		('ABILITY_RELIC_ENIG_MACUAHUITL',					'RELIC_ENIG_MACUAHUITL_FAITH');		
+	('ABILITY_RELIC_ENIG_MACUAHUITL',					'RELIC_ENIG_MACUAHUITL_FAITH');		
 --------------------------------------------------------------------------------------------------------------------------
 -- Modifiers
 --------------------------------------------------------------------------------------------------------------------------	
 INSERT INTO Modifiers	
 		(ModifierId,							ModifierType,								Permanent,	SubjectRequirementSetId)
 VALUES	('RELIC_ENIG_MACUAHUITL_SCIENCE',		'MODIFIER_UNIT_ADJUST_POST_COMBAT_YIELD',		0,			'RELIC_ENIG_MACUAHUITL_SCIENCE_REQ_SET'),
-		('RELIC_ENIG_MACUAHUITL_FAITH',			'MODIFIER_UNIT_ADJUST_POST_COMBAT_YIELD',		0,			'RELIC_ENIG_MACUAHUITL_FAITH_REQ_SET');	
---------------------------------------------------------------------------------------------------------------------------
--- ModifierStrings
---------------------------------------------------------------------------------------------------------------------------
-INSERT INTO ModifierStrings
-		(ModifierId,							Context,									Text)
-VALUES	('RELIC_ENIG_MACUAHUITL_SCIENCE',	'Preview',									'LOC_ABILITY_RELIC_ENIG_MACUAHUITL_SCIENCE_DESCRIPTION'),
-		('RELIC_ENIG_MACUAHUITL_FAITH',		'Preview',									'LOC_ABILITY_RELIC_ENIG_MACUAHUITL_FAITH_DESCRIPTION');	
+	('RELIC_ENIG_MACUAHUITL_FAITH',			'MODIFIER_UNIT_ADJUST_POST_COMBAT_YIELD',		0,			'RELIC_ENIG_MACUAHUITL_FAITH_REQ_SET');	
 --------------------------------------------------------------------------------------------------------------------------
 -- ModifierArguments
 --------------------------------------------------------------------------------------------------------------------------
 INSERT INTO ModifierArguments
 		(ModifierId,							Name,										Value)
 VALUES	('RELIC_ENIG_MACUAHUITL_SCIENCE',		'YieldType',								'YIELD_SCIENCE'),
-		('RELIC_ENIG_MACUAHUITL_SCIENCE',		'Amount',									10),
-		('RELIC_ENIG_MACUAHUITL_FAITH',			'YieldType',								'YIELD_FAITH'),
-		('RELIC_ENIG_MACUAHUITL_FAITH',			'Amount',									10);
+	('RELIC_ENIG_MACUAHUITL_SCIENCE',		'PercentDefeatedStrength',							50),
+	('RELIC_ENIG_MACUAHUITL_FAITH',			'YieldType',								'YIELD_FAITH'),
+	('RELIC_ENIG_MACUAHUITL_FAITH',			'PercentDefeatedStrength',									50);
 --------------------------------------------------------------------------------------------------------------------------
 -- Requirements
 --------------------------------------------------------------------------------------------------------------------------	
 INSERT INTO Requirements 			
 		(RequirementId,											RequirementType)
-VALUES	('RELIC_ENIG_MACUAHUITL_SCIENCE_REQ',			'REQUIREMENT_UNIT_IN_OWNER_TERRITORY'),
-		('RELIC_ENIG_MACUAHUITL_FAITH_REQ',				'REQUIREMENT_UNIT_IN_ENEMY_TERRITORY');
+VALUES	('RELIC_ENIG_MACUAHUITL_SCIENCE_REQ',				'REQUIREMENT_UNIT_IN_OWNER_TERRITORY'),
+	('RELIC_ENIG_MACUAHUITL_FAITH_REQ',				'REQUIREMENT_UNIT_IN_ENEMY_TERRITORY');
 --------------------------------------------------------------------------------------------------------------------------
 -- RequirementSets
 --------------------------------------------------------------------------------------------------------------------------
 INSERT INTO RequirementSets
 		(RequirementSetId,										RequirementSetType)
-VALUES	('RELIC_ENIG_MACUAHUITL_SCIENCE_REQ_SET',		'REQUIREMENTSET_TEST_ALL'),
+VALUES	('RELIC_ENIG_MACUAHUITL_SCIENCE_REQ_SET',			'REQUIREMENTSET_TEST_ALL'),
 		('RELIC_ENIG_MACUAHUITL_FAITH_REQ_SET',			'REQUIREMENTSET_TEST_ALL');
 --------------------------------------------------------------------------------------------------------------------------
 -- RequirementSetRequirements
 --------------------------------------------------------------------------------------------------------------------------
 INSERT INTO RequirementSetRequirements
 		(RequirementSetId,										RequirementId)
-VALUES	('RELIC_ENIG_MACUAHUITL_SCIENCE_REQ_SET',			'RELIC_ENIG_MACUAHUITL_SCIENCE_REQ'),
+VALUES	('RELIC_ENIG_MACUAHUITL_SCIENCE_REQ_SET',				'RELIC_ENIG_MACUAHUITL_SCIENCE_REQ'),
 		('RELIC_ENIG_MACUAHUITL_FAITH_REQ_SET',				'RELIC_ENIG_MACUAHUITL_FAITH_REQ');	
 --==========================================================================================================================
 -- UNITS: TRAITS
