@@ -189,7 +189,7 @@ INSERT INTO TraitModifiers
 		(TraitType,												ModifierId)
 VALUES	('TRAIT_LEADER_RELIC_ENIG_WHITE_SKIN',					'RELIC_ENIG_WHITE_SKIN_WONDER_HOLY'),
 		('TRAIT_LEADER_RELIC_ENIG_WHITE_SKIN',					'RELIC_ENIG_WHITE_SKIN_WONDER_SCIENCE'),
-		('TRAIT_LEADER_RELIC_ENIG_WHITE_SKIN',					'RELIC_ENIG_WHITE_SKIN_SETTLER_ZOC');	
+		('TRAIT_LEADER_RELIC_ENIG_WHITE_SKIN',					'RELIC_ENIG_WHITE_SKIN_WONDER_GROWTH');	
 --------------------------------------------------------------------------------------------------------------------------
 -- Modifiers
 --------------------------------------------------------------------------------------------------------------------------
