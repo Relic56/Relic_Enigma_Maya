@@ -136,15 +136,15 @@ VALUES	('RELIC_ENIG_SUN_SHIELD_WONDER_WHORE',					'MODIFIER_PLAYER_DIPLOMACY_SIM
 --------------------------------------------------------------------------------------------------------------------------
 INSERT INTO ModifierArguments
 		(ModifierId,										Name,												Value,																		Type)
-VALUES	('RELIC_ENIG_SUN_SHIELD_WONDER_WHORE',					'InitialValue',										-6,																			'ARGTYPE_IDENTITY'),
-		('RELIC_ENIG_SUN_SHIELD_WONDER_WHORE',					'StatementKey',										'LOC_DIPLO_WARNING_LEADER_RELIC_ENIG_PAKAL_ATTACKED_CONTINENT',				'ARGTYPE_IDENTITY'),
-		('RELIC_ENIG_SUN_SHIELD_WONDER_WHORE',					'SimpleModifierDescription',						'LOC_DIPLO_MODIFIER_RELIC_ENIG_SUN_SHIELD_ATTACKED_CONTINENT',					'ARGTYPE_IDENTITY'),
-		('RELIC_ENIG_SUN_SHIELD_MILITARY_THREAT',				'InitialValue',										-9,																			'ARGTYPE_IDENTITY'),
-		('RELIC_ENIG_SUN_SHIELD_MILITARY_THREAT',				'StatementKey',										'LOC_DIPLO_KUDO_LEADER_RELIC_ENIG_PAKAL_DECLARED_FRIEND',						'ARGTYPE_IDENTITY'),
-		('RELIC_ENIG_SUN_SHIELD_MILITARY_THREAT',				'SimpleModifierDescription',						'LOC_DIPLO_MODIFIER_RELIC_ENIG_SUN_SHIELD_DECLARED_FRIEND',						'ARGTYPE_IDENTITY'),
-		('RELIC_ENIG_SUN_SHIELD_SCIENCE_LEADER',				'InitialValue',										15,																			'ARGTYPE_IDENTITY'),
-		('RELIC_ENIG_SUN_SHIELD_SCIENCE_LEADER',				'StatementKey',										'LOC_DIPLO_KUDO_LEADER_RELIC_ENIG_PAKAL_REASON_RELIGION_RECEIVED',			'ARGTYPE_IDENTITY'),
-		('RELIC_ENIG_SUN_SHIELD_SCIENCE_LEADER',				'SimpleModifierDescription',						'LOC_DIPLO_MODIFIER_AGENDA_RELIC_ENIG_SUN_SHIELD_RELIGION_RECEIVED',			'ARGTYPE_IDENTITY');	
+VALUES	('RELIC_ENIG_SUN_SHIELD_WONDER_WHORE',						'InitialValue',								7,																			'ARGTYPE_IDENTITY'),
+		('RELIC_ENIG_SUN_SHIELD_WONDER_WHORE',					'StatementKey',								'LOC_DIPLO_KUDO_LEADER_RELIC_ENIG_SUN_SHIELD_REASON_WONDER_WHORE',				'ARGTYPE_IDENTITY'),
+		('RELIC_ENIG_SUN_SHIELD_WONDER_WHORE',					'SimpleModifierDescription',						'LOC_DIPLO_MODIFIER_AGENDA_RELIC_ENIG_SUN_SHIELD_WONDER_WHORE',					'ARGTYPE_IDENTITY'),
+		('RELIC_ENIG_SUN_SHIELD_MILITARY_THREAT',				'InitialValue',								-9,																			'ARGTYPE_IDENTITY'),
+		('RELIC_ENIG_SUN_SHIELD_MILITARY_THREAT',				'StatementKey',								'LOC_DIPLO_WARNING_LEADER_RELIC_ENIG_SUN_SHIELD_REASON_HIGH_MILITARY',						'ARGTYPE_IDENTITY'),
+		('RELIC_ENIG_SUN_SHIELD_MILITARY_THREAT',				'SimpleModifierDescription',						'LOC_DIPLO_MODIFIER_AGENDA_RELIC_ENIG_SUN_SHIELD_HIGH_MILITARY',						'ARGTYPE_IDENTITY'),
+		('RELIC_ENIG_SUN_SHIELD_SCIENCE_LEADER',				'InitialValue',								15,																			'ARGTYPE_IDENTITY'),
+		('RELIC_ENIG_SUN_SHIELD_SCIENCE_LEADER',				'StatementKey',								'LOC_DIPLO_KUDO_LEADER_RELIC_ENIG_SUN_SHIELD_REASON_SCIENCE_LEADER',			'ARGTYPE_IDENTITY'),
+		('RELIC_ENIG_SUN_SHIELD_SCIENCE_LEADER',				'SimpleModifierDescription',						'LOC_DIPLO_MODIFIER_AGENDA_RELIC_ENIG_SUN_SHIELD_SCIENCE_LEADER',			'ARGTYPE_IDENTITY');	
 --==========================================================================================================================
 -- LEADERS: COLOURS
 --==========================================================================================================================
