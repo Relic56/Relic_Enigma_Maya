@@ -149,23 +149,47 @@ VALUES	('TRAIT_AGENDA_RELIC_ENIG_AJAW_TIKAL',					'RELIC_ENIG_AJAW_TIKAL_WONDER_
 --------------------------------------------------------------------------------------------------------------------------
 INSERT INTO Modifiers
 (ModifierId,										ModifierType,										SubjectRequirementSetId)
-VALUES	('RELIC_ENIG_AJAW_TIKAL_WONDER_WHORE',					'MODIFIER_PLAYER_DIPLOMACY_SIMPLE_MODIFIER',		'PLAYER_LEADS_WONDERS'),
+VALUES	('RELIC_ENIG_AJAW_TIKAL_WONDER_WHORE',				'MODIFIER_PLAYER_DIPLOMACY_SIMPLE_MODIFIER',		'PLAYER_LEADS_WONDERS'),
 ('RELIC_ENIG_AJAW_TIKAL_MILITARY_THREAT',				'MODIFIER_PLAYER_DIPLOMACY_SIMPLE_MODIFIER',		'PLAYER_HAS_HIGH_STANDING_ARMY'),
-('RELIC_ENIG_AJAW_TIKAL_PRODUCTION_LEADER',				'MODIFIER_PLAYER_DIPLOMACY_SIMPLE_MODIFIER',		'PLAYER_HAS_HIGH_SCIENCE');
+('RELIC_ENIG_AJAW_TIKAL_PRODUCTION_LEADER',				'MODIFIER_PLAYER_DIPLOMACY_SIMPLE_MODIFIER',		'RELIC_ENIG_AJAW_TIKAL_PRODUCTION_REQ_SET');
 --------------------------------------------------------------------------------------------------------------------------
 -- ModifierArguments
 --------------------------------------------------------------------------------------------------------------------------
 INSERT INTO ModifierArguments
 (ModifierId,										Name,												Value,																		Type)
-VALUES	('RELIC_ENIG_AJAW_TIKAL_WONDER_WHORE',			'InitialValue',										-6,																			'ARGTYPE_IDENTITY'),
-('RELIC_ENIG_AJAW_TIKAL_WONDER_WHORE',					'StatementKey',										'LOC_DIPLO_WARNING_LEADER_RELIC_ENIG_YAXCHIN_ATTACKED_CONTINENT',				'ARGTYPE_IDENTITY'),
-('RELIC_ENIG_AJAW_TIKAL_WONDER_WHORE',					'SimpleModifierDescription',						'LOC_DIPLO_MODIFIER_RELIC_ENIG_AJAW_TIKAL_ATTACKED_CONTINENT',					'ARGTYPE_IDENTITY'),
-('RELIC_ENIG_AJAW_TIKAL_MILITARY_THREAT',				'InitialValue',										6,																			'ARGTYPE_IDENTITY'),
-('RELIC_ENIG_AJAW_TIKAL_MILITARY_THREAT',				'StatementKey',										'LOC_DIPLO_KUDO_LEADER_RELIC_ENIG_YAXCHIN_DECLARED_FRIEND',						'ARGTYPE_IDENTITY'),
-('RELIC_ENIG_AJAW_TIKAL_MILITARY_THREAT',				'SimpleModifierDescription',						'LOC_DIPLO_MODIFIER_RELIC_ENIG_AJAW_TIKAL_DECLARED_FRIEND',						'ARGTYPE_IDENTITY'),
-('RELIC_ENIG_AJAW_TIKAL_PRODUCTION_LEADER',				'InitialValue',										6,																				'ARGTYPE_IDENTITY'),
-('RELIC_ENIG_AJAW_TIKAL_PRODUCTION_LEADER',				'StatementKey',										'LOC_DIPLO_KUDO_LEADER_RELIC_ENIG_YAXCHIN_REASON_RELIGION_RECEIVED',			'ARGTYPE_IDENTITY'),
-('RELIC_ENIG_AJAW_TIKAL_PRODUCTION_LEADER',				'SimpleModifierDescription',						'LOC_DIPLO_MODIFIER_AGENDA_RELIC_ENIG_AJAW_TIKAL_RELIGION_RECEIVED',			'ARGTYPE_IDENTITY');
+VALUES	('RELIC_ENIG_AJAW_TIKAL_WONDER_WHORE',			'InitialValue',										-9,																			'ARGTYPE_IDENTITY'),
+('RELIC_ENIG_AJAW_TIKAL_WONDER_WHORE',					'StatementKey',										'LOC_DIPLO_WARNING_LEADER_RELIC_ENIG_YAXCHIN_WONDER_WHORE',				'ARGTYPE_IDENTITY'),
+('RELIC_ENIG_AJAW_TIKAL_WONDER_WHORE',					'SimpleModifierDescription',						'LOC_DIPLO_MODIFIER_RELIC_ENIG_AJAW_TIKAL_WONDER_WHORE',					'ARGTYPE_IDENTITY'),
+('RELIC_ENIG_AJAW_TIKAL_MILITARY_THREAT',				'InitialValue',										8,																			'ARGTYPE_IDENTITY'),
+('RELIC_ENIG_AJAW_TIKAL_MILITARY_THREAT',				'StatementKey',										'LOC_DIPLO_KUDO_LEADER_RELIC_ENIG_YAXCHIN_MILITARY_THREAT',						'ARGTYPE_IDENTITY'),
+('RELIC_ENIG_AJAW_TIKAL_MILITARY_THREAT',				'SimpleModifierDescription',						'LOC_DIPLO_MODIFIER_RELIC_ENIG_AJAW_TIKAL_MILITARY_THREAT',						'ARGTYPE_IDENTITY'),
+('RELIC_ENIG_AJAW_TIKAL_PRODUCTION_LEADER',				'InitialValue',										10,																				'ARGTYPE_IDENTITY'),
+('RELIC_ENIG_AJAW_TIKAL_PRODUCTION_LEADER',				'StatementKey',										'LOC_DIPLO_KUDO_LEADER_RELIC_ENIG_YAXCHIN_REASON_PRODUCTION_LEADER',			'ARGTYPE_IDENTITY'),
+('RELIC_ENIG_AJAW_TIKAL_PRODUCTION_LEADER',				'SimpleModifierDescription',						'LOC_DIPLO_MODIFIER_AGENDA_RELIC_ENIG_AJAW_TIKAL_PRODUCTION_LEADER',			'ARGTYPE_IDENTITY');
+--------------------------------------------------------------------------------------------------------------------------
+-- Requirements
+--------------------------------------------------------------------------------------------------------------------------	
+INSERT INTO Requirements 			
+		(RequirementId,											RequirementType)
+VALUES	('RELIC_ENIG_AJAW_TIKAL_PRODUCTION_REQ',			'REQUIREMENT_PLAYER_YIELD_LEAD');
+--------------------------------------------------------------------------------------------------------------------------
+-- RequirementArguments
+--------------------------------------------------------------------------------------------------------------------------
+INSERT INTO RequirementArguments
+		(RequirementId,											Name,																			Value)
+VALUES	('RELIC_ENIG_AJAW_TIKAL_PRODUCTION_REQ',				'YieldType',									'YIELD_PRODUCTION');
+--------------------------------------------------------------------------------------------------------------------------
+-- RequirementSets
+--------------------------------------------------------------------------------------------------------------------------
+INSERT INTO RequirementSets
+		(RequirementSetId,										RequirementSetType)
+VALUES	('RELIC_ENIG_AJAW_TIKAL_PRODUCTION_REQ_SET',			'REQUIREMENTSET_TEST_ALL');
+--------------------------------------------------------------------------------------------------------------------------
+-- RequirementSetRequirements
+--------------------------------------------------------------------------------------------------------------------------
+INSERT INTO RequirementSetRequirements
+		(RequirementSetId,										RequirementId)
+VALUES	('RELIC_ENIG_AJAW_TIKAL_PRODUCTION_REQ_SET',				'RELIC_ENIG_AJAW_TIKAL_PRODUCTION_REQ');	
 --==========================================================================================================================
 -- LEADERS: COLOURS
 --==========================================================================================================================
