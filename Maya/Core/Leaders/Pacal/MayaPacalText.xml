@@ -13,9 +13,9 @@
 
 		-<Row Language="en_US" Tag="LOC_LEADER_RELIC_ENIG_PAKAL_NAME">
 
-		<Text>Pakal</Text>
+			<Text>Pakal</Text>
 
-	</Row>
+		</Row>
 
 
 			<!--Agenda-->
@@ -36,26 +36,55 @@
 			</Row>
 
 
-			-<Row Language="en_US" Tag="LOC_DIPLO_KUDO_LEADER_RELIC_ENIG_SUN_SHIELD_REASON_LEADS_WONDERS">
+			-<Row Language="en_US" Tag="LOC_DIPLO_KUDO_LEADER_RELIC_ENIG_SUN_SHIELD_REASON_WONDER_WHORE">
 
 				<Text>(You have numerous Wonders.)</Text>
 
 			</Row>
 
 
-			-<Row Language="en_US" Tag="LOC_DIPLO_MODIFIER_AGENDA_RELIC_ENIG_SUN_SHIELD_LEADS_WONDERS">
+			-<Row Language="en_US" Tag="LOC_DIPLO_MODIFIER_AGENDA_RELIC_ENIG_SUN_SHIELD_WONDER_WHORE">
+
+				<Text>Leopold II believes your investment in Wonders is well-placed</Text>
+
+			</Row>
+	
+	
+			-<Row Language="en_US" Tag="LOC_DIPLO_KUDO_LEADER_RELIC_ENIG_SUN_SHIELD_REASON_SCIENCE_LEADER">
+
+				<Text>(You have numerous Wonders.)</Text>
+
+			</Row>
+
+
+			-<Row Language="en_US" Tag="LOC_DIPLO_MODIFIER_AGENDA_RELIC_ENIG_SUN_SHIELD_SCIENCE_LEADER">
 
 				<Text>Leopold II believes your investment in Wonders is well-placed</Text>
 
 			</Row>
 
+	
+				-<Row Language="en_US" Tag="LOC_DIPLO_WARNING_LEADER_RELIC_ENIG_SUN_SHIELD_REASON_HIGH_MILITARY">
+
+				<Text>(You have numerous Wonders.)</Text>
+
+			</Row>
+
+
+			-<Row Language="en_US" Tag="LOC_DIPLO_MODIFIER_AGENDA_RELIC_ENIG_SUN_SHIELD_HIGH_MILITARY">
+
+				<Text>Leopold II believes your investment in Wonders is well-placed</Text>
+
+			</Row>
+	
+	
 			<!--DOM-->
 
 
 
 			-<Row Language="en_US" Tag="LOC_LOADING_INFO_LEADER_RELIC_ENIG_PAKAL">
 
-				<Text>2012 is the end of the world confirmed Mayans stronk.</Text>
+				<Text>Your coming has been prophesized, K'inich Janaab Pakal, and you shall be the Shield of the Sun and the right hand of Itzamna! Though this land is a chaotic one, and the cities quarrel and clash around you, you are still born for greatness. Have your astronomers watch Venus to keep your calendar rounds and tell when it is most auspicious to build your wondrous temples and white skin palaces. Prepare yourself, Ajaw Pakal, because it is your destiny to shine like a star.</Text>
 
 			</Row>
 
@@ -96,37 +125,22 @@
 
 			-<Row Language="en_US" Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_RELIC_ENIG_PAKAL_QUOTE">
 
-				<Text>I do not want to miss a good chance of getting us a slice of this magnificent African cake.</Text>
+				<Text>N/A</Text>
 
 			</Row>
 
 
 			-<Row Language="en_US" Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_RELIC_ENIG_PAKAL_CHAPTER_HISTORY_PARA_1">
 
-				<Text>Leopold II (9 April 1835 – 17 December 1909) reigned as the second King of the Belgians from 1865 to 1909. He became known for the founding and exploitation of the Congo Free State as a private venture. Born in Brussels as the second (but eldest surviving) son of Leopold I and Louise of Orléans, he succeeded his father to the Belgian throne in 1865 and reigned for 44 years until his death - the longest reign of any Belgian monarch. He died without surviving male issue; the current Belgian king descends from his nephew and successor, Albert I.</Text>
+				<Text>K'inich Janaab Pakal I, also known as Pacal, Pacal the Great, 8 Ahau and Sun Shield, (March, 603 - August, 683) was ajaw of the Maya city-state of Palenque in the Late Classic period of pre-Columbian Mesoamerican chronology. He acceded to the throne in July 615 and ruled until his death. During a reign of 68 years, the longest known regnal period in the history of the Americas, the 30th longest worldwide and longest until Frederick III in the 15th century, Pakal was responsible for the construction or extension of some of Palenque's most notable surviving inscriptions and monumental architecture.</Text>
 
 			</Row>
 
 
 			-<Row Language="en_US" Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_RELIC_ENIG_PAKAL_CHAPTER_HISTORY_PARA_2">
 
-				<Text>Leopold became the founder and sole owner of the Congo Free State, a private project undertaken on his own behalf. He used explorer Henry Morton Stanley to help him lay claim to the Congo, the present-day Democratic Republic of the Congo. At the Berlin Conference of 1884–1885 the colonial nations of Europe authorized his claim by committing the Congo Free State to improving the lives of the native inhabitants. From the beginning, however, Leopold essentially ignored these conditions. He ran the Congo using the mercenary Force Publique for his personal enrichment. He used great sums of the money from this exploitation for public and private construction projects in Belgium during this period. He donated the private buildings to the state before his death, to preserve them for Belgium.</Text>
+				<Text>Pakal ascended the throne at age 12 and lived to the age of 80.  He expanded Palenque's power in the western part of the Maya states and initiated a building program at his capital that produced some of Maya civilization's finest art and architecture.  In 626 Pakal married Ix Tz'akbu Ajaw who was born in Uxte'k'uh.  Tz'akbu Ajaw was a descendant of the Toktahn dynasty, the original dynasty of Palenque.  In 628, one of Pakal's officials, was captured by Piedras Negras.  Six days later Nuun Ujol Chaak, ajaw of Santa Elena, was captured and taken to Palenque.  Having been appointed ajaw at the age of twelve, Pakal's mother was a regent to him, over the years she slowly lost power.  In 659 Pakal captured six prisoners, One of them, Ahiin Chan Ahk, was from Pipa'.  In 663 another lord of Pipa' was killed by Pakal.  In 647 K'inich Janaab Pakal began his first construction project.  Of all Pakal's construction projects, perhaps the most accomplished is the Palace of Palenque.  The building was already in existence, but Pakal made it much larger than it was.  Pakal started his construction by adding monument rooms onto the old level of the building.  The monuments and text associated with K'inich Janaab Pakal I are: Oval Palace Tablet, Hieroglyphic Stairway, House C texts, Subterranean Thrones and Tableritos, Olvidado piers and sarcophagus texts.</Text></Row>
 
-			</Row>
-
-
-			-<Row Language="en_US" Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_RELIC_ENIG_PAKAL_CHAPTER_HISTORY_PARA_3">
-
-				<Text>Leopold extracted a fortune from the Congo, initially by the collection of ivory, and - after a rise in the price of rubber in the 1890s - by forced labour from the natives to harvest and process rubber. Under his régime millions of the Congolese people died; modern estimates range from 1 to 15 million, with a consensus growing around 10 million. Human-rights abuses under his régime contributed significantly to these deaths. Reports of deaths and abuse led to a major international scandal in the early 20th century, and the Belgian government ultimately forced Leopold to relinquish control of the colony to Belgian civil administration in 1908.</Text>
-
-			</Row>
-
-
-			-<Row Language="en_US" Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_RELIC_ENIG_PAKAL_CHAPTER_HISTORY_PARA_4">
-
-				<Text>After the king's death and transfer of his private colony to Belgium, there occurred a "Great Forgetting". Many Belgians in the 20th and 21st centuries remember Leopold II as the "Builder King" for his extensive public works projects, and many remain unaware of his role in the atrocities in the Congo. In the 1990s, the colonial Royal Museum for Central Africa made no mention of the atrocities committed in the Congo Free State, despite the museum's large collection of colonial objects. On the boardwalk of Blankenberge, a popular coastal resort, a monument shows a pair of colonists as heroes protecting a desperate Congolese woman and child with "civilization". In Ostend, the beach promenade has a 1931 sculptural monument to Leopold II, showing Leopold and grateful Ostend fishermen and Congolese. The inscription accompanying the Congolese group notes: "De dank der Congolezen aan Leopold II om hen te hebben bevrijd van de slavernij onder de Arabieren" ("The gratitude of the Congolese to Leopold II for having liberated them from slavery under the Arabs"). In 2004, an activist group cut off the hand of the leftmost Congolese bronze figure, in protest against the atrocities committed in the Congo. The city council decided to keep the statue in its new form, without the hand.[NEWLINE][NEWLINE]Leopold II remains a controversial figure in the Democratic Republic of Congo. His statue in the capital Kinshasa was removed after independence. Congolese culture minister Christophe Muzungu decided to reinstate the statue in 2005. He noted that the beginning of the Free State had been a time of some economic and social progress. He argued that people should recognize some positive aspects of the king as well as the negative; but hours after the six-metre (20 ft) statue was installed near Kinshasa's central station, it was officially removed. The same workers took it down.</Text>
-
-			</Row>
 
 
 			-<Row Language="en_US" Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_RELIC_ENIG_PAKAL_CHAPTER_CAPSULE_BODY">
