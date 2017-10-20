@@ -36,14 +36,41 @@
 			</Row>
 
 
-			-<Row Language="en_US" Tag="LOC_DIPLO_KUDO_LEADER_RELIC_ENIG_AJAW_TIKAL_REASON_LEADS_WONDERS">
+			-<Row Language="en_US" Tag="LOC_DIPLO_WARNING_LEADER_RELIC_ENIG_AJAW_TIKAL_REASON_WONDER_WHORE">
 
 				<Text>(You have numerous Wonders.)</Text>
 
 			</Row>
 
 
-			-<Row Language="en_US" Tag="LOC_DIPLO_MODIFIER_AGENDA_RELIC_ENIG_AJAW_TIKAL_LEADS_WONDERS">
+			-<Row Language="en_US" Tag="LOC_DIPLO_MODIFIER_AGENDA_RELIC_ENIG_AJAW_TIKAL_WONDER_WHORE">
+
+				<Text>Leopold II believes your investment in Wonders is well-placed</Text>
+
+			</Row>
+	
+			-<Row Language="en_US" Tag="LOC_DIPLO_KUDO_LEADER_RELIC_ENIG_AJAW_TIKAL_REASON_MILITARY_THREAT">
+
+				<Text>(You have numerous Wonders.)</Text>
+
+			</Row>
+
+
+			-<Row Language="en_US" Tag="LOC_DIPLO_MODIFIER_AGENDA_RELIC_ENIG_AJAW_TIKAL_MILITARY_THREAT">
+
+				<Text>Leopold II believes your investment in Wonders is well-placed</Text>
+
+			</Row>
+	
+	
+			-<Row Language="en_US" Tag="LOC_DIPLO_KUDO_LEADER_RELIC_ENIG_AJAW_TIKAL_REASON_PRODUCTION_LEADER">
+
+				<Text>(You have numerous Wonders.)</Text>
+
+			</Row>
+
+
+			-<Row Language="en_US" Tag="LOC_DIPLO_MODIFIER_AGENDA_RELIC_ENIG_AJAW_TIKAL_PRODUCTION_LEADER">
 
 				<Text>Leopold II believes your investment in Wonders is well-placed</Text>
 
@@ -55,7 +82,7 @@
 
 			-<Row Language="en_US" Tag="LOC_LOADING_INFO_LEADER_RELIC_ENIG_YAXCHIN">
 
-				<Text>2012 is the end of the world confirmed Mayans stronk.</Text>
+				<Text>Your armies have been mustered and stand ready for battle, Yik’in Chan K’awiil. Your kingdom is strong and your defenses are mighty, while your enemies have grown lax and weak. March your Macuahuitl to crush the foreign kingdoms and puny cities! Carry their people back to Tikal so that they may watch as you tear out their weak king’s heart and cast his body into the dirt where it belongs. No kingdom shall be larger than yours, Yaxkin, for you are the Ajaw of Tikal, and you shall darken the sky!</Text>
 
 			</Row>
 
