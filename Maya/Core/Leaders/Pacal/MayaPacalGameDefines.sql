@@ -129,7 +129,7 @@ INSERT INTO Modifiers
 		(ModifierId,										ModifierType,										SubjectRequirementSetId)
 VALUES	('RELIC_ENIG_SUN_SHIELD_WONDER_WHORE',					'MODIFIER_PLAYER_DIPLOMACY_SIMPLE_MODIFIER',		'PLAYER_LEADS_WONDERS'),
 		('RELIC_ENIG_SUN_SHIELD_MILITARY_THREAT',				'MODIFIER_PLAYER_DIPLOMACY_SIMPLE_MODIFIER',		'PLAYER_HAS_HIGH_STANDING_ARMY'),
-		('RELIC_ENIG_SUN_SHIELD_SCIENCE_LEADER',				'MODIFIER_PLAYER_DIPLOMACY_SIMPLE_MODIFIER',		'PLAYER_HAS_HIGH_SCIENCE');
+		('RELIC_ENIG_SUN_SHIELD_SCIENCE_LEADER',				'MODIFIER_PLAYER_DIPLOMACY_SIMPLE_MODIFIER',		'RELIC_ENIG_SUN_SHIELD_SCIENCE_REQ');
 
 --------------------------------------------------------------------------------------------------------------------------
 -- ModifierArguments
@@ -145,6 +145,30 @@ VALUES	('RELIC_ENIG_SUN_SHIELD_WONDER_WHORE',						'InitialValue',								7,				
 		('RELIC_ENIG_SUN_SHIELD_SCIENCE_LEADER',				'InitialValue',								15,																			'ARGTYPE_IDENTITY'),
 		('RELIC_ENIG_SUN_SHIELD_SCIENCE_LEADER',				'StatementKey',								'LOC_DIPLO_KUDO_LEADER_RELIC_ENIG_SUN_SHIELD_REASON_SCIENCE_LEADER',			'ARGTYPE_IDENTITY'),
 		('RELIC_ENIG_SUN_SHIELD_SCIENCE_LEADER',				'SimpleModifierDescription',						'LOC_DIPLO_MODIFIER_AGENDA_RELIC_ENIG_SUN_SHIELD_SCIENCE_LEADER',			'ARGTYPE_IDENTITY');	
+--------------------------------------------------------------------------------------------------------------------------
+-- Requirements
+--------------------------------------------------------------------------------------------------------------------------	
+INSERT INTO Requirements 			
+		(RequirementId,											RequirementType)
+VALUES	('RELIC_ENIG_SUN_SHIELD_SCIENCE_REQ',			'REQUIREMENT_PLAYER_YIELD_LEAD');
+--------------------------------------------------------------------------------------------------------------------------
+-- RequirementArguments
+--------------------------------------------------------------------------------------------------------------------------
+INSERT INTO RequirementArguments
+		(RequirementId,											Name,																			Value)
+VALUES	('RELIC_ENIG_SUN_SHIELD_SCIENCE_REQ',				'YieldType',									'YIELD_SCIENCE');
+--------------------------------------------------------------------------------------------------------------------------
+-- RequirementSets
+--------------------------------------------------------------------------------------------------------------------------
+INSERT INTO RequirementSets
+		(RequirementSetId,										RequirementSetType)
+VALUES	('RELIC_ENIG_SUN_SHIELD_SCIENCE_REQ_SET',			'REQUIREMENTSET_TEST_ALL');
+--------------------------------------------------------------------------------------------------------------------------
+-- RequirementSetRequirements
+--------------------------------------------------------------------------------------------------------------------------
+INSERT INTO RequirementSetRequirements
+		(RequirementSetId,										RequirementId)
+VALUES	('RELIC_ENIG_SUN_SHIELD_SCIENCE_REQ_SET',				'RELIC_ENIG_SUN_SHIELD_SCIENCE_REQ');			
 --==========================================================================================================================
 -- LEADERS: COLOURS
 --==========================================================================================================================
