@@ -51,7 +51,7 @@
 	
 			-<Row Language="en_US" Tag="LOC_DIPLO_KUDO_LEADER_RELIC_ENIG_AJAW_TIKAL_REASON_MILITARY_THREAT">
 
-				<Text>(You have numerous Wonders.)</Text>
+				<Text>(You have a strong military.)</Text>
 
 			</Row>
 
@@ -65,7 +65,7 @@
 	
 			-<Row Language="en_US" Tag="LOC_DIPLO_KUDO_LEADER_RELIC_ENIG_AJAW_TIKAL_REASON_PRODUCTION_LEADER">
 
-				<Text>(You have numerous Wonders.)</Text>
+				<Text>(You have a very productive nation.)</Text>
 
 			</Row>
 
