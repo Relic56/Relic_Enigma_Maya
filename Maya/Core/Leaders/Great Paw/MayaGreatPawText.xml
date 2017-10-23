@@ -160,7 +160,7 @@
 
 			-<Row Language="en_US" Tag="LOC_DIPLO_FIRST_MEET_LEADER_RELIC_ENIG_YAXCHIN_ANY">
 
-				<Text>Do you come here for idle greetings? Do not waste breath, if you have come here in search of peace then perhaps you will be strong enough for it.</Text>
+				<Text>Do you come here for idle greetings? Do not waste breath, and know that I am the chosen of Ek Chuaj! If you have come here in search of peace then perhaps you will be strong enough for it.</Text>
 
 			</Row>
 
@@ -180,7 +180,7 @@
 
 			-<Row Language="en_US" Tag="LOC_DIPLO_FIRST_MEET_NEAR_INITIATOR_POSITIVE_LEADER_RELIC_ENIG_YAXCHIN_ANY">
 
-				<Text>Good, we shall ready the training grounds.</Text>
+				<Text>Good, we shall give a sacrifice to Buluc Chabtan in preparation.</Text>
 
 			</Row>
 
@@ -233,7 +233,7 @@
 
 			-<Row Language="en_US" Tag="LOC_DIPLO_DELEGATION_FROM_AI_LEADER_RELIC_ENIG_YAXCHIN_ANY">
 
-				<Text>Fine atlatls and spears have been sent to you. I recommend you consider returning a gift of your own.</Text>
+				<Text>Fine atlatls and spears have been sent to you, as well as figures of the god Chin that I believe you'll enjoy. I recommend you consider returning a gift of your own.</Text>
 
 			</Row>
 
@@ -289,7 +289,7 @@
 
 			-<Row Language="en_US" Tag="LOC_DIPLO_REJECT_DECLARE_FRIEND_FROM_HUMAN_LEADER_RELIC_ENIG_YAXCHIN_ANY">
 
-				<Text>Hah! I am a conqueror, and you are weak.</Text>
+				<Text>Hah! I am a conqueror, the chosen of Ek Chuaj, the Darkness himself! And you, you are weak.</Text>
 
 			</Row>
 
@@ -507,7 +507,7 @@
 
 			-<Row Language="en_US" Tag="LOC_DIPLO_DEFEAT_FROM_HUMAN_LEADER_RELIC_ENIG_YAXCHIN_ANY">
 
-				<Text>Your defence was weak and your armies pathetic. Weak! Though that's no matter to you now, the temple is being prepared, and I have sharpened my flint.</Text>
+				<Text>Your defence was miserable and your armies were pathetic. Weak! Though that's no matter to you now, the temple is being prepared, and I have sharpened my flint.</Text>
 
 			</Row>
 
