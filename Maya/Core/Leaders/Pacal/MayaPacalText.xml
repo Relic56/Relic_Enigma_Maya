@@ -188,7 +188,7 @@
 
 			-<Row Language="en_US" Tag="LOC_DIPLO_FIRST_MEET_NEAR_INITIATOR_POSITIVE_LEADER_RELIC_ENIG_PAKAL_ANY">
 
-				<Text>The Evening Star said that you'd agree, and they're always right.</Text>
+				<Text>The Evening Star said that you'd agree, and it is always right.</Text>
 
 			</Row>
 
@@ -198,7 +198,7 @@
 
 			-<Row Language="en_US" Tag="LOC_DIPLO_FIRST_MEET_NO_MANS_INFO_EXCHANGE_LEADER_RELIC_ENIG_PAKAL_ANY">
 
-				<Text>You have seen my cities, but not yet the greatest of them. Let us remedy this!</Text>
+				<Text>You have seen my cities, but not yet the greatest of them. Let us remedy this! Come, see the Temples for the Triad of Palenque!</Text>
 
 			</Row>
 
@@ -208,7 +208,7 @@
 
 			-<Row Language="en_US" Tag="LOC_DIPLO_GREETING_LEADER_RELIC_ENIG_PAKAL_ANY">
 
-				<Text>Greetings once more.</Text>
+				<Text>I hope Xaman Ek was kind to you on your journey here.</Text>
 
 			</Row>
 
@@ -353,7 +353,7 @@
 
 			-<Row Language="en_US" Tag="LOC_DIPLO_KUDO_EXIT_LEADER_RELIC_ENIG_PAKAL_ANY">
 
-				<Text>Your nation is one of great intellect. I approve of this.</Text>
+				<Text>Your nation is one of great intellect. Itzamna would approve.</Text>
 
 			</Row>
 
