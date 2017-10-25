@@ -489,3 +489,4 @@ BEGIN
 				(ModifierId, Name,	Value)
 		VALUES	('RELIC_ENIG_CALENDAR_ROUNDS_'||NEW.BuildingType||'_SCIENCE',	'Value',	NEW.YieldChange/2);
 END;
+
