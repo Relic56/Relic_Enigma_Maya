@@ -493,21 +493,21 @@
 
 		-<Replace Language="en_US" Tag="LOC_CIVILIZATION_PALENQUE_NAME">
 
-			<Text>Ugarit</Text>
+			<Text>Caral</Text>
 
 		</Replace>
 
 
 		-<Replace Language="en_US" Tag="LOC_CIVILIZATION_PALENQUE_DESCRIPTION">
 
-			<Text>Ugarit city-state</Text>
+			<Text>Caral city-state</Text>
 
 		</Replace>
 
 
 		-<Replace Language="en_US" Tag="LOC_CIVILIZATION_PALENQUE_ADJECTIVE">
 
-			<Text>Ugarit</Text>
+			<Text>Caral</Text>
 
 		<Gender>Masculine:an</Gender>
 
@@ -516,28 +516,28 @@
 
 		-<Replace Language="en_US" Tag="LOC_LEADER_TRAIT_PALENQUE_NAME">
 
-			<Text>Ugarit Suzerain Bonus</Text>
+			<Text>Caral Suzerain Bonus</Text>
 
 		</Replace>
 
 
 		-<Replace Language="en_US" Tag="LOC_PEDIA_CITYSTATES_PAGE_CIVILIZATION_PALENQUE_CHAPTER_HISTORY_PARA_1">
 
-			<Text>The first written evidence mentioning the city comes from the nearby city of Ebla, c. 1800 BC. Ugarit passed into the sphere of influence of Egypt, which deeply influenced its art.  Amarna letters from Ugarit c. 1350 BC record one letter each from Ammittamru I, Niqmaddu II, and his queen.</Text>
+			<Text>Caral was inhabited roughly between the 26th and 20th centuries BCE, enclosing an area of more than 60 hectares (150 acres). Caral was described by its excavators as the oldest urban centre in the Americas, a claim that was later challenged as other ancient sites were found nearby, such as Bandurria, Peru. Accommodating more than 3,000 inhabitants, it is the best studied and one of the largest Norte Chico sites known.</Text>
 
 		</Replace>
 
 
 		-<Replace Language="en_US" Tag="LOC_PEDIA_CITYSTATES_PAGE_CIVILIZATION_PALENQUE_CHAPTER_HISTORY_PARA_2">
 
-			<Text>Since an Egyptian sword bearing the name of pharaoh Merneptah was found in the destruction levels, 1190 BC was taken as the date for the beginning of the LH IIIC. A cuneiform tablet found in 1986 shows that Ugarit was destroyed after the death of Merneptah.  Scribes in Ugarit appear to have originated the "Ugaritic alphabet" around 1400 BC: 30 letters, corresponding to sounds, were inscribed on clay tablets; although they are cuneiform in appearance, they bear no relation to Mesopotamian cuneiform signs.</Text>
+			<Text>Paul Kosok discovered Caral in 1948, but it received little attention at the time because it appeared to lack many typical artefacts that were sought at archaeological sites throughout the Andes at the time. In 1975, the Peruvian architect Carlos Williams made a detailed record of most of the archaeological sites of the valley of Supe, among which he recorded Caral, from which he made some observations about the development of architecture in the Andes. Ruth Shady further explored the 4,000- to 4,600-year-old city of temples in the Peruvian desert, with its elaborate complex of temples, an amphitheatre and ordinary houses. The urban complex is spread out over 150 acres (607,000 m²) and contains plazas and residential buildings. Caral was a thriving metropolis at roughly the same time that Egypt's great pyramids were being built.</Text>
 
 		</Replace>
 
 
 		-<Replace Language="en_US" Tag="LOC_PEDIA_CITYSTATES_PAGE_CIVILIZATION_PALENQUE_CHAPTER_HISTORY_PARA_3">
 
-			<Text>After its destruction in the early 12th century BC, Ugarit's location was forgotten until 1928 when a peasant accidentally opened an old tomb while ploughing a field.  On excavation of the site, several deposits of cuneiform clay tablets were found; all dating from the last phase of Ugarit, around 1200 BC. These represented a palace library, a temple library and-apparently unique in the world at the time-two private libraries, one belonging to a diplomat named Rapanu.</Text>
+			<Text>Among the artefacts found at Caral are a knotted textile piece that the excavators have labelled a quipu. They argue that the artefact is evidence that the quipu record keeping system, a method involving knots tied in rope that was brought to perfection by the Inca Empire, was older than any archaeologist had previously guessed. Evidence has emerged that the quipu may also have recorded logographic information in the same way writing does. Gary Urton has suggested that the quipus used a binary system which could record phonological or logographic data.</Text>
 
 		</Replace>
 
