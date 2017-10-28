@@ -99,7 +99,7 @@
 
 			-<Row Language="en_US" Tag="LOC_TRAIT_LEADER_RELIC_ENIG_DARK_SKY_DESCRIPTION">
 
-				<Text>Upon conquering an enemy city, production in all cities is boosted (excluding wonders and yields). Conquering a city state provides Great Person Points depending on type upon capture and a passive yield afterwards.</Text>
+				<Text>Upon conquering an enemy city, production in all cities is boosted, excluding wonders and yields. Conquering a city state provides Great Person Points depending on type upon capture and a passive yield afterwards.</Text>
 
 			</Row>
 
