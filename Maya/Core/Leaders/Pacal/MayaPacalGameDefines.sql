@@ -218,8 +218,8 @@ INSERT INTO Modifiers
 VALUES		('RELIC_ENIG_WHITE_SKIN_WONDER_HOLY',		'MODIFIER_PLAYER_CITIES_ADJUST_WONDER_PRODUCTION',		1,				'RELIC_ENIG_WHITE_SKIN_WONDER_HOLY_REQ_SET'),
 		('RELIC_ENIG_WHITE_SKIN_WONDER_SCIENCE',	'MODIFIER_PLAYER_CITIES_ADJUST_WONDER_PRODUCTION',		1,				'RELIC_ENIG_WHITE_SKIN_WONDER_SCIENCE_REQ_SET'),
 		('RELIC_ENIG_WHITE_SKIN_WONDER_GROWTH',		'MODIFIER_SINGLE_CITY_ADJUST_CITY_GROWTH',			1,				'RELIC_ENIG_WHITE_SKIN_WONDER_GROWTH_REQ_SET'),
-		('RELIC_ENIG_WHITE_SKIN_WONDER_ILBEEB',		'MODIFIER_PLAYER_CITIES_DISTRICT_ADJACENCY',			1,				null),
-		('RELIC_ENIG_WHITE_SKIN_WONDER_HOLY_SITE',	'MODIFIER_PLAYER_CITIES_DISTRICT_ADJACENCY',			1,				null);
+		('RELIC_ENIG_WHITE_SKIN_WONDER_ILBEEB',		'MODIFIER_PLAYER_CITIES_DISTRICT_ADJACENCY',			1,				'RELIC_ENIG_WHITE_SKIN_WONDER_SCIENCE_REQ_SET'),
+		('RELIC_ENIG_WHITE_SKIN_WONDER_HOLY_SITE',	'MODIFIER_PLAYER_CITIES_DISTRICT_ADJACENCY',			1,				'RELIC_ENIG_WHITE_SKIN_WONDER_HOLY_REQ_SET');
 --------------------------------------------------------------------------------------------------------------------------
 -- ModifierArguments
 --------------------------------------------------------------------------------------------------------------------------
@@ -228,13 +228,11 @@ INSERT INTO ModifierArguments
 VALUES		('RELIC_ENIG_WHITE_SKIN_WONDER_HOLY',					'Amount',								10),
 		('RELIC_ENIG_WHITE_SKIN_WONDER_SCIENCE',				'Amount',								10),
 		('RELIC_ENIG_WHITE_SKIN_WONDER_GROWTH',					'Amount',								20),
-		('RELIC_ENIG_WHITE_SKIN_WONDER_ILBEEB',					'DistrictType',								'DISTRICT_RELIC_ENIG_CARACOL'),
-		('RELIC_ENIG_WHITE_SKIN_WONDER_ILBEEB',					'AdjacentDistrict',							'DISTRICT_WONDER'),
+		('RELIC_ENIG_WHITE_SKIN_WONDER_ILBEEB',					'DistrictType',								'DISTRICT_WONDER'),
 		('RELIC_ENIG_WHITE_SKIN_WONDER_ILBEEB',					'YieldType',								'YIELD_SCIENCE'),
 		('RELIC_ENIG_WHITE_SKIN_WONDER_ILBEEB',					'Amount',								1),
 		('RELIC_ENIG_WHITE_SKIN_WONDER_ILBEEB',					'Description',								),
-		('RELIC_ENIG_WHITE_SKIN_WONDER_HOLY_SITE',				'DistrictType',								'DISTRICT_HOLY_SITE'),
-		('RELIC_ENIG_WHITE_SKIN_WONDER_HOLY_SITE',				'AdjacentDistrict',							'DISTRICT_WONDER'),
+		('RELIC_ENIG_WHITE_SKIN_WONDER_HOLY_SITE',				'DistrictType',								'DISTRICT_WONDER'),
 		('RELIC_ENIG_WHITE_SKIN_WONDER_HOLY_SITE',				'YieldType',								'YIELD_FAITH'),
 		('RELIC_ENIG_WHITE_SKIN_WONDER_HOLY_SITE',				'Amount',								1),
 		('RELIC_ENIG_WHITE_SKIN_WONDER_HOLY_SITE',				'Description',								);
@@ -243,7 +241,7 @@ VALUES		('RELIC_ENIG_WHITE_SKIN_WONDER_HOLY',					'Amount',								10),
 --------------------------------------------------------------------------------------------------------------------------	
 INSERT INTO Requirements 			
 		(RequirementId,											RequirementType)
-VALUES	('RELIC_ENIG_WHITE_SKIN_WONDER_HOLY_REQ',			'REQUIREMENT_CITY_HAS_DISTRICT'),
+VALUES		('RELIC_ENIG_WHITE_SKIN_WONDER_HOLY_REQ',			'REQUIREMENT_CITY_HAS_DISTRICT'),
 		('RELIC_ENIG_WHITE_SKIN_WONDER_SCIENCE_REQ',		'REQUIREMENT_CITY_HAS_DISTRICT'),
 		('RELIC_ENIG_WHITE_SKIN_WONDER_GROWTH_REQ',			'REQUIREMENT_CITY_HAS_ANY_WONDER');
 --------------------------------------------------------------------------------------------------------------------------
@@ -251,14 +249,14 @@ VALUES	('RELIC_ENIG_WHITE_SKIN_WONDER_HOLY_REQ',			'REQUIREMENT_CITY_HAS_DISTRIC
 --------------------------------------------------------------------------------------------------------------------------
 INSERT INTO RequirementArguments
 		(RequirementId,											Name,										Value)
-VALUES	('RELIC_ENIG_WHITE_SKIN_WONDER_HOLY_REQ',			'DistrictType',									'DISTRICT_HOLY_SITE'),
+VALUES		('RELIC_ENIG_WHITE_SKIN_WONDER_HOLY_REQ',			'DistrictType',									'DISTRICT_HOLY_SITE'),
 		('RELIC_ENIG_WHITE_SKIN_WONDER_SCIENCE_REQ',		'DistrictType',									'DISTRICT_RELIC_ENIG_CARACOL');
 --------------------------------------------------------------------------------------------------------------------------
 -- RequirementSets
 --------------------------------------------------------------------------------------------------------------------------
 INSERT INTO RequirementSets
 		(RequirementSetId,										RequirementSetType)
-VALUES	('RELIC_ENIG_WHITE_SKIN_WONDER_HOLY_REQ_SET',		'REQUIREMENTSET_TEST_ALL'),
+VALUES		('RELIC_ENIG_WHITE_SKIN_WONDER_HOLY_REQ_SET',		'REQUIREMENTSET_TEST_ALL'),
 		('RELIC_ENIG_WHITE_SKIN_WONDER_SCIENCE_REQ_SET',	'REQUIREMENTSET_TEST_ALL'),
 		('RELIC_ENIG_WHITE_SKIN_WONDER_GROWTH_REQ_SET',		'REQUIREMENTSET_TEST_ALL');
 --------------------------------------------------------------------------------------------------------------------------
@@ -266,7 +264,7 @@ VALUES	('RELIC_ENIG_WHITE_SKIN_WONDER_HOLY_REQ_SET',		'REQUIREMENTSET_TEST_ALL')
 --------------------------------------------------------------------------------------------------------------------------
 INSERT INTO RequirementSetRequirements
 		(RequirementSetId,										RequirementId)
-VALUES	('RELIC_ENIG_WHITE_SKIN_WONDER_HOLY_REQ_SET',		'RELIC_ENIG_WHITE_SKIN_WONDER_HOLY_REQ'),
+VALUES		('RELIC_ENIG_WHITE_SKIN_WONDER_HOLY_REQ_SET',		'RELIC_ENIG_WHITE_SKIN_WONDER_HOLY_REQ'),
 		('RELIC_ENIG_WHITE_SKIN_WONDER_SCIENCE_REQ_SET',	'RELIC_ENIG_WHITE_SKIN_WONDER_SCIENCE_REQ'),
 		('RELIC_ENIG_WHITE_SKIN_WONDER_GROWTH_REQ_SET',		'RELIC_ENIG_WHITE_SKIN_WONDER_GROWTH_REQ');	
 --==========================================================================================================================
