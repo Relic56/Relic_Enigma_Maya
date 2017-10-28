@@ -107,13 +107,7 @@ VALUES	('TRAIT_AGENDA_RELIC_ENIG_SUN_SHIELD',					'LOC_PLACEHOLDER',							'LOC_
 ----------------------------------------------------------------------------------------------------------------------------				
 INSERT INTO AgendaTraits				
 		(AgendaType,										TraitType)
-VALUES	('AGENDA_RELIC_ENIG_SUN_SHIELD',						'TRAIT_AGENDA_RELIC_ENIG_SUN_SHIELD');	
---------------------------------------------------------------------------------------------------------------------------			
--- ExclusiveAgendas			
---------------------------------------------------------------------------------------------------------------------------				
-INSERT INTO ExclusiveAgendas				
-		(AgendaOne,											AgendaTwo)
-VALUES	('AGENDA_RELIC_ENIG_SUN_SHIELD',						'AGENDA_DARWINIST');	
+VALUES	('AGENDA_RELIC_ENIG_SUN_SHIELD',						'TRAIT_AGENDA_RELIC_ENIG_SUN_SHIELD');		
 ----------------------------------------------------------------------------------------------------------------------------				
 -- TraitModifiers						
 ----------------------------------------------------------------------------------------------------------------------------				
@@ -191,7 +185,7 @@ VALUES	('COLOR_PLAYER_RELIC_ENIG_MAYA_PAKAL_PRIMARY', 		0.824,	0.652,	0.484,	1),
 --------------------------------------------------------------------------------------------------------------------------	
 INSERT INTO LoadingInfo	
 		(LeaderType,				BackgroundImage, 			ForegroundImage,					PlayDawnOfManAudio)
-VALUES	('LEADER_RELIC_ENIG_PAKAL',	'LEADER_GORGO_BACKGROUND',	'LEADER_RELIC_ENIG_PAKAL_NEUTRAL',	0);	
+VALUES	('LEADER_RELIC_ENIG_PAKAL',	'LEADER_MONTEZUMA_BACKGROUND',	'LEADER_RELIC_ENIG_PAKAL_NEUTRAL',	0);	
 --==========================================================================================================================
 -- LEADERS: TRAITS
 --==========================================================================================================================
