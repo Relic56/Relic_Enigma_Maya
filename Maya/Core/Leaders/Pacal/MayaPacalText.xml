@@ -518,12 +518,26 @@
 				<Text>I was right, as I always am. You could never hope to stand against us.</Text>
 
 			</Row>
+	
+	
+			-<Row Language="en_US" Tag="LOC_DISTRICT_RELIC_ENIG_WHITE_SKIN_SCIENCE_WONDER">
+
+				<Text>+{1_num} [ICON_SCIENCE] Science from the adjacent Wonder.</Text>
+
+			</Row>
+
+
+			-<Row Language="en_US" Tag="LOC_DISTRICT_RELIC_ENIG_WHITE_SKIN_HOLY_WONDER">
+
+				<Text>+{1_num} [ICON_FAITH] Faith from the adjacent Wonder.</Text>
+
+			</Row>
 
 
 			<!--MOD SUPPORT-->
 
 
-			<!--RELIC_ENIG Rule with Faith-->
+			<!--JFD Rule with Faith-->
 
 
 
