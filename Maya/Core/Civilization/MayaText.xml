@@ -540,7 +540,195 @@
 			<Text>Among the artefacts found at Caral are a knotted textile piece that the excavators have labelled a quipu. They argue that the artefact is evidence that the quipu record keeping system, a method involving knots tied in rope that was brought to perfection by the Inca Empire, was older than any archaeologist had previously guessed. Evidence has emerged that the quipu may also have recorded logographic information in the same way writing does. Gary Urton has suggested that the quipus used a binary system which could record phonological or logographic data.</Text>
 
 		</Replace>
+	
+		<!--MOD SUPPORT-->
 
+
+		<!--JFD Rule with Faith-->
+
+
+
+		-<Row Language="en_US" Tag="LOC_GOVERNMENT_JFD_CHIEFDOM_LEADER_TITLE_RELIC_ENIG_MAYA">
+
+			<Text>Sajal</Text>
+
+		</Row>
+
+
+		-<Row Language="en_US" Tag="LOC_GOVERNMENT_JFD_CHIEFDOM_LEADER_TITLE_RELIC_ENIG_MAYA_FEMININE">
+
+			<Text>Ix Sajal</Text>
+
+		</Row>
+
+
+		-<Row Language="en_US" Tag="LOC_GOVERNMENT_JFD_HORDE_LEADER_TITLE_RELIC_ENIG_MAYA">
+
+			<Text>B'akab'</Text>
+
+		</Row>
+
+
+		-<Row Language="en_US" Tag="LOC_GOVERNMENT_JFD_HORDE_LEADER_TITLE_RELIC_ENIG_MAYA_FEMININE">
+
+			<Text>Ix B'akab'</Text>
+
+		</Row>
+
+
+		-<Row Language="en_US" Tag="LOC_GOVERNMENT_JFD_POLIS_LEADER_TITLE_RELIC_ENIG_MAYA">
+
+			<Text>Sajal</Text>
+
+		</Row>
+
+
+		-<Row Language="en_US" Tag="LOC_GOVERNMENT_JFD_POLIS_LEADER_TITLE_RELIC_ENIG_MAYA_FEMININE">
+
+			<Text>Ix Sajal</Text>
+
+		</Row>
+
+
+		-<Row Language="en_US" Tag="LOC_GOVERNMENT_JFD_AUTOCRACY_LEADER_TITLE_RELIC_ENIG_MAYA">
+
+			<Text>B'akab'</Text>
+
+		</Row>
+
+
+		-<Row Language="en_US" Tag="LOC_GOVERNMENT_JFD_AUTOCRACY_LEADER_TITLE_RELIC_ENIG_MAYA_FEMININE">
+
+			<Text>Ix B'akab'</Text>
+
+		</Row>
+
+
+		-<Row Language="en_US" Tag="LOC_GOVERNMENT_JFD_CLASSICAL_DEMOCRACY_LEADER_TITLE_RELIC_ENIG_MAYA">
+
+			<Text>K'inich</Text>
+
+		</Row>
+
+
+		-<Row Language="en_US" Tag="LOC_GOVERNMENT_JFD_CLASSICAL_DEMOCRACY_LEADER_TITLE_RELIC_ENIG_MAYA_FEMININE">
+
+			<Text>Ix K'inich</Text>
+
+		</Row>
+
+
+		-<Row Language="en_US" Tag="LOC_GOVERNMENT_JFD_OLIGARCHY_LEADER_TITLE_RELIC_ENIG_MAYA">
+
+			<Text>Ajaw</Text>
+
+		</Row>
+
+
+		-<Row Language="en_US" Tag="LOC_GOVERNMENT_JFD_OLIGARCHY_LEADER_TITLE_RELIC_ENIG_MAYA_FEMININE">
+
+			<Text>Ix Ajaw</Text>
+
+		</Row>
+
+
+		-<Row Language="en_US" Tag="LOC_GOVERNMENT_JFD_MERCHANT_REPUBLIC_LEADER_TITLE_RELIC_ENIG_MAYA">
+
+			<Text>K'inich</Text>
+
+		</Row>
+
+
+		-<Row Language="en_US" Tag="LOC_GOVERNMENT_JFD_MERCHANT_REPUBLIC_LEADER_TITLE_RELIC_ENIG_MAYA_FEMININE">
+
+			<Text>Ix K'inich</Text>
+
+		</Row>
+
+
+		-<Row Language="en_US" Tag="LOC_GOVERNMENT_JFD_MONARCHY_LEADER_TITLE_RELIC_ENIG_MAYA">
+
+			<Text>Ajaw</Text>
+
+		</Row>
+
+
+		-<Row Language="en_US" Tag="LOC_GOVERNMENT_JFD_MONARCHY_LEADER_TITLE_RELIC_ENIG_MAYA_FEMININE">
+
+			<Text>Ix Ajaw</Text>
+
+		</Row>
+
+
+		-<Row Language="en_US" Tag="LOC_GOVERNMENT_JFD_NOBLE_REPUBLIC_LEADER_TITLE_RELIC_ENIG_MAYA">
+
+			<Text>Sajal</Text>
+
+		</Row>
+
+
+		-<Row Language="en_US" Tag="LOC_GOVERNMENT_JFD_NOBLE_REPUBLIC_LEADER_TITLE_RELIC_ENIG_MAYA_FEMININE">
+
+			<Text>Ix Sajal</Text>
+
+		</Row>
+
+
+		-<Row Language="en_US" Tag="LOC_GOVERNMENT_JFD_PEOPLES_REPUBLIC_LEADER_TITLE_RELIC_ENIG_MAYA">
+
+			<Text>K'inich</Text>
+
+		</Row>
+
+
+		-<Row Language="en_US" Tag="LOC_GOVERNMENT_JFD_PEOPLES_REPUBLIC_LEADER_TITLE_RELIC_ENIG_MAYA_FEMININE">
+
+			<Text>Ix K'inich</Text>
+
+		</Row>
+
+
+		-<Row Language="en_US" Tag="LOC_GOVERNMENT_JFD_LIBERAL_DEMOCRACY_LEADER_TITLE_RELIC_ENIG_MAYA">
+
+			<Text>K'inich</Text>
+
+		</Row>
+
+
+		-<Row Language="en_US" Tag="LOC_GOVERNMENT_JFD_LIBERAL_DEMOCRACY_LEADER_TITLE_RELIC_ENIG_MAYA_FEMININE">
+
+			<Text>Ix K'inich</Text>
+
+		</Row>
+
+
+		-<Row Language="en_US" Tag="LOC_GOVERNMENT_JFD_MILITARY_GUARDIANSHIP_LEADER_TITLE_RELIC_ENIG_MAYA">
+
+			<Text>B'akab'</Text>
+
+		</Row>
+
+
+		-<Row Language="en_US" Tag="LOC_GOVERNMENT_JFD_MILITARY_GUARDIANSHIP_LEADER_TITLE_RELIC_ENIG_MAYA_FEMININE">
+
+			<Text>Ix B'akab'</Text>
+
+		</Row>
+
+
+		-<Row Language="en_US" Tag="LOC_GOVERNMENT_JFD_EMPIRE_LEADER_TITLE_RELIC_ENIG_MAYA">
+
+			<Text>Kalomte</Text>
+
+		</Row>
+
+
+		-<Row Language="en_US" Tag="LOC_GOVERNMENT_JFD_EMPIRE_LEADER_TITLE_RELIC_ENIG_MAYA_FEMININE">
+
+			<Text>Ix Kalomte</Text>
+
+		</Row>
+	
 	</LocalizedText>
 
 </GameData>
