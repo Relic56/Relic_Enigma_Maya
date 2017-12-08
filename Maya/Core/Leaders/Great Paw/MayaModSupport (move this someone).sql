@@ -5,11 +5,11 @@
 ----------------------------------------------------------------------------------------------------------------------------
 CREATE TABLE IF NOT EXISTS StartPosition (MapName TEXT, Civilization TEXT, Leader TEXT, X INT default 0, Y INT default 0);
 INSERT INTO StartPosition
-	(Civilization,				MapName,			X,	Y)
-VALUES	('CIVILIZATION_RELIC_ENIG_MAYA',	'GiantEarth',		    	9,	40),
-        ('CIVILIZATION_RELIC_ENIG_MAYA',	'GreatestEarthMap',		42,	24),
-	('CIVILIZATION_RELIC_ENIG_MAYA',	'LargestEarth',	   		11,	49),
-	('CIVILIZATION_RELIC_ENIG_MAYA',	'CordiformEarth',	 	30,	13);
+	(Civilization,				Leader,				MapName,		X,	Y)
+VALUES	('CIVILIZATION_RELIC_ENIG_MAYA',	'LEADER_RELIC_ENIG_PAKAL',	'GiantEarth',		22,	71),
+	('CIVILIZATION_RELIC_ENIG_MAYA',	'LEADER_RELIC_ENIG_PAKAL',	'GreatestEarthMap',	51,	53),
+	('CIVILIZATION_RELIC_ENIG_MAYA',	'LEADER_RELIC_ENIG_YAXKIN',	'GiantEarth',		47,	58),
+	('CIVILIZATION_RELIC_ENIG_MAYA',	'LEADER_RELIC_ENIG_YAXKIN',	'GreatestEarthMap',	39,	97);
 --==========================================================================================================================
 -- JFD RULE WITH FAITH
 --==========================================================================================================================
