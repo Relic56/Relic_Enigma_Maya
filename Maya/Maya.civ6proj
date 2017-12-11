@@ -53,9 +53,6 @@
     <Content Include="Core\Leaders\Great Paw\MayaGreatPawIconDefinitions.sql">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="Core\Leaders\Great Paw\MayaGreatPawModSupport.sql">
-      <SubType>Content</SubType>
-    </Content>
     <Content Include="Core\Leaders\Great Paw\MayaGreatPawText.xml">
       <SubType>Content</SubType>
     </Content>

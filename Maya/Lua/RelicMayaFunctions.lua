@@ -172,7 +172,7 @@ end
 
 local iPoints = 100 -- Make this scale off something you twat
 
-function C15_OnMayaCapture(iVictoriousPlayer, iDefeatedPlayer, iNewCityID, iCityPlotX, iCityPlotY)
+function C15_Relic_OnMayaCapture(iVictoriousPlayer, iDefeatedPlayer, iNewCityID, iCityPlotX, iCityPlotY)
     local pPlayer = Players[iVictoriousPlayer]
     local pPlayerConfig = PlayerConfigurations[iVictoriousPlayer]
     local sLeaderType = pPlayerConfig:GetLeaderTypeName()
@@ -200,7 +200,7 @@ function C15_OnMayaCapture(iVictoriousPlayer, iDefeatedPlayer, iNewCityID, iCity
     end
 end
 
-GameEvents.CityConquered.Add(C15_OnMayaCapture)
+GameEvents.CityConquered.Add(C15_Relic_OnMayaCapture)
 
 function Relic_Maya_New_Turn(playerID)
 	print("new turn and stuff")

@@ -1,0 +1,19 @@
+Starting AssetCooker...
+Opened output file: C:\Users\Ethan Yao\Documents\My Games\Sid Meier's Civilization VI\Mods\Maya\ArtDefs/Units.artdef
+Cooking ArtDef: (Cultures.artdef).
+Cooking ArtDef: (Eras.artdef).
+Cooking ArtDef: (CityGenerators.artdef).
+Cooking ArtDef: (Appeal.artdef).
+Cooking ArtDef: (Civilizations.artdef).
+Cooking ArtDef: (Landmarks.artdef).
+Cooking ArtDef: (Districts.artdef).
+Cooking ArtDef: (Buildings.artdef).
+Cooking ArtDef: (StrategicView.artdef).
+Cooking ArtDef: (Clutter.artdef).
+Cooking ArtDef: (Terrains.artdef).
+Cooking ArtDef: (Features.artdef).
+Cooking ArtDef: (VFX.artdef).
+Cooking ArtDef: (Units.artdef).
+Cook finished for ArtDef at Path: 'Units.artdef' with Template: 'Units'
+ArtDef cook completed.
+Cook completed in 3.880 seconds
