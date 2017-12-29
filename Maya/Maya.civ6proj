@@ -18,7 +18,10 @@
     <AssemblyName>Maya</AssemblyName>
     <RootNamespace>Maya</RootNamespace>
     <FrontEndActionData><![CDATA[<FrontEndActions><UpdateDatabase id="NewAction"><File>Core/Leaders/Great Paw/MayaGreatPawConfig.sql</File><File>Core/Leaders/Pacal/MayaPacalConfig.sql</File></UpdateDatabase><UpdateIcons id="NewAction"><File>Core/Civilization/MayaIconDefinitions.sql</File><File>Core/Leaders/Pacal/MayaPacalIconDefinitions.sql</File><File>Core/Leaders/Great Paw/MayaGreatPawIconDefinitions.sql</File></UpdateIcons><UpdateText id="NewAction"><File>Core/Civilization/MayaText.xml</File><File>Core/Leaders/Great Paw/MayaGreatPawText.xml</File><File>Core/Leaders/Pacal/MayaPacalText.xml</File></UpdateText><UpdateArt id="NewAction"><File>(Mod Art Dependency File)</File></UpdateArt></FrontEndActions>]]></FrontEndActionData>
-    <InGameActionData><![CDATA[<InGameActions><UpdateDatabase id="NewAction"><File>Core/Civilization/MayaGameDefines.sql</File><File>Core/Leaders/Great Paw/MayaGreatPawGameDefines.sql</File><File>Core/Leaders/Pacal/MayaPacalGameDefines.sql</File></UpdateDatabase><UpdateArt id="NewAction"><File>(Mod Art Dependency File)</File></UpdateArt><UpdateIcons id="NewAction"><File>Core/Civilization/MayaIconDefinitions.sql</File><File>Core/Leaders/Pacal/MayaPacalGameDefines.sql</File><File>Core/Leaders/Great Paw/MayaGreatPawGameDefines.sql</File></UpdateIcons><AddGameplayScripts id="NewAction"><File>Lua/RelicMayaFunctions.lua</File></AddGameplayScripts><UpdateText id="NewAction"><File>Core/Civilization/MayaText.xml</File><File>Core/Leaders/Great Paw/MayaGreatPawText.xml</File><File>Core/Leaders/Pacal/MayaPacalText.xml</File></UpdateText></InGameActions>]]></InGameActionData>
+    <InGameActionData><![CDATA[<InGameActions><UpdateDatabase id="NewAction"><File>Core/Civilization/MayaGameDefines.sql</File><File>Core/Leaders/Great Paw/MayaGreatPawGameDefines.sql</File><File>Core/Leaders/Pacal/MayaPacalGameDefines.sql</File></UpdateDatabase><UpdateArt id="NewAction"><File>(Mod Art Dependency File)</File></UpdateArt><UpdateIcons id="NewAction"><File>Core/Civilization/MayaIconDefinitions.sql</File><File>Core/Leaders/Great Paw/MayaGreatPawIconDefinitions.sql</File><File>Core/Leaders/Pacal/MayaPacalIconDefinitions.sql</File></UpdateIcons><AddGameplayScripts id="NewAction"><File>Lua/RelicMayaFunctions.lua</File></AddGameplayScripts><UpdateText id="NewAction"><File>Core/Civilization/MayaText.xml</File><File>Core/Leaders/Great Paw/MayaGreatPawText.xml</File><File>Core/Leaders/Pacal/MayaPacalText.xml</File></UpdateText></InGameActions>]]></InGameActionData>
+    <ModProperties>
+      <CustomProperties xmlns="" />
+    </ModProperties>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Default' ">
     <OutputPath>.</OutputPath>
@@ -39,6 +42,9 @@
       <SubType>Content</SubType>
     </Content>
     <Content Include="Core\Civilization\MayaIconDefinitions.sql">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Core\Civilization\MayaModSupport.sql">
       <SubType>Content</SubType>
     </Content>
     <Content Include="Core\Civilization\MayaText.xml">
