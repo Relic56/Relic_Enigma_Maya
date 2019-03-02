@@ -140,21 +140,7 @@ VALUES	('RELIC_ENIG_SUN_SHIELD_WONDER_WHORE',					'InitialValue',								7,					
 	('RELIC_ENIG_SUN_SHIELD_SCIENCE_LEADER',				'InitialValue',								15,											'ARGTYPE_IDENTITY'),
 	('RELIC_ENIG_SUN_SHIELD_SCIENCE_LEADER',				'StatementKey',								'LOC_DIPLO_KUDO_LEADER_RELIC_ENIG_SUN_SHIELD_REASON_SCIENCE_LEADER',			'ARGTYPE_IDENTITY'),
 	('RELIC_ENIG_SUN_SHIELD_SCIENCE_LEADER',				'SimpleModifierDescription',						'LOC_DIPLO_MODIFIER_AGENDA_RELIC_ENIG_SUN_SHIELD_SCIENCE_LEADER',			'ARGTYPE_IDENTITY');			
---==========================================================================================================================
--- LEADERS: COLOURS
---==========================================================================================================================
--- PlayerColors
---------------------------------------------------------------------------------------------------------------------------	
-INSERT INTO PlayerColors	
-	(Type,					Usage,				PrimaryColor, 					SecondaryColor,						TextColor)
-VALUES	('LEADER_RELIC_ENIG_PAKAL',		'Unique',			'COLOR_PLAYER_RELIC_ENIG_MAYA_PAKAL_PRIMARY',	'COLOR_PLAYER_RELIC_ENIG_MAYA_PAKAL_SECONDARY', 	'COLOR_PLAYER_WHITE_TEXT');
---------------------------------------------------------------------------------------------------------------------------			
--- Colors			
---------------------------------------------------------------------------------------------------------------------------	
-INSERT INTO Colors 
-	(Type, 							Red, 	Green, 	Blue, 	Alpha)
-VALUES	('COLOR_PLAYER_RELIC_ENIG_MAYA_PAKAL_PRIMARY', 		0.824,	0.652,	0.484,	1),
-	('COLOR_PLAYER_RELIC_ENIG_MAYA_PAKAL_SECONDARY', 	0.164,	0.332,	0.344,	1);
+
 --==========================================================================================================================
 -- LEADERS: LOADING INFO
 --==========================================================================================================================
@@ -201,18 +187,20 @@ VALUES	('RELIC_ENIG_WHITE_SKIN_WONDER_HOLY',		'MODIFIER_PLAYER_CITIES_ADJUST_WON
 -- ModifierArguments
 --------------------------------------------------------------------------------------------------------------------------
 INSERT INTO ModifierArguments
-	(ModifierId,								Name,									Value)
+		(ModifierId,											Name,									Value)
 VALUES	('RELIC_ENIG_WHITE_SKIN_WONDER_HOLY',					'Amount',								10),
-	('RELIC_ENIG_WHITE_SKIN_WONDER_SCIENCE',				'Amount',								10),
-	('RELIC_ENIG_WHITE_SKIN_WONDER_GROWTH',					'Amount',								20),
-	('RELIC_ENIG_WHITE_SKIN_WONDER_ILBEEB',					'DistrictType',								'DISTRICT_WONDER'),
-	('RELIC_ENIG_WHITE_SKIN_WONDER_ILBEEB',					'YieldType',								'YIELD_SCIENCE'),
-	('RELIC_ENIG_WHITE_SKIN_WONDER_ILBEEB',					'Amount',								1),
-	('RELIC_ENIG_WHITE_SKIN_WONDER_ILBEEB',					'Description',								'LOC_DISTRICT_RELIC_ENIG_WHITE_SKIN_SCIENCE_WONDER'),
-	('RELIC_ENIG_WHITE_SKIN_WONDER_HOLY_SITE',				'DistrictType',								'DISTRICT_WONDER'),
-	('RELIC_ENIG_WHITE_SKIN_WONDER_HOLY_SITE',				'YieldType',								'YIELD_FAITH'),
-	('RELIC_ENIG_WHITE_SKIN_WONDER_HOLY_SITE',				'Amount',								1),
-	('RELIC_ENIG_WHITE_SKIN_WONDER_HOLY_SITE',				'Description',								'LOC_DISTRICT_RELIC_ENIG_WHITE_SKIN_HOLY_WONDER');
+		('RELIC_ENIG_WHITE_SKIN_WONDER_SCIENCE',				'Amount',								10),
+		('RELIC_ENIG_WHITE_SKIN_WONDER_GROWTH',					'Amount',								20),
+		('RELIC_ENIG_WHITE_SKIN_WONDER_ILBEEB',					'DistrictType',							'DISTRICT_WONDER'),
+		('RELIC_ENIG_WHITE_SKIN_WONDER_ILBEEB',					'YieldType',							'YIELD_SCIENCE'),
+		('RELIC_ENIG_WHITE_SKIN_WONDER_ILBEEB',					'Amount',								1),
+		('RELIC_ENIG_WHITE_SKIN_WONDER_ILBEEB',					'Description',							'LOC_DISTRICT_RELIC_ENIG_WHITE_SKIN_SCIENCE_WONDER'),
+		('RELIC_ENIG_WHITE_SKIN_WONDER_ILBEEB',					'TilesRequired',						1),
+		('RELIC_ENIG_WHITE_SKIN_WONDER_HOLY_SITE',				'DistrictType',							'DISTRICT_WONDER'),
+		('RELIC_ENIG_WHITE_SKIN_WONDER_HOLY_SITE',				'YieldType',							'YIELD_FAITH'),
+		('RELIC_ENIG_WHITE_SKIN_WONDER_HOLY_SITE',				'Amount',								1),
+		('RELIC_ENIG_WHITE_SKIN_WONDER_HOLY_SITE',				'Description',							'LOC_DISTRICT_RELIC_ENIG_WHITE_SKIN_HOLY_WONDER'),
+		('RELIC_ENIG_WHITE_SKIN_WONDER_HOLY_SITE',				'TilesRequired',						1);
 --------------------------------------------------------------------------------------------------------------------------
 -- Requirements
 --------------------------------------------------------------------------------------------------------------------------	

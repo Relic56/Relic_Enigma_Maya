@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<AssetObjects..XLP>
+	<m_Version>
+		<major>4</major>
+		<minor>0</minor>
+		<build>315</build>
+		<revision>805</revision>
+	</m_Version>
+	<m_ClassName text="UITexture"/>
+	<m_PackageName text="UIIcons"/>
+	<m_Entries>
+		<Element>
+			<m_EntryID text="Caral128"/>
+			<m_ObjectName text="Caral128"/>
+		</Element>
+		<Element>
+			<m_EntryID text="Caral200"/>
+			<m_ObjectName text="Caral200"/>
+		</Element>
+		<Element>
+			<m_EntryID text="Caral22"/>
+			<m_ObjectName text="Caral22"/>
+		</Element>
+		<Element>
+			<m_EntryID text="Caral256"/>
+			<m_ObjectName text="Caral256"/>
+		</Element>
+		<Element>
+			<m_EntryID text="Caral30"/>
+			<m_ObjectName text="Caral30"/>
+		</Element>
+		<Element>
+			<m_EntryID text="Caral36"/>
+			<m_ObjectName text="Caral36"/>
+		</Element>
+		<Element>
+			<m_EntryID text="Caral44"/>
+			<m_ObjectName text="Caral44"/>
+		</Element>
+		<Element>
+			<m_EntryID text="Caral48"/>
+			<m_ObjectName text="Caral48"/>
+		</Element>
+		<Element>
+			<m_EntryID text="Caral50"/>
+			<m_ObjectName text="Caral50"/>
+		</Element>
+		<Element>
+			<m_EntryID text="Caral64"/>
+			<m_ObjectName text="Caral64"/>
+		</Element>
+		<Element>
+			<m_EntryID text="Caral80"/>
+			<m_ObjectName text="Caral80"/>
+		</Element>
+		<Element>
+			<m_EntryID text="Maya128"/>
+			<m_ObjectName text="Maya128"/>
+		</Element>
+		<Element>
+			<m_EntryID text="Maya200"/>
+			<m_ObjectName text="Maya200"/>
+		</Element>
+		<Element>
+			<m_EntryID text="Maya22"/>
+			<m_ObjectName text="Maya22"/>
+		</Element>
+		<Element>
+			<m_EntryID text="Maya256"/>
+			<m_ObjectName text="Maya256"/>
+		</Element>
+		<Element>
+			<m_EntryID text="Maya30"/>
+			<m_ObjectName text="Maya30"/>
+		</Element>
+		<Element>
+			<m_EntryID text="Maya36"/>
+			<m_ObjectName text="Maya36"/>
+		</Element>
+		<Element>
+			<m_EntryID text="Maya44"/>
+			<m_ObjectName text="Maya44"/>
+		</Element>
+		<Element>
+			<m_EntryID text="Maya48"/>
+			<m_ObjectName text="Maya48"/>
+		</Element>
+		<Element>
+			<m_EntryID text="Maya50"/>
+			<m_ObjectName text="Maya50"/>
+		</Element>
+		<Element>
+			<m_EntryID text="Maya64"/>
+			<m_ObjectName text="Maya64"/>
+		</Element>
+		<Element>
+			<m_EntryID text="Maya80"/>
+			<m_ObjectName text="Maya80"/>
+		</Element>
+		<Element>
+			<m_EntryID text="Pakal256"/>
+			<m_ObjectName text="Pakal256"/>
+		</Element>
+		<Element>
+			<m_EntryID text="Pakal32"/>
+			<m_ObjectName text="Pakal32"/>
+		</Element>
+		<Element>
+			<m_EntryID text="Pakal45"/>
+			<m_ObjectName text="Pakal45"/>
+		</Element>
+		<Element>
+			<m_EntryID text="Pakal48"/>
+			<m_ObjectName text="Pakal48"/>
+		</Element>
+		<Element>
+			<m_EntryID text="Pakal50"/>
+			<m_ObjectName text="Pakal50"/>
+		</Element>
+		<Element>
+			<m_EntryID text="Pakal55"/>
+			<m_ObjectName text="Pakal55"/>
+		</Element>
+		<Element>
+			<m_EntryID text="Pakal64"/>
+			<m_ObjectName text="Pakal64"/>
+		</Element>
+		<Element>
+			<m_EntryID text="Pakal80"/>
+			<m_ObjectName text="Pakal80"/>
+		</Element>
+		<Element>
+			<m_EntryID text="PakalMaya45"/>
+			<m_ObjectName text="PakalMaya45"/>
+		</Element>
+		<Element>
+			<m_EntryID text="RELIC_ENIG_PAKAL_1"/>
+			<m_ObjectName text="RELIC_ENIG_PAKAL_1"/>
+		</Element>
+		<Element>
+			<m_EntryID text="RELIC_ENIG_PAKAL_4"/>
+			<m_ObjectName text="RELIC_ENIG_PAKAL_4"/>
+		</Element>
+		<Element>
+			<m_EntryID text="RELIC_ENIG_YAXCHIN_1"/>
+			<m_ObjectName text="RELIC_ENIG_YAXCHIN_1"/>
+		</Element>
+		<Element>
+			<m_EntryID text="RELIC_ENIG_YAXCHIN_4"/>
+			<m_ObjectName text="RELIC_ENIG_YAXCHIN_4"/>
+		</Element>
+		<Element>
+			<m_EntryID text="Yaxchin256"/>
+			<m_ObjectName text="Yaxchin256"/>
+		</Element>
+		<Element>
+			<m_EntryID text="Yaxchin32"/>
+			<m_ObjectName text="Yaxchin32"/>
+		</Element>
+		<Element>
+			<m_EntryID text="Yaxchin45"/>
+			<m_ObjectName text="Yaxchin45"/>
+		</Element>
+		<Element>
+			<m_EntryID text="Yaxchin48"/>
+			<m_ObjectName text="Yaxchin48"/>
+		</Element>
+		<Element>
+			<m_EntryID text="Yaxchin50"/>
+			<m_ObjectName text="Yaxchin50"/>
+		</Element>
+		<Element>
+			<m_EntryID text="Yaxchin55"/>
+			<m_ObjectName text="Yaxchin55"/>
+		</Element>
+		<Element>
+			<m_EntryID text="Yaxchin64"/>
+			<m_ObjectName text="Yaxchin64"/>
+		</Element>
+		<Element>
+			<m_EntryID text="Yaxchin80"/>
+			<m_ObjectName text="Yaxchin80"/>
+		</Element>
+		<Element>
+			<m_EntryID text="YaxchinMaya45"/>
+			<m_ObjectName text="YaxchinMaya45"/>
+		</Element>
+		<Element>
+			<m_EntryID text="Caracol128"/>
+			<m_ObjectName text="Caracol128"/>
+		</Element>
+		<Element>
+			<m_EntryID text="Caracol256"/>
+			<m_ObjectName text="Caracol256"/>
+		</Element>
+		<Element>
+			<m_EntryID text="Caracol32"/>
+			<m_ObjectName text="Caracol32"/>
+		</Element>
+		<Element>
+			<m_EntryID text="Caracol38"/>
+			<m_ObjectName text="Caracol38"/>
+		</Element>
+		<Element>
+			<m_EntryID text="Caracol50"/>
+			<m_ObjectName text="Caracol50"/>
+		</Element>
+		<Element>
+			<m_EntryID text="Caracol70"/>
+			<m_ObjectName text="Caracol70"/>
+		</Element>
+		<Element>
+			<m_EntryID text="Caracol80"/>
+			<m_ObjectName text="Caracol80"/>
+		</Element>
+		<Element>
+			<m_EntryID text="MacuahuitlUnitFlags22"/>
+			<m_ObjectName text="MacuahuitlUnitFlags22"/>
+		</Element>
+		<Element>
+			<m_EntryID text="MacuahuitlUnitFlags256"/>
+			<m_ObjectName text="MacuahuitlUnitFlags256"/>
+		</Element>
+		<Element>
+			<m_EntryID text="MacuahuitlUnitFlags32"/>
+			<m_ObjectName text="MacuahuitlUnitFlags32"/>
+		</Element>
+		<Element>
+			<m_EntryID text="MacuahuitlUnitFlags38"/>
+			<m_ObjectName text="MacuahuitlUnitFlags38"/>
+		</Element>
+		<Element>
+			<m_EntryID text="MacuahuitlUnitFlags50"/>
+			<m_ObjectName text="MacuahuitlUnitFlags50"/>
+		</Element>
+		<Element>
+			<m_EntryID text="MacuahuitlUnitFlags80"/>
+			<m_ObjectName text="MacuahuitlUnitFlags80"/>
+		</Element>
+		<Element>
+			<m_EntryID text="Venus256"/>
+			<m_ObjectName text="Venus256"/>
+		</Element>
+		<Element>
+			<m_EntryID text="Venus30"/>
+			<m_ObjectName text="Venus30"/>
+		</Element>
+		<Element>
+			<m_EntryID text="Venus32"/>
+			<m_ObjectName text="Venus32"/>
+		</Element>
+		<Element>
+			<m_EntryID text="Venus38"/>
+			<m_ObjectName text="Venus38"/>
+		</Element>
+		<Element>
+			<m_EntryID text="Venus50"/>
+			<m_ObjectName text="Venus50"/>
+		</Element>
+		<Element>
+			<m_EntryID text="Venus70"/>
+			<m_ObjectName text="Venus70"/>
+		</Element>
+		<Element>
+			<m_EntryID text="Venus80"/>
+			<m_ObjectName text="Venus80"/>
+		</Element>
+		<Element>
+			<m_EntryID text="MacuahuitlUnitPortrait200"/>
+			<m_ObjectName text="MacuahuitlUnitPortrait200"/>
+		</Element>
+		<Element>
+			<m_EntryID text="MacuahuitlUnitPortrait256"/>
+			<m_ObjectName text="MacuahuitlUnitPortrait256"/>
+		</Element>
+		<Element>
+			<m_EntryID text="MacuahuitlUnitPortrait38"/>
+			<m_ObjectName text="MacuahuitlUnitPortrait38"/>
+		</Element>
+		<Element>
+			<m_EntryID text="MacuahuitlUnitPortrait50"/>
+			<m_ObjectName text="MacuahuitlUnitPortrait50"/>
+		</Element>
+		<Element>
+			<m_EntryID text="MacuahuitlUnitPortrait70"/>
+			<m_ObjectName text="MacuahuitlUnitPortrait70"/>
+		</Element>
+		<Element>
+			<m_EntryID text="MacuahuitlUnitPortrait95"/>
+			<m_ObjectName text="MacuahuitlUnitPortrait95"/>
+		</Element>
+		<Element>
+			<m_EntryID text="Moment_UniqueUnit_Rel_Hadzab"/>
+			<m_ObjectName text="Moment_UniqueUnit_Rel_Hadzab"/>
+		</Element>
+		<Element>
+			<m_EntryID text="Moment_UniqueInfrastructure_Rel_Caracol"/>
+			<m_ObjectName text="Moment_UniqueInfrastructure_Rel_Caracol"/>
+		</Element>
+	</m_Entries>
+	<m_AllowedPlatforms>
+		<Element>WINDOWS</Element>
+		<Element>LINUX</Element>
+		<Element>MACOS</Element>
+		<Element>IOS</Element>
+	</m_AllowedPlatforms>
+</AssetObjects..XLP>
+

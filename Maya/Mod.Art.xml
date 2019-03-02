@@ -9,6 +9,7 @@
 			<consumerName text="Units"/>
 			<relativeArtDefPaths>
 				<Element text ="Units.artdef"/>
+				<Element text ="Cultures.artdef"/>
 			</relativeArtDefPaths>
 			<libraryDependencies>
 				<Element text="Unit"/>
@@ -30,6 +31,7 @@
 		<Element>
 			<consumerName text="Landmarks"/>
 			<relativeArtDefPaths>
+				<Element text="Landmarks.artdef"/>
 			</relativeArtDefPaths>
 			<libraryDependencies>
 				<Element text="CityBuildings"/>
@@ -61,6 +63,7 @@
 		<Element>
 			<consumerName text="StrategicView_Properties"/>
 			<relativeArtDefPaths>
+				<Element text="StrategicView.artdef"/>
 			</relativeArtDefPaths>
 			<libraryDependencies/>
 			<loadsLibraries>false</loadsLibraries>
@@ -68,6 +71,7 @@
 		<Element>
 			<consumerName text="StrategicView_Sprite"/>
 			<relativeArtDefPaths>
+				<Element text="StrategicView.artdef"/>
 			</relativeArtDefPaths>
 			<libraryDependencies>
 				<Element text="StrategicView_Sprite"/>
@@ -78,6 +82,7 @@
 		<Element>
 			<consumerName text="StrategicView_Route"/>
 			<relativeArtDefPaths>
+				<Element text="StrategicView.artdef"/>
 			</relativeArtDefPaths>
 			<libraryDependencies>
 				<Element text="StrategicView_Route"/>
@@ -88,6 +93,7 @@
 		<Element>
 			<consumerName text="StrategicView_TerrainType"/>
 			<relativeArtDefPaths>
+				<Element text="StrategicView.artdef"/>
 			</relativeArtDefPaths>
 			<libraryDependencies>
 				<Element text="StrategicView_TerrainBlend"/>
@@ -100,6 +106,7 @@
 		<Element>
 			<consumerName text="StrategicView_TerrainBlendCorners"/>
 			<relativeArtDefPaths>
+				<Element text="StrategicView.artdef"/>
 			</relativeArtDefPaths>
 			<libraryDependencies>
 				<Element text="StrategicView_TerrainBlendCorners"/>
@@ -110,6 +117,7 @@
 		<Element>
 			<consumerName text="StrategicView_TerrainBlend"/>
 			<relativeArtDefPaths>
+				<Element text="StrategicView.artdef"/>
 			</relativeArtDefPaths>
 			<libraryDependencies>
 				<Element text="StrategicView_TerrainBlend"/>
@@ -250,6 +258,7 @@
 		<Element>
 			<consumerName text="Civilizations"/>
 			<relativeArtDefPaths>
+				<Element text ="Civilizations.artdef"/>
 			</relativeArtDefPaths>
 			<libraryDependencies/>
 			<loadsLibraries>false</loadsLibraries>
@@ -257,6 +266,7 @@
 		<Element>
 			<consumerName text="Cultures"/>
 			<relativeArtDefPaths>
+				<Element text ="Cultures.artdef"/>
 			</relativeArtDefPaths>
 			<libraryDependencies/>
 			<loadsLibraries>false</loadsLibraries>
@@ -278,6 +288,7 @@
 		<Element>
 			<consumerName text="WorldView_Translate"/>
 			<relativeArtDefPaths>
+				<Element text="Districts.artdef"/>
 			</relativeArtDefPaths>
 			<libraryDependencies/>
 			<loadsLibraries>false</loadsLibraries>
@@ -285,6 +296,7 @@
 		<Element>
 			<consumerName text="StrategicView_Translate"/>
 			<relativeArtDefPaths>
+				<Element text="Districts.artdef"/>
 			</relativeArtDefPaths>
 			<libraryDependencies/>
 			<loadsLibraries>false</loadsLibraries>
@@ -292,6 +304,8 @@
 		<Element>
 			<consumerName text="Audio"/>
 			<relativeArtDefPaths>
+				<Element text="Leaders.artdef"/>
+				<Element text="Districts.artdef"/>
 			</relativeArtDefPaths>
 			<libraryDependencies/>
 			<loadsLibraries>false</loadsLibraries>
@@ -299,6 +313,7 @@
 		<Element>
 			<consumerName text="LeaderLighting"/>
 			<relativeArtDefPaths>
+				<Element text="Leaders.artdef"/>
 			</relativeArtDefPaths>
 			<libraryDependencies>
 				<Element text="LeaderLighting"/>
@@ -309,6 +324,7 @@
 		<Element>
 			<consumerName text="Leaders"/>
 			<relativeArtDefPaths>
+				<Element text="Leaders.artdef"/>
 			</relativeArtDefPaths>
 			<libraryDependencies>
 				<Element text="Leader"/>
@@ -320,6 +336,7 @@
 		<Element>
 			<consumerName text="LeaderFallback"/>
 			<relativeArtDefPaths>
+				<Element text ="FallbackLeaders.artdef"/>
 			</relativeArtDefPaths>
 			<libraryDependencies>
 				<Element text="LeaderFallback"/>
@@ -456,6 +473,7 @@
 		<Element>
 			<libraryName text="LeaderFallback"/>
 			<relativePackagePaths>
+				<Element text ="FallbackLeaders"/>
 			</relativePackagePaths>
 		</Element>
 		<Element>
@@ -501,6 +519,7 @@
 		<Element>
 			<libraryName text="StrategicView_Sprite"/>
 			<relativePackagePaths>
+				<Element text="StrategicView_Sprite"/>
 			</relativePackagePaths>
 		</Element>
 		<Element>
@@ -511,6 +530,7 @@
 		<Element>
 			<libraryName text="StrategicView_TerrainBlendCorners"/>
 			<relativePackagePaths>
+			
 			</relativePackagePaths>
 		</Element>
 		<Element>
@@ -536,6 +556,7 @@
 		<Element>
 			<libraryName text="TileBase"/>
 			<relativePackagePaths>
+				<Element text="TileBase"/>
 			</relativePackagePaths>
 		</Element>
 		<Element>
@@ -546,6 +567,8 @@
 		<Element>
 			<libraryName text="UITexture"/>
 			<relativePackagePaths>
+				<Element text ="UIIcons"/>
+				<Element text ="UILeaders"/>
 			</relativePackagePaths>
 		</Element>
 		<Element>

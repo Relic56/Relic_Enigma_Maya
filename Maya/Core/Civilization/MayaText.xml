@@ -1,734 +1,401 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by Ed Beach (Firaxis Games) -->
-
 <GameData>
-
-
 	-<LocalizedText>
-
 		<!--CIVILIZATION-->
-
-
-
 		-<Row Language="en_US" Tag="LOC_CIVILIZATION_RELIC_ENIG_MAYA_NAME">
-
 			<Text>Maya</Text>
-
 		</Row>
-
-
 		-<Row Language="en_US" Tag="LOC_CIVILIZATION_RELIC_ENIG_MAYA_DESCRIPTION">
-
 			<Text>Mayan Empire</Text>
-
 		</Row>
-
-
 		-<Row Language="en_US" Tag="LOC_CIVILIZATION_RELIC_ENIG_MAYA_ADJECTIVE">
-
 			<Text>Mayan</Text>
-
 		</Row>
-
-
 		-<Row Language="en_US" Tag="LOC_CIVILIZATION_RELIC_ENIG_MAYA_DESCRIPTION_JFD_CIVILIZATION">
-
 			<Text>Mayan Civilization</Text>
-
 		</Row>
-
 		<!--Pedia-->
-
-
-
 		-<Row Language="en_US" Tag="LOC_CIVINFO_RELIC_ENIG_MAYA_LOCATION">
-
 			<Text>Mesoamerica</Text>
-
 		</Row>
-
-
 		-<Row Language="en_US" Tag="LOC_CIVINFO_RELIC_ENIG_MAYA_POPULATION">
-
 			<Text>Est. 2 million</Text>
-
 		</Row>
-
-
 		-<Row Language="en_US" Tag="LOC_CIVINFO_RELIC_ENIG_MAYA_SIZE">
-
 			<Text>Est. 200,000 sq miles</Text>
-
 		</Row>
-
-
 		-<Row Language="en_US" Tag="LOC_CIVINFO_RELIC_ENIG_MAYA_CAPITAL">
-
 			<Text>City-states, none specified</Text>
-
 		</Row>
-
-
 		-<Row Language="en_US" Tag="LOC_PEDIA_CIVILIZATIONS_PAGE_CIVILIZATION_RELIC_ENIG_MAYA_CHAPTER_HISTORY_PARA_1">
-
 			<Text>The Maya civilization was a Mesoamerican civilization developed by the Maya peoples, and noted for its hieroglyphic script-the only known fully developed writing system of the pre-Columbian Americas-as well as for its art, architecture, mathematics, calendar, and astronomical system.  The Maya civilization developed highly sophisticated artforms, and the Maya created art using both perishable and non-perishable materials, including wood, jade, obsidian, ceramics, sculpted stone monuments, stucco, and finely painted murals.  The territory of the Maya covered a third of Mesoamerica, and the Maya were engaged in a dynamic relationship with neighbouring cultures that included the Olmecs, Mixtecs, Teotihuacan, the Aztecs, and others.</Text>
-
 		</Row>
-
-
 		-<Row Language="en_US" Tag="LOC_PEDIA_CIVILIZATIONS_PAGE_CIVILIZATION_RELIC_ENIG_MAYA_CHAPTER_HISTORY_PARA_2">
-
 			<Text>During the Early Classic period, the Maya cities of Tikal and Kaminaljuyu were key Maya foci in a network that extended beyond the Maya area into the highlands of central Mexico.  Maya occupation at Cuello has been carbon dated to around 2600 BC. Settlements were established around 1800 BC in the Soconusco region of the Pacific coast, and the Maya were already cultivating the staple crops of maize, beans, squash, and chili pepper.  In the 1960s, the distinguished Mayanist J. Eric S. Thompson promoted the ideas that Maya cities were essentially vacant ceremonial centres serving a dispersed population in the forest, and that the Maya civilization was governed by peaceful astronomer-priests.</Text>
-
 		</Row>
-
-
 		-<Row Language="en_US" Tag="LOC_PEDIA_CIVILIZATIONS_PAGE_CIVILIZATION_RELIC_ENIG_MAYA_CHAPTER_HISTORY_PARA_3">
-
 			<Text>The first reliably evidenced polities formed in the Maya lowlands in the 9th century BC. During the Late Preclassic, the Maya political system coalesced into a theopolitical form, where elite ideology justified the ruler's authority, and was reinforced by public display, ritual, and religion.  The Maya political landscape was highly complex and Maya elites engaged in political intrigue to gain economic and social advantage over neighbours.  Classic Maya rule was centred in a royal culture that was displayed in all areas of Classic Maya art.  Trade was a key component of Maya society, and in the development of the Maya civilization.  The Maya engaged in long distance trade across the Maya region, and across greater Mesoamerica and beyond.  Shifts in trade routes occurred with the rise and fall of important cities in the Maya region, and have been identified in every major reorganization of the Maya civilization, such as the rise of Preclassic Maya civilization, the transition to the Classic, and the Terminal Classic collapse.</Text>
-
 		</Row>
-
-
 		-<Row Language="en_US" Tag="LOC_PEDIA_CIVILIZATIONS_PAGE_CIVILIZATION_RELIC_ENIG_MAYA_CHAPTER_HISTORY_PARA_4">
-
 			<Text>Although surviving Maya art represents only a small proportion of the art that the Maya created, it represents a wider variety of subjects than any other art tradition in the Americas.  The Maya had no knowledge of the potter's wheel, and Maya vessels were built up by coiling rolled strips of clay into the desired form.  The Maya produced a vast array of structures, and have left an extensive architectural legacy that places the Maya civilization as one of the great preindustrial civilizations of the world.  Masonry architecture built by the Maya evidences craft specialization in Maya society, centralized organization and the political means to mobilize a large workforce.  The language of almost all Classic Maya texts over the entire Maya area has been identified as Ch'olan; Late Preclassic text from Kaminaljuyu, in the highlands, also appears to be in, or related to, Ch'olan.  The Catholic Church and colonial officials, notably Bishop Diego de Landa, destroyed Maya texts wherever they found them, and with them the knowledge of Maya writing, but by chance three uncontested pre-Columbian books dated to the Postclassic period have been preserved.  Most surviving pre-Columbian Maya writing dates to the Classic period and is contained in stone inscriptions from Maya sites, such as stelae, or on ceramics vessels.  The bar-and-dot counting system that is the base of Maya numerals was in use in Mesoamerica by 1000 BC; the Maya adopted it by the Late Preclassic, and added the symbol for zero.  In some cases, the Maya calculations were more accurate than equivalent calculations in the Old World; for example, the Maya solar year was calculated to greater accuracy than the Julian year.</Text>
-
 		</Row>
-
-
 		<!--Trait-->
-
-
-
 		-<Row Language="en_US" Tag="LOC_TRAIT_CIVILIZATION_RELIC_ENIG_CALENDAR_ROUNDS_NAME">
-
 			<Text>Calendar Rounds</Text>
-
 		</Row>
-
-
 		-<Row Language="en_US" Tag="LOC_TRAIT_CIVILIZATION_RELIC_ENIG_CALENDAR_ROUNDS_DESCRIPTION">
-
-			<Text>Gain Great Scientist points every time you gain a Eureka or enter a new era.  Holy Sites do not fill a District slot and its buildings grant half their [ICON_FAITH] Faith yield in [ICON_SCIENCE] Science.</Text>
-
+			<Text>Gain [ICON_GREATSCIENTIST] Great Scientist points every time you gain a [ICON_TECHBOOSTED] Eureka or enter a new era.  Holy Sites do not fill a District slot and its buildings grant half their [ICON_FAITH] Faith yield in [ICON_SCIENCE] Science.</Text>
 		</Row>
-
 		<!--Citizens-->
-
-
 		-<Row Language="en_US" Tag="LOC_CITIZEN_RELIC_ENIG_MAYA_MALE_1">
-
 			<Text>Ajbit</Text>
-
 		</Row>
-
-
 		-<Row Language="en_US" Tag="LOC_CITIZEN_RELIC_ENIG_MAYA_MALE_2">
-
 			<Text>Ajtzak</Text>
-
 		</Row>
-
-
 		-<Row Language="en_US" Tag="LOC_CITIZEN_RELIC_ENIG_MAYA_MALE_3">
-
 			<Text>Alom</Text>
-
 		</Row>
-
-
 		-<Row Language="en_US" Tag="LOC_CITIZEN_RELIC_ENIG_MAYA_MALE_4">
-
 			<Text>Bahlam</Text>
-
 		</Row>
-
-
 		-<Row Language="en_US" Tag="LOC_CITIZEN_RELIC_ENIG_MAYA_MALE_5">
-
 			<Text>Chaac</Text>
-
 		</Row>
-
-
 		-<Row Language="en_US" Tag="LOC_CITIZEN_RELIC_ENIG_MAYA_MALE_6">
-
 			<Text>Coyopa</Text>
-
 		</Row>
-
-
 		-<Row Language="en_US" Tag="LOC_CITIZEN_RELIC_ENIG_MAYA_MALE_7">
-
 			<Text>Hobnil</Text>
-
 		</Row>
-
-
 		-<Row Language="en_US" Tag="LOC_CITIZEN_RELIC_ENIG_MAYA_MALE_8">
-
 			<Text>Hun-Ixim</Text>
-
 		</Row>
-
-
 		-<Row Language="en_US" Tag="LOC_CITIZEN_RELIC_ENIG_MAYA_MALE_9">
-
 			<Text>Itzamna</Text>
-
 		</Row>
-
-
 		-<Row Language="en_US" Tag="LOC_CITIZEN_RELIC_ENIG_MAYA_MODERN_MALE_1">
-
 			<Text>Jacawitz</Text>
-
 		</Row>
-
-
 		-<Row Language="en_US" Tag="LOC_CITIZEN_RELIC_ENIG_MAYA_MODERN_MALE_2">
-
 			<Text>Kisin</Text>
-
 		</Row>
-
-
 		-<Row Language="en_US" Tag="LOC_CITIZEN_RELIC_ENIG_MAYA_MODERN_MALE_3">
-
 			<Text>Nohochacyum</Text>
-
 		</Row>
-
-
 		-<Row Language="en_US" Tag="LOC_CITIZEN_RELIC_ENIG_MAYA_MODERN_MALE_4">
-
 			<Text>Maximon</Text>
-
 		</Row>
-
-
 		-<Row Language="en_US" Tag="LOC_CITIZEN_RELIC_ENIG_MAYA_MODERN_MALE_5">
-
 			<Text>Qaholom</Text>
-
 		</Row>
-
-
 		-<Row Language="en_US" Tag="LOC_CITIZEN_RELIC_ENIG_MAYA_MODERN_MALE_6">
-
 			<Text>Sip</Text>
-
 		</Row>
-
-
 		-<Row Language="en_US" Tag="LOC_CITIZEN_RELIC_ENIG_MAYA_MODERN_MALE_7">
-
 			<Text>Tepeu</Text>
-
 		</Row>
-
-
 		-<Row Language="en_US" Tag="LOC_CITIZEN_RELIC_ENIG_MAYA_MODERN_MALE_8">
-
 			<Text>Vatanchu</Text>
-
 		</Row>
-
-
 		-<Row Language="en_US" Tag="LOC_CITIZEN_RELIC_ENIG_MAYA_MODERN_MALE_9">
-
 			<Text>Xaman Ek</Text>
-
 		</Row>
-
-
 		-<Row Language="en_US" Tag="LOC_CITIZEN_RELIC_ENIG_MAYA_MODERN_MALE_10">
-
 			<Text>Xcarruchan</Text>
-
 		</Row>
-
-
 		-<Row Language="en_US" Tag="LOC_CITIZEN_RELIC_ENIG_MAYA_FEMALE_1">
-
 			<Text>Xquic</Text>
-
 		</Row>
-
-
 		-<Row Language="en_US" Tag="LOC_CITIZEN_RELIC_ENIG_MAYA_FEMALE_2">
-
 			<Text>Zipacna</Text>
-
 		</Row>
-
-
 		-<Row Language="en_US" Tag="LOC_CITIZEN_RELIC_ENIG_MAYA_FEMALE_3">
-
 			<Text>Akhushtal</Text>
-
 		</Row>
-
-
 		-<Row Language="en_US" Tag="LOC_CITIZEN_RELIC_ENIG_MAYA_FEMALE_4">
-
 			<Text>Akna</Text>
-
 		</Row>
-
-
 		-<Row Language="en_US" Tag="LOC_CITIZEN_RELIC_ENIG_MAYA_FEMALE_5">
-
 			<Text>Chimalmat</Text>
-
 		</Row>
-
-
 		-<Row Language="en_US" Tag="LOC_CITIZEN_RELIC_ENIG_MAYA_FEMALE_6">
-
 			<Text>Ixmucane</Text>
-
 		</Row>
-
-
 		-<Row Language="en_US" Tag="LOC_CITIZEN_RELIC_ENIG_MAYA_FEMALE_7">
-
 			<Text>Ixtab</Text>
-
 		</Row>
-
-
 		-<Row Language="en_US" Tag="LOC_CITIZEN_RELIC_ENIG_MAYA_FEMALE_8">
-
 			<Text>Tohil</Text>
-
 		</Row>
-
-
 		-<Row Language="en_US" Tag="LOC_CITIZEN_RELIC_ENIG_MAYA_FEMALE_9">
-
 			<Text>Votan</Text>
-
 		</Row>
-
-
 		-<Row Language="en_US" Tag="LOC_CITIZEN_RELIC_ENIG_MAYA_FEMALE_10">
-
 			<Text>Aroha</Text>
-
 		</Row>
-
-
 		-<Row Language="en_US" Tag="LOC_CITIZEN_RELIC_ENIG_MAYA_MODERN_FEMALE_1">
-
 			<Text>Xquic</Text>
-
 		</Row>
-
-
 		-<Row Language="en_US" Tag="LOC_CITIZEN_RELIC_ENIG_MAYA_MODERN_FEMALE_2">
-
 			<Text>Zipacna</Text>
-
 		</Row>
-
-
 		-<Row Language="en_US" Tag="LOC_CITIZEN_RELIC_ENIG_MAYA_MODERN_FEMALE_3">
-
 			<Text>Akhushtal</Text>
-
 		</Row>
-
-
 		-<Row Language="en_US" Tag="LOC_CITIZEN_RELIC_ENIG_MAYA_MODERN_FEMALE_4">
-
 			<Text>Akna</Text>
-
 		</Row>
-
-
 		-<Row Language="en_US" Tag="LOC_CITIZEN_RELIC_ENIG_MAYA_MODERN_FEMALE_5">
-
 			<Text>Chimalmat</Text>
-
 		</Row>
-
-
 		-<Row Language="en_US" Tag="LOC_CITIZEN_RELIC_ENIG_MAYA_MODERN_FEMALE_6">
-
 			<Text>Ixmucane</Text>
-
 		</Row>
-
-
 		-<Row Language="en_US" Tag="LOC_CITIZEN_RELIC_ENIG_MAYA_MODERN_FEMALE_7">
-
 			<Text>Ixtab</Text>
-
 		</Row>
-
-
 		-<Row Language="en_US" Tag="LOC_CITIZEN_RELIC_ENIG_MAYA_MODERN_FEMALE_8">
-
 			<Text>Tohil</Text>
-
 		</Row>
-
-
 		-<Row Language="en_US" Tag="LOC_CITIZEN_RELIC_ENIG_MAYA_MODERN_FEMALE_9">
-
 			<Text>Votan</Text>
-
 		</Row>
-
-
 		-<Row Language="en_US" Tag="LOC_CITIZEN_RELIC_ENIG_MAYA_MODERN_FEMALE_10">
-
 			<Text>Xcarruchan</Text>
-
 		</Row>
-
-		<!--TAUA-->
-
-
-
+		<!--Cities-->
+		-<Row Language="en_US" Tag="LOC_CITY_NAME_MAYA_PALENQUE">
+			<Text>Palenque</Text>
+		</Row>
+		-<Row Language="en_US" Tag="LOC_CITY_NAME_MAYA_COPAN">
+			<Text>Copan</Text>
+		</Row>
+		-<Row Language="en_US" Tag="LOC_CITY_NAME_MAYA_TIKAL">
+			<Text>Tikal</Text>
+		</Row>
+		-<Row Language="en_US" Tag="LOC_CITY_NAME_MAYA_QUMARKAJ">
+			<Text>Q'umarkaj</Text>
+		</Row>
+		-<Row Language="en_US" Tag="LOC_CITY_NAME_MAYA_CHICHEN_ITZA">
+			<Text>Chichen Itza</Text>
+		</Row>
+		-<Row Language="en_US" Tag="LOC_CITY_NAME_MAYA_MAYAPAN">
+			<Text>Mayapan</Text>
+		</Row>
+		-<Row Language="en_US" Tag="LOC_CITY_NAME_MAYA_IXIMCHE">
+			<Text>Iximche</Text>
+		</Row>
+		-<Row Language="en_US" Tag="LOC_CITY_NAME_MAYA_CALAKMUL">
+			<Text>Calakmul</Text>
+		</Row>
+		-<Row Language="en_US" Tag="LOC_CITY_NAME_MAYA_YOKIB">
+			<Text>Yo'k'ib</Text>
+		</Row>
+		-<Row Language="en_US" Tag="LOC_CITY_NAME_MAYA_TULUUM">
+			<Text>Tulu'm</Text>
+		</Row>
+		-<Row Language="en_US" Tag="LOC_CITY_NAME_MAYA_YAXCHILAN">
+			<Text>Yaxchilan</Text>
+		</Row>
+		-<Row Language="en_US" Tag="LOC_CITY_NAME_MAYA_OXMAL">
+			<Text>Oxmal</Text>
+		</Row>
+		-<Row Language="en_US" Tag="LOC_CITY_NAME_MAYA_DZIBILCHALTUN">
+			<Text>Dzibilchaltun</Text>
+		</Row>
+		-<Row Language="en_US" Tag="LOC_CITY_NAME_MAYA_CHEN_CHUN_CHUKUM">
+			<Text>Ch'en Chun Chukum</Text>
+		</Row>
+		-<Row Language="en_US" Tag="LOC_CITY_NAME_MAYA_KAMINALJUYU">
+			<Text>Kaminaljuyu</Text>
+		</Row>
+		-<Row Language="en_US" Tag="LOC_CITY_NAME_MAYA_KAN">
+			<Text>Kan</Text>
+		</Row>
+		-<Row Language="en_US" Tag="LOC_CITY_NAME_MAYA_NAKBE">
+			<Text>Nakbe</Text>
+		</Row>
+		-<Row Language="en_US" Tag="LOC_CITY_NAME_MAYA_QUIRIGUA">
+			<Text>Quirigua</Text>
+		</Row>
+		-<Row Language="en_US" Tag="LOC_CITY_NAME_MAYA_BEKAN">
+			<Text>Bekan</Text>
+		</Row>
+		-<Row Language="en_US" Tag="LOC_CITY_NAME_MAYA_YAXHA">
+			<Text>Yaxha</Text>
+		</Row>
+		-<Row Language="en_US" Tag="LOC_CITY_NAME_MAYA_OXWITZA">
+			<Text>Oxwitza</Text>
+		</Row>
+		-<Row Language="en_US" Tag="LOC_CITY_NAME_MAYA_KOBA">
+			<Text>Koba</Text>
+		</Row>
+		-<Row Language="en_US" Tag="LOC_CITY_NAME_MAYA_SAAAL">
+			<Text>Sa'aal</Text>
+		</Row>
+		-<Row Language="en_US" Tag="LOC_CITY_NAME_MAYA_IXKUN">
+			<Text>Ixkun</Text>
+		</Row>
+		-<Row Language="en_US" Tag="LOC_CITY_NAME_MAYA_WAKA">
+			<Text>Waka</Text>
+		</Row>
+		-<Row Language="en_US" Tag="LOC_CITY_NAME_MAYA_OXKINTOK">
+			<Text>Oxkintok</Text>
+		</Row>
+		-<Row Language="en_US" Tag="LOC_CITY_NAME_MAYA_CEIBAL">
+			<Text>Ceibal</Text>
+		</Row>
+		-<Row Language="en_US" Tag="LOC_CITY_NAME_MAYA_NAACHTUN">
+			<Text>Naachtun</Text>
+		</Row>
+		<!--HADZAB-->
 		-<Row Language="en_US" Tag="LOC_UNIT_RELIC_ENIG_MACUAHUITL_NAME">
-
 			<Text>Hadzab</Text>
-
 		</Row>
-
-
 		-<Row Language="en_US" Tag="LOC_UNIT_RELIC_ENIG_MACUAHUITL_DESCRIPTION">
-
-			<Text>Mayan unique unit which replaces the Swordsman.  It requires no iron and is cheaper to produce.  Grants science from combat in friendly territory and faith from combat in enemy territory.</Text>
-
+			<Text>Mayan unique unit which replaces the Swordsman.  It requires no iron and is cheaper to produce.  Grants [ICON_SCIENCE] Science from kills in friendly territory and [ICON_FAITH] Faith from kills in enemy territory.</Text>
 		</Row>
-
-
 		-<Row Language="en_US" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_RELIC_ENIG_MACUAHUITL_CHAPTER_HISTORY_PARA_1">
-
 			<Text>The hadzab, a type of macana, was a common weapon used by the Mayan military forces and other cultures of central Mexico, that was noted during the 16th-century Spanish conquest of the region.  They also used other implements such as the round shield, the bow, and the spear-thrower.  It was the only "Sword" with ceramic material in its edges, only comparable with the modern ceramic knife.  It was capable of inflicting serious lacerations from the rows of obsidian blades embedded in its sides, which could be knapped into blades or spikes, or in a circular fashion that looked like "Scales" It is sometimes referred to as a sword or club, but it lacks a true European equivalent, perhaps it is best described as a baton with a cutting edge.  According to one source, the hadzab was 3 to 4 feet long, and three inches in diameter, with a groove along either edge, into which sharp-edged pieces of flint or obsidian were inserted, and firmly fixed with an adhesive.  The rows of obsidian blades were sometimes discontinuous, leaving gaps along the side, while at other times the rows were set close together and formed a single edge.  It was noted by the Spanish that the habzab was so cleverly constructed that the blades could be neither pulled out nor broken.  The hadzab was made with either one-handed or two-handed grips, as well as in rectangular, ovoid, or pointed forms.  The two-handed hadzab has been described "As tall as a man".</Text>
-
 		</Row>
-
-
 		-<Row Language="en_US" Tag="LOC_ABILITY_RELIC_ENIG_MACUAHUITL_NAME">
-
 			<Text>Sacrifices of Kulkulkan</Text>
-
 		</Row>
-
-
 		-<Row Language="en_US" Tag="LOC_ABILITY_RELIC_ENIG_MACUAHUITL_DESCRIPTION">
-
-			<Text>Grants science from combat in friendly territory and fatih from combat in enemy territory.</Text>
-
+			<Text>Grants science from kills in friendly territory and fatih from kills in enemy territory.</Text>
 		</Row>
-
-		<!--PA-->
-
-
-
+		<!--ILB'EEB'-->
 		-<Row Language="en_US" Tag="LOC_DISTRICT_RELIC_ENIG_CARACOL_NAME">
-
-			<Text>Ilb'eeb'</Text>
-
+			<Text>Kuuchil Ah Ek</Text>
 		</Row>
-
-
 		-<Row Language="en_US" Tag="LOC_DISTRICT_RELIC_ENIG_CARACOL_DESCRIPTION">
-
-			<Text>A district unique to the Maya for science and faith. Replaces the Campus.[NEWLINE][NEWLINE]Gains standard adjacency from Holy Sites and the City Center.  Buildings in it may be purchased with faith.</Text>
-
+			<Text>A district unique to the Maya for science and faith. Replaces the Campus.[NEWLINE][NEWLINE]Gains standard adjacency from Holy Sites and the City Center.  Buildings in it may be purchased with [ICON_FAITH] Faith.  Unlocks the Venus Observations unit project</Text>
 		</Row>
-
-
 		-<Row Language="en_US" Tag="LOC_PEDIA_DISTRICTS_PAGE_DISTRICT_RELIC_ENIG_CARACOL_CHAPTER_HISTORY_PARA_1">
-
 			<Text>The Maya made meticulous observations of celestial bodies, patiently recording astronomical data on the movements of the sun, moon, Venus, and the stars. This information was used for divination, so Maya astronomy was essentially for astrological purposes. Maya astronomy did not serve to study the universe for scientific reasons, nor was it used to measure the seasons in order to calculate crop planting. It was rather used by the priesthood to comprehend past cycles of time, and project them into the future to produce prophecy. The priesthood refined observations and recorded eclipses of the sun and moon, and movements of Venus and the stars; these were measured against dated events in the past, on the assumption that similar events would occur in the future when the same astronomical conditions prevailed. Illustrations in the codices show that priests made astronomical observations using the naked eye, assisted by crossed sticks as a sighting device. Analysis of the few remaining Postclassic codices has revealed that, at the time of European contact, the Maya had recorded eclipse tables, calendars, and astronomical knowledge that was more accurate at that time than comparable knowledge in Europe.  The Maya measured the 584-day Venus cycle with an error of just two hours. Five cycles of Venus equated to eight 365-day haab calendrical cycles, and this period was recorded in the codices. The Maya also followed the movements of Jupiter, Mars and Mercury. When Venus rose as the Morning Star, this was associated with the rebirth of the Maya Hero Twins. For the Maya, the heliacal rising of Venus was associated with destruction and upheaval. Venus was closely associated with warfare, and the hieroglyph meaning "war" incorporated the glyph-element symbolizing the planet. Sight-lines through the windows of the Caracol building at Chichen Itza align with the northernmost and southernmost extremes of Venus' path. Maya rulers launched military campaigns to coincide with the heliacal or cosmical rising of Venus, and would also sacrifice important captives to coincide with such conjunctions.  Solar and lunar eclipses were considered to be especially dangerous events that could bring catastrophe upon the world. In the Dresden Codex, a solar eclipse is represented by a serpent devouring the k'in ("day") hieroglyph. Eclipses were interpreted as the sun or moon being bitten, and lunar tables were recorded in order that the Maya might be able to predict them, and perform the appropriate ceremonies to ward off disaster.</Text>
-
 		</Row>
-
-
 		-<Row Language="en_US" Tag="LOC_DISTRICT_RELIC_ENIG_CARACOL_HOLY_SITE">
-
 			<Text>+{1_num} [ICON_SCIENCE] Science from the adjacent Holy Site.</Text>
-
 		</Row>
-
-
 		-<Row Language="en_US" Tag="LOC_DISTRICT_RELIC_ENIG_CARACOL_CITY_CENTER">
-
 			<Text>+{1_num} [ICON_SCIENCE] Science from the adjacent City Center.</Text>
-
 		</Row>
-	
-	
 		-<Row Language="en_US" Tag="LOC_PROJECT_RELIC_ENIG_VENUS_NAME">
-
 			<Text>Venus Observations</Text>
-
 		</Row>
-
-
 		-<Row Language="en_US" Tag="LOC_PROJECT_RELIC_ENIG_VENUS_SHORT_NAME">
-
 			<Text>Venus Observations</Text>
-
 		</Row>
-
-
-		-<Row Language="en_US" Tag="LOC_PROJECT_JFD_ROYAL_TOUR_DESCRIPTION">
-
-			<Text>Mayan Ilb'eeb' district unique project.  Provides [ICON_GREATPROPHET] Great Prophet points, [ICON_FAITH[ Faith, and a Eureka when completed.</Text>
-
+		-<Row Language="en_US" Tag="LOC_PROJECT_RELIC_ENIG_VENUS_DESCRIPTION">
+			<Text>Mayan Kuuchil Ah Ek district unique project.  Provides [ICON_GREATPROPHET] Great Prophet points, [ICON_FAITH] Faith, and a Eureka when completed.</Text>
 		</Row>
-	
 		<!--MINOR CIVS-->
-
-
-
 		-<Replace Language="en_US" Tag="LOC_CIVILIZATION_PALENQUE_NAME">
-
 			<Text>Caral</Text>
-
 		</Replace>
-
-
+		-<Replace Language="en_US" Tag="LOC_CITY_NAME_PALENQUE">
+			<Text>Caral</Text>
+		</Replace>
 		-<Replace Language="en_US" Tag="LOC_CIVILIZATION_PALENQUE_DESCRIPTION">
-
 			<Text>Caral city-state</Text>
-
 		</Replace>
-
-
 		-<Replace Language="en_US" Tag="LOC_CIVILIZATION_PALENQUE_ADJECTIVE">
-
 			<Text>Caral</Text>
-
-		<Gender>Masculine:an</Gender>
-
+			<Gender>Masculine:an</Gender>
 		</Replace>
-
-
 		-<Replace Language="en_US" Tag="LOC_LEADER_TRAIT_PALENQUE_NAME">
-
 			<Text>Caral Suzerain Bonus</Text>
-
 		</Replace>
-
-
 		-<Replace Language="en_US" Tag="LOC_PEDIA_CITYSTATES_PAGE_CIVILIZATION_PALENQUE_CHAPTER_HISTORY_PARA_1">
-
 			<Text>Caral was inhabited roughly between the 26th and 20th centuries BCE, enclosing an area of more than 60 hectares (150 acres). Caral was described by its excavators as the oldest urban centre in the Americas, a claim that was later challenged as other ancient sites were found nearby, such as Bandurria, Peru. Accommodating more than 3,000 inhabitants, it is the best studied and one of the largest Norte Chico sites known.</Text>
-
 		</Replace>
-
-
 		-<Replace Language="en_US" Tag="LOC_PEDIA_CITYSTATES_PAGE_CIVILIZATION_PALENQUE_CHAPTER_HISTORY_PARA_2">
-
 			<Text>Paul Kosok discovered Caral in 1948, but it received little attention at the time because it appeared to lack many typical artefacts that were sought at archaeological sites throughout the Andes at the time. In 1975, the Peruvian architect Carlos Williams made a detailed record of most of the archaeological sites of the valley of Supe, among which he recorded Caral, from which he made some observations about the development of architecture in the Andes. Ruth Shady further explored the 4,000- to 4,600-year-old city of temples in the Peruvian desert, with its elaborate complex of temples, an amphitheatre and ordinary houses. The urban complex is spread out over 150 acres (607,000 m²) and contains plazas and residential buildings. Caral was a thriving metropolis at roughly the same time that Egypt's great pyramids were being built.</Text>
-
 		</Replace>
-
-
 		-<Replace Language="en_US" Tag="LOC_PEDIA_CITYSTATES_PAGE_CIVILIZATION_PALENQUE_CHAPTER_HISTORY_PARA_3">
-
 			<Text>Among the artefacts found at Caral are a knotted textile piece that the excavators have labelled a quipu. They argue that the artefact is evidence that the quipu record keeping system, a method involving knots tied in rope that was brought to perfection by the Inca Empire, was older than any archaeologist had previously guessed. Evidence has emerged that the quipu may also have recorded logographic information in the same way writing does. Gary Urton has suggested that the quipus used a binary system which could record phonological or logographic data.</Text>
-
 		</Replace>
-	
 		<!--MOD SUPPORT-->
-
-
 		<!--JFD Rule with Faith-->
-
-
-
 		-<Row Language="en_US" Tag="LOC_GOVERNMENT_JFD_CHIEFDOM_LEADER_TITLE_RELIC_ENIG_MAYA">
-
 			<Text>Sajal</Text>
-
 		</Row>
-
-
 		-<Row Language="en_US" Tag="LOC_GOVERNMENT_JFD_CHIEFDOM_LEADER_TITLE_RELIC_ENIG_MAYA_FEMININE">
-
 			<Text>Ix Sajal</Text>
-
 		</Row>
-
-
 		-<Row Language="en_US" Tag="LOC_GOVERNMENT_JFD_HORDE_LEADER_TITLE_RELIC_ENIG_MAYA">
-
 			<Text>B'akab'</Text>
-
 		</Row>
-
-
 		-<Row Language="en_US" Tag="LOC_GOVERNMENT_JFD_HORDE_LEADER_TITLE_RELIC_ENIG_MAYA_FEMININE">
-
 			<Text>Ix B'akab'</Text>
-
 		</Row>
-
-
 		-<Row Language="en_US" Tag="LOC_GOVERNMENT_JFD_POLIS_LEADER_TITLE_RELIC_ENIG_MAYA">
-
 			<Text>Sajal</Text>
-
 		</Row>
-
-
 		-<Row Language="en_US" Tag="LOC_GOVERNMENT_JFD_POLIS_LEADER_TITLE_RELIC_ENIG_MAYA_FEMININE">
-
 			<Text>Ix Sajal</Text>
-
 		</Row>
-
-
 		-<Row Language="en_US" Tag="LOC_GOVERNMENT_JFD_AUTOCRACY_LEADER_TITLE_RELIC_ENIG_MAYA">
-
 			<Text>B'akab'</Text>
-
 		</Row>
-
-
 		-<Row Language="en_US" Tag="LOC_GOVERNMENT_JFD_AUTOCRACY_LEADER_TITLE_RELIC_ENIG_MAYA_FEMININE">
-
 			<Text>Ix B'akab'</Text>
-
 		</Row>
-
-
 		-<Row Language="en_US" Tag="LOC_GOVERNMENT_JFD_CLASSICAL_DEMOCRACY_LEADER_TITLE_RELIC_ENIG_MAYA">
-
 			<Text>K'inich</Text>
-
 		</Row>
-
-
 		-<Row Language="en_US" Tag="LOC_GOVERNMENT_JFD_CLASSICAL_DEMOCRACY_LEADER_TITLE_RELIC_ENIG_MAYA_FEMININE">
-
 			<Text>Ix K'inich</Text>
-
 		</Row>
-
-
 		-<Row Language="en_US" Tag="LOC_GOVERNMENT_JFD_OLIGARCHY_LEADER_TITLE_RELIC_ENIG_MAYA">
-
 			<Text>Ajaw</Text>
-
 		</Row>
-
-
 		-<Row Language="en_US" Tag="LOC_GOVERNMENT_JFD_OLIGARCHY_LEADER_TITLE_RELIC_ENIG_MAYA_FEMININE">
-
 			<Text>Ix Ajaw</Text>
-
 		</Row>
-
-
 		-<Row Language="en_US" Tag="LOC_GOVERNMENT_JFD_MERCHANT_REPUBLIC_LEADER_TITLE_RELIC_ENIG_MAYA">
-
 			<Text>K'inich</Text>
-
 		</Row>
-
-
 		-<Row Language="en_US" Tag="LOC_GOVERNMENT_JFD_MERCHANT_REPUBLIC_LEADER_TITLE_RELIC_ENIG_MAYA_FEMININE">
-
 			<Text>Ix K'inich</Text>
-
 		</Row>
-
-
 		-<Row Language="en_US" Tag="LOC_GOVERNMENT_JFD_MONARCHY_LEADER_TITLE_RELIC_ENIG_MAYA">
-
 			<Text>Ajaw</Text>
-
 		</Row>
-
-
 		-<Row Language="en_US" Tag="LOC_GOVERNMENT_JFD_MONARCHY_LEADER_TITLE_RELIC_ENIG_MAYA_FEMININE">
-
 			<Text>Ix Ajaw</Text>
-
 		</Row>
-
-
 		-<Row Language="en_US" Tag="LOC_GOVERNMENT_JFD_NOBLE_REPUBLIC_LEADER_TITLE_RELIC_ENIG_MAYA">
-
 			<Text>Sajal</Text>
-
 		</Row>
-
-
 		-<Row Language="en_US" Tag="LOC_GOVERNMENT_JFD_NOBLE_REPUBLIC_LEADER_TITLE_RELIC_ENIG_MAYA_FEMININE">
-
 			<Text>Ix Sajal</Text>
-
 		</Row>
-
-
 		-<Row Language="en_US" Tag="LOC_GOVERNMENT_JFD_PEOPLES_REPUBLIC_LEADER_TITLE_RELIC_ENIG_MAYA">
-
 			<Text>K'inich</Text>
-
 		</Row>
-
-
 		-<Row Language="en_US" Tag="LOC_GOVERNMENT_JFD_PEOPLES_REPUBLIC_LEADER_TITLE_RELIC_ENIG_MAYA_FEMININE">
-
 			<Text>Ix K'inich</Text>
-
 		</Row>
-
-
 		-<Row Language="en_US" Tag="LOC_GOVERNMENT_JFD_LIBERAL_DEMOCRACY_LEADER_TITLE_RELIC_ENIG_MAYA">
-
 			<Text>K'inich</Text>
-
 		</Row>
-
-
 		-<Row Language="en_US" Tag="LOC_GOVERNMENT_JFD_LIBERAL_DEMOCRACY_LEADER_TITLE_RELIC_ENIG_MAYA_FEMININE">
-
 			<Text>Ix K'inich</Text>
-
 		</Row>
-
-
 		-<Row Language="en_US" Tag="LOC_GOVERNMENT_JFD_MILITARY_GUARDIANSHIP_LEADER_TITLE_RELIC_ENIG_MAYA">
-
 			<Text>B'akab'</Text>
-
 		</Row>
-
-
 		-<Row Language="en_US" Tag="LOC_GOVERNMENT_JFD_MILITARY_GUARDIANSHIP_LEADER_TITLE_RELIC_ENIG_MAYA_FEMININE">
-
 			<Text>Ix B'akab'</Text>
-
 		</Row>
-
-
 		-<Row Language="en_US" Tag="LOC_GOVERNMENT_JFD_EMPIRE_LEADER_TITLE_RELIC_ENIG_MAYA">
-
 			<Text>Kalomte</Text>
-
 		</Row>
-
-
 		-<Row Language="en_US" Tag="LOC_GOVERNMENT_JFD_EMPIRE_LEADER_TITLE_RELIC_ENIG_MAYA_FEMININE">
-
 			<Text>Ix Kalomte</Text>
-
 		</Row>
-	
 	</LocalizedText>
-
 </GameData>

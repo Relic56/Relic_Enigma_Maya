@@ -190,21 +190,7 @@ VALUES	('RELIC_ENIG_AJAW_TIKAL_PRODUCTION_REQ_SET',			'REQUIREMENTSET_TEST_ALL')
 INSERT INTO RequirementSetRequirements
 		(RequirementSetId,										RequirementId)
 VALUES	('RELIC_ENIG_AJAW_TIKAL_PRODUCTION_REQ_SET',				'RELIC_ENIG_AJAW_TIKAL_PRODUCTION_REQ');	
---==========================================================================================================================
--- LEADERS: COLOURS
---==========================================================================================================================
--- PlayerColors
---------------------------------------------------------------------------------------------------------------------------
-INSERT INTO PlayerColors
-(Type,							Usage,				PrimaryColor, 									SecondaryColor,									 TextColor)
-VALUES ('LEADER_RELIC_ENIG_YAXCHIN',		'Unique',			'COLOR_PLAYER_RELIC_ENIG_MAYA_YAXCHIN_PRIMARY',	'COLOR_PLAYER_RELIC_ENIG_MAYA_YAXCHIN_SECONDARY', 	 'COLOR_PLAYER_WHITE_TEXT');
---------------------------------------------------------------------------------------------------------------------------
--- Colors
---------------------------------------------------------------------------------------------------------------------------
-INSERT INTO Colors
-(Type, 															Red, 	Green, 	Blue, 	Alpha)
-VALUES	('COLOR_PLAYER_RELIC_ENIG_MAYA_YAXCHIN_PRIMARY', 		0,	0.266,		0,		1),
-		('COLOR_PLAYER_RELIC_ENIG_MAYA_YAXCHIN_SECONDARY',	 	0.433,	0.726,	0.402,	1);
+
 --==========================================================================================================================
 -- LEADERS: LOADING INFO
 --==========================================================================================================================
@@ -234,6 +220,6 @@ VALUES	('TRAIT_LEADER_RELIC_ENIG_DARK_SKY',					'LOC_TRAIT_LEADER_RELIC_ENIG_DAR
 ----------------------------------------------------------------------------------------------------------------------------
 INSERT INTO CivilizationLeaders
 (CivilizationType,			LeaderType,					CapitalName)
-VALUES	('CIVILIZATION_RELIC_ENIG_MAYA',	'LEADER_RELIC_ENIG_YAXCHIN',	'LOC_CITY_NAME_RELIC_ENIG_TIKAL');
+VALUES	('CIVILIZATION_RELIC_ENIG_MAYA',	'LEADER_RELIC_ENIG_YAXCHIN',	'LOC_CITY_NAME_MAYA_TIKAL');
 --==========================================================================================================================
 --==========================================================================================================================

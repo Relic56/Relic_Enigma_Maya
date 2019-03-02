@@ -5,11 +5,17 @@
 ----------------------------------------------------------------------------------------------------------------------------
 CREATE TABLE IF NOT EXISTS StartPosition (MapName TEXT, Civilization TEXT, Leader TEXT, X INT default 0, Y INT default 0);
 INSERT INTO StartPosition
-	(Civilization,				Leader,				MapName,		X,	Y)
-VALUES	('CIVILIZATION_RELIC_ENIG_MAYA',	'LEADER_RELIC_ENIG_PAKAL',	'GiantEarth',		22,	71),
-	('CIVILIZATION_RELIC_ENIG_MAYA',	'LEADER_RELIC_ENIG_PAKAL',	'GreatestEarthMap',	51,	53),
-	('CIVILIZATION_RELIC_ENIG_MAYA',	'LEADER_RELIC_ENIG_YAXKIN',	'GiantEarth',		47,	58),
-	('CIVILIZATION_RELIC_ENIG_MAYA',	'LEADER_RELIC_ENIG_YAXKIN',	'GreatestEarthMap',	39,	97);
+		(Civilization,						Leader,						MapName,			X,	Y)
+VALUES	('CIVILIZATION_RELIC_ENIG_MAYA',	'LEADER_RELIC_ENIG_PAKAL',	'GiantEarth',		144,47),
+		('CIVILIZATION_RELIC_ENIG_MAYA',	'LEADER_RELIC_ENIG_PAKAL',	'GreatestEarthMap',	16,	32),
+		('CIVILIZATION_RELIC_ENIG_MAYA',	'LEADER_RELIC_ENIG_YAXKIN',	'GiantEarth',		145,47),
+		('CIVILIZATION_RELIC_ENIG_MAYA',	'LEADER_RELIC_ENIG_YAXKIN',	'GreatestEarthMap',	17,	32);
+
+UPDATE StartPosition SET X = 151, Y = 27
+WHERE Civilization = 'CIVILIZATION_PALENQUE' AND MapName = 'GiantEarth';
+
+UPDATE StartPosition SET X = 22, Y = 16
+WHERE Civilization = 'CIVILIZATION_PALENQUE' AND MapName = 'GreatestEarthMap';
 --==========================================================================================================================
 -- JFD RULE WITH FAITH
 --==========================================================================================================================

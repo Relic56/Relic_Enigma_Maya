@@ -1,538 +1,217 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by Ed Beach (Firaxis Games) -->
-
 <GameData>
-
-
 	-<LocalizedText>
-
 		<!--LEADER-->
-
-
-
 		-<Row Language="en_US" Tag="LOC_LEADER_RELIC_ENIG_PAKAL_NAME">
-
 			<Text>Pakal</Text>
-
 		</Row>
-
-
-			<!--Agenda-->
-
-
-
-			-<Row Language="en_US" Tag="LOC_AGENDA_RELIC_ENIG_SUN_SHIELD_NAME">
-
-				<Text>Sun Shield</Text>
-
-			</Row>
-
-
-			-<Row Language="en_US" Tag="LOC_AGENDA_RELIC_ENIG_SUN_SHIELD_DESCRIPTION">
-
-				<Text>Likes those who have high science outputs.  Dislikes those who pose a military threat to him or construct many wonders.</Text>
-
-			</Row>
-
-
-			-<Row Language="en_US" Tag="LOC_DIPLO_KUDO_LEADER_RELIC_ENIG_SUN_SHIELD_REASON_WONDER_WHORE">
-
-				<Text>(You have numerous Wonders.)</Text>
-
-			</Row>
-
-
-			-<Row Language="en_US" Tag="LOC_DIPLO_MODIFIER_AGENDA_RELIC_ENIG_SUN_SHIELD_WONDER_WHORE">
-
-				<Text>Pacal resents that you have built so many Wonders.</Text>
-
-			</Row>
-	
-	
-			-<Row Language="en_US" Tag="LOC_DIPLO_KUDO_LEADER_RELIC_ENIG_SUN_SHIELD_REASON_SCIENCE_LEADER">
-
-				<Text>(You have a high scientific output.)</Text>
-
-			</Row>
-
-
-			-<Row Language="en_US" Tag="LOC_DIPLO_MODIFIER_AGENDA_RELIC_ENIG_SUN_SHIELD_SCIENCE_LEADER">
-
-				<Text>Pacal applauds your advanced sciences.</Text>
-
-			</Row>
-
-	
-				-<Row Language="en_US" Tag="LOC_DIPLO_WARNING_LEADER_RELIC_ENIG_SUN_SHIELD_REASON_HIGH_MILITARY">
-
-				<Text>(You focus on military efforts.)</Text>
-
-			</Row>
-
-
-			-<Row Language="en_US" Tag="LOC_DIPLO_MODIFIER_AGENDA_RELIC_ENIG_SUN_SHIELD_HIGH_MILITARY">
-
-				<Text>Pacal is alarmed by your military strength.</Text>
-
-			</Row>
-	
-	
-			<!--DOM-->
-
-
-
-			-<Row Language="en_US" Tag="LOC_LOADING_INFO_LEADER_RELIC_ENIG_PAKAL">
-
-				<Text>Your coming has been prophesized, K'inich Janaab Pakal, and you shall be the Shield of the Sun and the right hand of Itzamna! Though this land is a chaotic one, and the cities quarrel and clash around you, you are still born for greatness. Have your astronomers watch Venus to keep your calendar rounds and tell when it is most auspicious to build your wondrous temples and white skin palaces. Prepare yourself, Ajaw Pakal, because it is your destiny to shine like a star.</Text>
-
-			</Row>
-
-			<!--Traits-->
-
-
-
-			-<Row Language="en_US" Tag="LOC_TRAIT_LEADER_RELIC_ENIG_WHITE_SKIN_NAME">
-
-				<Text>White Skin House</Text>
-
-			</Row>
-
-
-			-<Row Language="en_US" Tag="LOC_TRAIT_LEADER_RELIC_ENIG_WHITE_SKIN_DESCRIPTION">
-
-				<Text>The Holy Site and Ilb'eeb' Districts grant additional Wonder production in their cities.  Cities with a Wonder gain additional growth, and Ilb'eebs and Holy Sites gain a standard adjacency bonus from Wonders.</Text>
-
-			</Row>
-
-			<!--Civilopedia-->
-
-
-
-			-<Row Language="en_US" Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_RELIC_ENIG_PAKAL_TITLE">
-
-				<Text>Pakal</Text>
-
-			</Row>
-
-
-			-<Row Language="en_US" Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_RELIC_ENIG_PAKAL_SUBTITLE">
-
-				<Text>Ajaw of Palenque</Text>
-
-			</Row>
-
-
-			-<Row Language="en_US" Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_RELIC_ENIG_PAKAL_QUOTE">
-
-				<Text>Aliens.</Text>
-
-			</Row>
-
-
-			-<Row Language="en_US" Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_RELIC_ENIG_PAKAL_CHAPTER_HISTORY_PARA_1">
-
-				<Text>K'inich Janaab Pakal I, also known as Pacal, Pacal the Great, 8 Ahau and Sun Shield, (March, 603 - August, 683) was ajaw of the Maya city-state of Palenque in the Late Classic period of pre-Columbian Mesoamerican chronology. He acceded to the throne in July 615 and ruled until his death. During a reign of 68 years, the longest known regnal period in the history of the Americas, the 30th longest worldwide and longest until Frederick III in the 15th century, Pakal was responsible for the construction or extension of some of Palenque's most notable surviving inscriptions and monumental architecture.</Text>
-
-			</Row>
-
-
-			-<Row Language="en_US" Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_RELIC_ENIG_PAKAL_CHAPTER_HISTORY_PARA_2">
-
-				<Text>Pakal ascended the throne at age 12 and lived to the age of 80.  He expanded Palenque's power in the western part of the Maya states and initiated a building program at his capital that produced some of Maya civilization's finest art and architecture.  In 626 Pakal married Ix Tz'akbu Ajaw who was born in Uxte'k'uh.  Tz'akbu Ajaw was a descendant of the Toktahn dynasty, the original dynasty of Palenque.  In 628, one of Pakal's officials, was captured by Piedras Negras.  Six days later Nuun Ujol Chaak, ajaw of Santa Elena, was captured and taken to Palenque.  Having been appointed ajaw at the age of twelve, Pakal's mother was a regent to him, over the years she slowly lost power.  In 659 Pakal captured six prisoners, One of them, Ahiin Chan Ahk, was from Pipa'.  In 663 another lord of Pipa' was killed by Pakal.  In 647 K'inich Janaab Pakal began his first construction project.  Of all Pakal's construction projects, perhaps the most accomplished is the Palace of Palenque.  The building was already in existence, but Pakal made it much larger than it was.  Pakal started his construction by adding monument rooms onto the old level of the building.  The monuments and text associated with K'inich Janaab Pakal I are: Oval Palace Tablet, Hieroglyphic Stairway, House C texts, Subterranean Thrones and Tableritos, Olvidado piers and sarcophagus texts.</Text></Row>
-
-
-
-			-<Row Language="en_US" Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_RELIC_ENIG_PAKAL_CHAPTER_CAPSULE_BODY">
-
-				<Text>Pacal's leadership allows the Mayans advanced science, deep faith, and great Wonders.</Text>
-
-			</Row>
-
-
-			-<Row Language="en_US" Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_RELIC_ENIG_PAKAL_CHAPTER_DETAILED_BODY">
-
-				<Text>Ilb'eeb' districts allow the Mayans to pursue both science and found a religion quickly, and Pacal's "White Skin House" ability allows them to additionally help in Wonder production. Wonder production, the Venus Observation Project, and both offense and defense with Hadabs will help make Pacal's Maya into a great scientific and religious power.</Text>
-
-			</Row>
-
-			<!--Diplomacy-->
-
-
-			<!--FIRST MEET-->
-
-
-			<!--First AI line-->
-
-
-
-			-<Row Language="en_US" Tag="LOC_DIPLO_FIRST_MEET_LEADER_RELIC_ENIG_PAKAL_ANY">
-
-				<Text>Ah, yes. My astronomers saw the portents of your arrival. The wonders of Palenque are open to you, traveller.</Text>
-
-			</Row>
-
-			<!--AI invitation to visit nearby City-->
-
-
-
-			-<Row Language="en_US" Tag="LOC_DIPLO_FIRST_MEET_VISIT_RECIPIENT_LEADER_RELIC_ENIG_PAKAL_ANY">
-
-				<Text>We have some impressive temples in a nearby city. I invite you to see them!</Text>
-
-			</Row>
-
-			<!--AI accepts Human invitation-->
-
-
-
-			-<Row Language="en_US" Tag="LOC_DIPLO_FIRST_MEET_NEAR_INITIATOR_POSITIVE_LEADER_RELIC_ENIG_PAKAL_ANY">
-
-				<Text>The Evening Star said that you'd agree, and it is always right.</Text>
-
-			</Row>
-
-			<!--AI invitation to exchange Capital Information-->
-
-
-
-			-<Row Language="en_US" Tag="LOC_DIPLO_FIRST_MEET_NO_MANS_INFO_EXCHANGE_LEADER_RELIC_ENIG_PAKAL_ANY">
-
-				<Text>You have seen my cities, but not yet the greatest of them. Let us remedy this! Come, see the Temples for the Triad of Palenque!</Text>
-
-			</Row>
-
-			<!--GREETINGS-->
-
-
-
-			-<Row Language="en_US" Tag="LOC_DIPLO_GREETING_LEADER_RELIC_ENIG_PAKAL_ANY">
-
-				<Text>I hope Xaman Ek was kind to you on your journey here.</Text>
-
-			</Row>
-
-			<!--DELEGATION-->
-
-
-			<!--AI Accepts-->
-
-
-
-			-<Row Language="en_US" Tag="LOC_DIPLO_ACCEPT_DELEGATION_FROM_HUMAN_LEADER_RELIC_ENIG_PAKAL_ANY">
-
-				<Text>Seems to be a wise arrangement. I agree.</Text>
-
-			</Row>
-
-			<!--AI Rejects-->
-
-
-
-			-<Row Language="en_US" Tag="LOC_DIPLO_REJECT_DELEGATION_FROM_HUMAN_LEADER_RELIC_ENIG_PAKAL_ANY">
-
-				<Text>No, no, I'm afraid the stars aren't fortuitous for it. My apologies.</Text>
-
-			</Row>
-
-			<!--AI Requests -->
-
-
-
-			-<Row Language="en_US" Tag="LOC_DIPLO_DELEGATION_FROM_AI_LEADER_RELIC_ENIG_PAKAL_ANY">
-
-				<Text>I've sent some of my astronomers to view the night sky from your lands and exchange our knowledge and sciences. Would you accept them?</Text>
-
-			</Row>
-
-			<!--OPEN BORDERS-->
-
-
-			<!--AI accepts from human-->
-
-
-
-			-<Row Language="en_US" Tag="LOC_DIPLO_ACCEPT_OPEN_BORDERS_FROM_HUMAN_LEADER_RELIC_ENIG_PAKAL_ANY">
-
-				<Text>Wisdom, yes.</Text>
-
-			</Row>
-
-			<!--AI rejects from human-->
-
-
-
-			-<Row Language="en_US" Tag="LOC_DIPLO_REJECT_OPEN_BORDERS_FROM_HUMAN_LEADER_RELIC_ENIG_PAKAL_ANY">
-
-				<Text>No, this is not what the portents say.</Text>
-
-			</Row>
-
-			<!--AI requests from human-->
-
-
-
-			-<Row Language="en_US" Tag="LOC_DIPLO_OPEN_BORDERS_FROM_AI_LEADER_RELIC_ENIG_PAKAL_ANY">
-
-				<Text>Opening our borders would allow for knowledge to flow more freely between us. Perhaps you'd consider it?</Text>
-
-			</Row>
-
-			<!--DECLARE FRIENDSHIP-->
-
-
-			<!--AI accepts from human-->
-
-
-
-			-<Row Language="en_US" Tag="LOC_DIPLO_ACCEPT_DECLARE_FRIEND_FROM_HUMAN_LEADER_RELIC_ENIG_PAKAL_ANY">
-
-				<Text>Finally, a friend in our quest for knowledge.</Text>
-
-			</Row>
-
-			<!--AI Rejects from human -->
-
-
-
-			-<Row Language="en_US" Tag="LOC_DIPLO_REJECT_DECLARE_FRIEND_FROM_HUMAN_LEADER_RELIC_ENIG_PAKAL_ANY">
-
-				<Text>I'm afraid not. Do not let this be an impediment on your search for enlightenment, though.</Text>
-
-			</Row>
-
-			<!--AI Requests friendship from human-->
-
-
-
-			-<Row Language="en_US" Tag="LOC_DIPLO_DECLARE_FRIEND_FROM_AI_LEADER_RELIC_ENIG_PAKAL_ANY">
-
-				<Text>A fellow academic! I suggest we band together and aid eachother. Would you agree?</Text>
-
-			</Row>
-
-			<!--Human accepts AI requests, AI responds-->
-
-
-
-			-<Row Language="en_US" Tag="LOC_DIPLO_ACCEPT_DECLARE_FRIEND_FROM_AI_LEADER_RELIC_ENIG_PAKAL_ANY">
-
-				<Text>I knew you would see the logic in it.</Text>
-
-			</Row>
-
-			<!--Human rejects AI requests, AI responds-->
-
-
-
-			-<Row Language="en_US" Tag="LOC_DIPLO_REJECT_DECLARE_FRIEND_FROM_AI_LEADER_RELIC_ENIG_PAKAL_ANY">
-
-				<Text>Your civilization has so much to learn, how could you think this intelligent?</Text>
-
-			</Row>
-
-			<!--ALLIANCE-->
-
-
-			<!--AI Requests an alliance from human-->
-
-
-
-			-<Row Language="en_US" Tag="LOC_DIPLO_MAKE_ALLIANCE_FROM_AI_LEADER_RELIC_ENIG_PAKAL_ANY">
-
-				<Text>The gods in the stars have told me that this is a wise offer. Have your own astronomers told you the same?</Text>
-
-			</Row>
-
-			<!--KUDOS & WARNINGS-->
-
-
-			<!--AI Kudos-->
-
-
-
-			-<Row Language="en_US" Tag="LOC_DIPLO_KUDO_EXIT_LEADER_RELIC_ENIG_PAKAL_ANY">
-
-				<Text>Your nation is one of great intellect. Itzamna would approve.</Text>
-
-			</Row>
-
-			<!--AI Warnings-->
-
-
-
-			-<Row Language="en_US" Tag="LOC_DIPLO_WARNING_EXIT_LEADER_RELIC_ENIG_PAKAL_ANY">
-
-				<Text>...</Text>
-
-			</Row>
-
-			<!--AI warns player for border troops-->
-
-
-
-			-<Row Language="en_US" Tag="LOC_DIPLO_WARNING_TOO_MANY_TROOPS_NEAR_ME_LEADER_RELIC_ENIG_PAKAL_ANY">
-
-				<Text>I've heard some disturbing prophecies. Perhaps you'd care to dispell them?</Text>
-
-			</Row>
-
-			<!--TRADE-->
-
-
-			<!--AI Accepts Deal-->
-
-
-
-			-<Row Language="en_US" Tag="LOC_DIPLO_ACCEPT_MAKE_DEAL_FROM_AI_LEADER_RELIC_ENIG_PAKAL_ANY">
-
-				<Text>A fair and smart offer. I accept.</Text>
-
-			</Row>
-
-			<!--AI Rejects Deal-->
-
-
-
-			-<Row Language="en_US" Tag="LOC_DIPLO_REJECT_MAKE_DEAL_FROM_AI_LEADER_RELIC_ENIG_PAKAL_ANY">
-
-				<Text>I don't think that would be wise, unfortunately.</Text>
-
-			</Row>
-
-			<!--DENOUNCE-->
-
-
-			<!--From Human-->
-
-
-
-			-<Row Language="en_US" Tag="LOC_DIPLO_DENOUNCE_FROM_HUMAN_LEADER_RELIC_ENIG_PAKAL_ANY">
-
-				<Text>The prophecies said you were a brute. I hoped they were misread.</Text>
-
-			</Row>
-
-			<!--From AI-->
-
-
-
-			-<Row Language="en_US" Tag="LOC_DIPLO_DENOUNCE_FROM_AI_LEADER_RELIC_ENIG_PAKAL_ANY">
-
-				<Text>You are an unenlightened, stupid, barbaric oaf who is alien to the very notion of science! Now get out! (Denounces You)</Text>
-
-			</Row>
-
-			<!--Rationale-->
-
-
-
-			-<Row Language="en_US" Tag="LOC_DIPLO_DENOUNCE_REASON_FROM_AI_LEADER_ANY_REASON_RELIC_ENIG_SUN_SHIELD_HIGH_CITY_STATE_AGGRESSION">
-
-				<Text>(You are very aggressive toward City-States.)</Text>
-
-			</Row>
-
-
-			-<Row Language="en_US" Tag="LOC_DIPLO_DENOUNCE_REASON_FROM_AI_LEADER_ANY_REASON_RELIC_ENIG_SUN_SHIELD_MED_CITY_STATE_AGGRESSION">
-
-				<Text>(You are aggressive toward City-States.)</Text>
-
-			</Row>
-
-			<!--DECLARE WAR-->
-
-
-			<!--Human Declares War-->
-
-
-
-			-<Row Language="en_US" Tag="LOC_DIPLO_DECLARE_WAR_FROM_HUMAN_LEADER_RELIC_ENIG_PAKAL_ANY">
-
-				<Text>You cannot possibly stand against us. Science, construction, and prophecy are on our side!</Text>
-
-			</Row>
-
-			<!--AI Declares War-->
-
-
-
-			-<Row Language="en_US" Tag="LOC_DIPLO_DECLARE_WAR_FROM_AI_LEADER_RELIC_ENIG_PAKAL_ANY">
-
-				<Text>I strike you down now, not only for prophecy, but to raise your cities and sciences to levels you never could.</Text>
-
-			</Row>
-
-			<!--MAKE PEACE-->
-
-
-			<!--AI accepts from human-->
-
-
-
-			-<Row Language="en_US" Tag="LOC_DIPLO_MAKE_PEACE_AI_ACCEPT_DEAL_LEADER_RELIC_ENIG_PAKAL_ANY">
-
-				<Text>Agreed. We can get back to more academic pursuits now.</Text>
-
-			</Row>
-
-			<!--AI refuses human-->
-
-
-
-			-<Row Language="en_US" Tag="LOC_DIPLO_MAKE_PEACE_AI_REFUSE_DEAL_LEADER_RELIC_ENIG_PAKAL_ANY">
-
-				<Text>Do you think I am unlearned? This offer is not fair.</Text>
-
-			</Row>
-
-			<!--AI requests from human-->
-
-
-
-			-<Row Language="en_US" Tag="LOC_DIPLO_MAKE_PEACE_FROM_AI_LEADER_RELIC_ENIG_PAKAL_ANY">
-
-				<Text>We have let disagreements get in the way of our learning and our temple-building. Can we remedy this?</Text>
-
-			</Row>
-
-			<!--DEFEAT-->
-
-
-			<!--AI is Defeated-->
-
-
-
-			-<Row Language="en_US" Tag="LOC_DIPLO_DEFEAT_FROM_AI_LEADER_RELIC_ENIG_PAKAL_ANY">
-
-				<Text>How could this have happened? How could I have failed? How?!</Text>
-
-			</Row>
-
-			<!--Human is Defeated (will see this in hotseat)-->
-
-
-
-			-<Row Language="en_US" Tag="LOC_DIPLO_DEFEAT_FROM_HUMAN_LEADER_RELIC_ENIG_PAKAL_ANY">
-
-				<Text>I was right, as I always am. You could never hope to stand against us.</Text>
-
-			</Row>
-	
-	
-			-<Row Language="en_US" Tag="LOC_DISTRICT_RELIC_ENIG_WHITE_SKIN_SCIENCE_WONDER">
-
-				<Text>+{1_num} [ICON_SCIENCE] Science from the adjacent Wonder.</Text>
-
-			</Row>
-
-
-			-<Row Language="en_US" Tag="LOC_DISTRICT_RELIC_ENIG_WHITE_SKIN_HOLY_WONDER">
-
-				<Text>+{1_num} [ICON_FAITH] Faith from the adjacent Wonder.</Text>
-
-			</Row>
-
-		</LocalizedText>
-
+		<!--Agenda-->
+		-<Row Language="en_US" Tag="LOC_AGENDA_RELIC_ENIG_SUN_SHIELD_NAME">
+			<Text>Sun Shield</Text>
+		</Row>
+		-<Row Language="en_US" Tag="LOC_AGENDA_RELIC_ENIG_SUN_SHIELD_DESCRIPTION">
+			<Text>Likes those who have high science outputs.  Dislikes those who pose a military threat to him or construct many wonders.</Text>
+		</Row>
+		-<Row Language="en_US" Tag="LOC_DIPLO_KUDO_LEADER_RELIC_ENIG_SUN_SHIELD_REASON_WONDER_WHORE">
+			<Text>(You have numerous Wonders.)</Text>
+		</Row>
+		-<Row Language="en_US" Tag="LOC_DIPLO_MODIFIER_AGENDA_RELIC_ENIG_SUN_SHIELD_WONDER_WHORE">
+			<Text>Pacal resents that you have built so many Wonders.</Text>
+		</Row>
+		-<Row Language="en_US" Tag="LOC_DIPLO_KUDO_LEADER_RELIC_ENIG_SUN_SHIELD_REASON_SCIENCE_LEADER">
+			<Text>(You have a high scientific output.)</Text>
+		</Row>
+		-<Row Language="en_US" Tag="LOC_DIPLO_MODIFIER_AGENDA_RELIC_ENIG_SUN_SHIELD_SCIENCE_LEADER">
+			<Text>Pacal applauds your advanced sciences.</Text>
+		</Row>
+		-<Row Language="en_US" Tag="LOC_DIPLO_WARNING_LEADER_RELIC_ENIG_SUN_SHIELD_REASON_HIGH_MILITARY">
+			<Text>(You focus on military efforts.)</Text>
+		</Row>
+		-<Row Language="en_US" Tag="LOC_DIPLO_MODIFIER_AGENDA_RELIC_ENIG_SUN_SHIELD_HIGH_MILITARY">
+			<Text>Pacal is alarmed by your military strength.</Text>
+		</Row>
+		<!--DOM-->
+		-<Row Language="en_US" Tag="LOC_LOADING_INFO_LEADER_RELIC_ENIG_PAKAL">
+			<Text>Your coming has been prophesized, K'inich Janaab Pakal, and you shall be the Shield of the Sun and the right hand of Itzamna! Though this land is a chaotic one, and the cities quarrel and clash around you, you are still born for greatness. Have your astronomers watch Venus to keep your calendar rounds and tell when it is most auspicious to build your wondrous temples and white skin palaces. Prepare yourself, Ajaw Pakal, because it is your destiny to shine like a star.</Text>
+		</Row>
+		<!--Traits-->
+		-<Row Language="en_US" Tag="LOC_TRAIT_LEADER_RELIC_ENIG_WHITE_SKIN_NAME">
+			<Text>White Skin House</Text>
+		</Row>
+		-<Row Language="en_US" Tag="LOC_TRAIT_LEADER_RELIC_ENIG_WHITE_SKIN_DESCRIPTION">
+			<Text>The Holy Site and Kuuchil Ah Ek Districts grant additional Wonder [ICON_PRODUCTION] Production in their cities.  Cities with a Wonder gain additional [ICON_FOOD] Growth, and Kuuchil Ah Eks and Holy Sites gain a standard adjacency bonus from Wonders.</Text>
+		</Row>
+		<!--Civilopedia-->
+		-<Row Language="en_US" Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_RELIC_ENIG_PAKAL_TITLE">
+			<Text>Pakal</Text>
+		</Row>
+		-<Row Language="en_US" Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_RELIC_ENIG_PAKAL_SUBTITLE">
+			<Text>Ajaw of Palenque</Text>
+		</Row>
+		-<Row Language="en_US" Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_RELIC_ENIG_PAKAL_QUOTE">
+			<Text>Aliens.</Text>
+		</Row>
+		-<Row Language="en_US" Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_RELIC_ENIG_PAKAL_CHAPTER_HISTORY_PARA_1">
+			<Text>K'inich Janaab Pakal I, also known as Pacal, Pacal the Great, 8 Ahau and Sun Shield, (March, 603 - August, 683) was ajaw of the Maya city-state of Palenque in the Late Classic period of pre-Columbian Mesoamerican chronology. He acceded to the throne in July 615 and ruled until his death. During a reign of 68 years, the longest known regnal period in the history of the Americas, the 30th longest worldwide and longest until Frederick III in the 15th century, Pakal was responsible for the construction or extension of some of Palenque's most notable surviving inscriptions and monumental architecture.</Text>
+		</Row>
+		-<Row Language="en_US" Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_RELIC_ENIG_PAKAL_CHAPTER_HISTORY_PARA_2">
+			<Text>Pakal ascended the throne at age 12 and lived to the age of 80.  He expanded Palenque's power in the western part of the Maya states and initiated a building program at his capital that produced some of Maya civilization's finest art and architecture.  In 626 Pakal married Ix Tz'akbu Ajaw who was born in Uxte'k'uh.  Tz'akbu Ajaw was a descendant of the Toktahn dynasty, the original dynasty of Palenque.  In 628, one of Pakal's officials, was captured by Piedras Negras.  Six days later Nuun Ujol Chaak, ajaw of Santa Elena, was captured and taken to Palenque.  Having been appointed ajaw at the age of twelve, Pakal's mother was a regent to him, over the years she slowly lost power.  In 659 Pakal captured six prisoners, One of them, Ahiin Chan Ahk, was from Pipa'.  In 663 another lord of Pipa' was killed by Pakal.  In 647 K'inich Janaab Pakal began his first construction project.  Of all Pakal's construction projects, perhaps the most accomplished is the Palace of Palenque.  The building was already in existence, but Pakal made it much larger than it was.  Pakal started his construction by adding monument rooms onto the old level of the building.  The monuments and text associated with K'inich Janaab Pakal I are: Oval Palace Tablet, Hieroglyphic Stairway, House C texts, Subterranean Thrones and Tableritos, Olvidado piers and sarcophagus texts.</Text>
+		</Row>
+		-<Row Language="en_US" Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_RELIC_ENIG_PAKAL_CHAPTER_CAPSULE_BODY">
+			<Text>Pacal's leadership allows the Mayans advanced science, deep faith, and great Wonders.</Text>
+		</Row>
+		-<Row Language="en_US" Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_RELIC_ENIG_PAKAL_CHAPTER_DETAILED_BODY">
+			<Text>Kuuchil Ah Ek districts allow the Mayans to pursue both science and found a religion quickly, and Pacal's "White Skin House" ability allows them to additionally help in Wonder production. Wonder production, the Venus Observation Project, and both offense and defense with Hadabs will help make Pacal's Maya into a great scientific and religious power.</Text>
+		</Row>
+		<!--Diplomacy-->
+		<!--FIRST MEET-->
+		<!--First AI line-->
+		-<Row Language="en_US" Tag="LOC_DIPLO_FIRST_MEET_LEADER_RELIC_ENIG_PAKAL_ANY">
+			<Text>Ah, yes. My astronomers saw the portents of your arrival. The wonders of Palenque are open to you, traveller.</Text>
+		</Row>
+		<!--AI invitation to visit nearby City-->
+		-<Row Language="en_US" Tag="LOC_DIPLO_FIRST_MEET_VISIT_RECIPIENT_LEADER_RELIC_ENIG_PAKAL_ANY">
+			<Text>We have some impressive temples in a nearby city. I invite you to see them!</Text>
+		</Row>
+		<!--AI accepts Human invitation-->
+		-<Row Language="en_US" Tag="LOC_DIPLO_FIRST_MEET_NEAR_INITIATOR_POSITIVE_LEADER_RELIC_ENIG_PAKAL_ANY">
+			<Text>The Evening Star said that you'd agree, and it is always right.</Text>
+		</Row>
+		<!--AI invitation to exchange Capital Information-->
+		-<Row Language="en_US" Tag="LOC_DIPLO_FIRST_MEET_NO_MANS_INFO_EXCHANGE_LEADER_RELIC_ENIG_PAKAL_ANY">
+			<Text>You have seen my cities, but not yet the greatest of them. Let us remedy this! Come, see the Temples for the Triad of Palenque!</Text>
+		</Row>
+		<!--GREETINGS-->
+		-<Row Language="en_US" Tag="LOC_DIPLO_GREETING_LEADER_RELIC_ENIG_PAKAL_ANY">
+			<Text>I hope Xaman Ek was kind to you on your journey here.</Text>
+		</Row>
+		<!--DELEGATION-->
+		<!--AI Accepts-->
+		-<Row Language="en_US" Tag="LOC_DIPLO_ACCEPT_DELEGATION_FROM_HUMAN_LEADER_RELIC_ENIG_PAKAL_ANY">
+			<Text>Seems to be a wise arrangement. I agree.</Text>
+		</Row>
+		<!--AI Rejects-->
+		-<Row Language="en_US" Tag="LOC_DIPLO_REJECT_DELEGATION_FROM_HUMAN_LEADER_RELIC_ENIG_PAKAL_ANY">
+			<Text>No, no, I'm afraid the stars aren't fortuitous for it. My apologies.</Text>
+		</Row>
+		<!--AI Requests -->
+		-<Row Language="en_US" Tag="LOC_DIPLO_DELEGATION_FROM_AI_LEADER_RELIC_ENIG_PAKAL_ANY">
+			<Text>I've sent some of my astronomers to view the night sky from your lands and exchange our knowledge and sciences. Would you accept them?</Text>
+		</Row>
+		<!--OPEN BORDERS-->
+		<!--AI accepts from human-->
+		-<Row Language="en_US" Tag="LOC_DIPLO_ACCEPT_OPEN_BORDERS_FROM_HUMAN_LEADER_RELIC_ENIG_PAKAL_ANY">
+			<Text>Wisdom, yes.</Text>
+		</Row>
+		<!--AI rejects from human-->
+		-<Row Language="en_US" Tag="LOC_DIPLO_REJECT_OPEN_BORDERS_FROM_HUMAN_LEADER_RELIC_ENIG_PAKAL_ANY">
+			<Text>No, this is not what the portents say.</Text>
+		</Row>
+		<!--AI requests from human-->
+		-<Row Language="en_US" Tag="LOC_DIPLO_OPEN_BORDERS_FROM_AI_LEADER_RELIC_ENIG_PAKAL_ANY">
+			<Text>Opening our borders would allow for knowledge to flow more freely between us. Perhaps you'd consider it?</Text>
+		</Row>
+		<!--DECLARE FRIENDSHIP-->
+		<!--AI accepts from human-->
+		-<Row Language="en_US" Tag="LOC_DIPLO_ACCEPT_DECLARE_FRIEND_FROM_HUMAN_LEADER_RELIC_ENIG_PAKAL_ANY">
+			<Text>Finally, a friend in our quest for knowledge.</Text>
+		</Row>
+		<!--AI Rejects from human -->
+		-<Row Language="en_US" Tag="LOC_DIPLO_REJECT_DECLARE_FRIEND_FROM_HUMAN_LEADER_RELIC_ENIG_PAKAL_ANY">
+			<Text>I'm afraid not. Do not let this be an impediment on your search for enlightenment, though.</Text>
+		</Row>
+		<!--AI Requests friendship from human-->
+		-<Row Language="en_US" Tag="LOC_DIPLO_DECLARE_FRIEND_FROM_AI_LEADER_RELIC_ENIG_PAKAL_ANY">
+			<Text>A fellow academic! I suggest we band together and aid eachother. Would you agree?</Text>
+		</Row>
+		<!--Human accepts AI requests, AI responds-->
+		-<Row Language="en_US" Tag="LOC_DIPLO_ACCEPT_DECLARE_FRIEND_FROM_AI_LEADER_RELIC_ENIG_PAKAL_ANY">
+			<Text>I knew you would see the logic in it.</Text>
+		</Row>
+		<!--Human rejects AI requests, AI responds-->
+		-<Row Language="en_US" Tag="LOC_DIPLO_REJECT_DECLARE_FRIEND_FROM_AI_LEADER_RELIC_ENIG_PAKAL_ANY">
+			<Text>Your civilization has so much to learn, how could you think this intelligent?</Text>
+		</Row>
+		<!--ALLIANCE-->
+		<!--AI Requests an alliance from human-->
+		-<Row Language="en_US" Tag="LOC_DIPLO_MAKE_ALLIANCE_FROM_AI_LEADER_RELIC_ENIG_PAKAL_ANY">
+			<Text>The gods in the stars have told me that this is a wise offer. Have your own astronomers told you the same?</Text>
+		</Row>
+		<!--KUDOS & WARNINGS-->
+		<!--AI Kudos-->
+		-<Row Language="en_US" Tag="LOC_DIPLO_KUDO_EXIT_LEADER_RELIC_ENIG_PAKAL_ANY">
+			<Text>Your nation is one of great intellect. Itzamna would approve.</Text>
+		</Row>
+		<!--AI Warnings-->
+		-<Row Language="en_US" Tag="LOC_DIPLO_WARNING_EXIT_LEADER_RELIC_ENIG_PAKAL_ANY">
+			<Text>...</Text>
+		</Row>
+		<!--AI warns player for border troops-->
+		-<Row Language="en_US" Tag="LOC_DIPLO_WARNING_TOO_MANY_TROOPS_NEAR_ME_LEADER_RELIC_ENIG_PAKAL_ANY">
+			<Text>I've heard some disturbing prophecies. Perhaps you'd care to dispell them?</Text>
+		</Row>
+		<!--TRADE-->
+		<!--AI Accepts Deal-->
+		-<Row Language="en_US" Tag="LOC_DIPLO_ACCEPT_MAKE_DEAL_FROM_AI_LEADER_RELIC_ENIG_PAKAL_ANY">
+			<Text>A fair and smart offer. I accept.</Text>
+		</Row>
+		<!--AI Rejects Deal-->
+		-<Row Language="en_US" Tag="LOC_DIPLO_REJECT_MAKE_DEAL_FROM_AI_LEADER_RELIC_ENIG_PAKAL_ANY">
+			<Text>I don't think that would be wise, unfortunately.</Text>
+		</Row>
+		<!--DENOUNCE-->
+		<!--From Human-->
+		-<Row Language="en_US" Tag="LOC_DIPLO_DENOUNCE_FROM_HUMAN_LEADER_RELIC_ENIG_PAKAL_ANY">
+			<Text>The prophecies said you were a brute. I hoped they were misread.</Text>
+		</Row>
+		<!--From AI-->
+		-<Row Language="en_US" Tag="LOC_DIPLO_DENOUNCE_FROM_AI_LEADER_RELIC_ENIG_PAKAL_ANY">
+			<Text>You are an unenlightened, stupid, barbaric oaf who is alien to the very notion of science! Now get out! (Denounces You)</Text>
+		</Row>
+		<!--Rationale-->
+		-<Row Language="en_US" Tag="LOC_DIPLO_DENOUNCE_REASON_FROM_AI_LEADER_ANY_REASON_RELIC_ENIG_SUN_SHIELD_HIGH_CITY_STATE_AGGRESSION">
+			<Text>(You are very aggressive toward City-States.)</Text>
+		</Row>
+		-<Row Language="en_US" Tag="LOC_DIPLO_DENOUNCE_REASON_FROM_AI_LEADER_ANY_REASON_RELIC_ENIG_SUN_SHIELD_MED_CITY_STATE_AGGRESSION">
+			<Text>(You are aggressive toward City-States.)</Text>
+		</Row>
+		<!--DECLARE WAR-->
+		<!--Human Declares War-->
+		-<Row Language="en_US" Tag="LOC_DIPLO_DECLARE_WAR_FROM_HUMAN_LEADER_RELIC_ENIG_PAKAL_ANY">
+			<Text>You cannot possibly stand against us. Science, construction, and prophecy are on our side!</Text>
+		</Row>
+		<!--AI Declares War-->
+		-<Row Language="en_US" Tag="LOC_DIPLO_DECLARE_WAR_FROM_AI_LEADER_RELIC_ENIG_PAKAL_ANY">
+			<Text>I strike you down now, not only for prophecy, but to raise your cities and sciences to levels you never could.</Text>
+		</Row>
+		<!--MAKE PEACE-->
+		<!--AI accepts from human-->
+		-<Row Language="en_US" Tag="LOC_DIPLO_MAKE_PEACE_AI_ACCEPT_DEAL_LEADER_RELIC_ENIG_PAKAL_ANY">
+			<Text>Agreed. We can get back to more academic pursuits now.</Text>
+		</Row>
+		<!--AI refuses human-->
+		-<Row Language="en_US" Tag="LOC_DIPLO_MAKE_PEACE_AI_REFUSE_DEAL_LEADER_RELIC_ENIG_PAKAL_ANY">
+			<Text>Do you think I am unlearned? This offer is not fair.</Text>
+		</Row>
+		<!--AI requests from human-->
+		-<Row Language="en_US" Tag="LOC_DIPLO_MAKE_PEACE_FROM_AI_LEADER_RELIC_ENIG_PAKAL_ANY">
+			<Text>We have let disagreements get in the way of our learning and our temple-building. Can we remedy this?</Text>
+		</Row>
+		<!--DEFEAT-->
+		<!--AI is Defeated-->
+		-<Row Language="en_US" Tag="LOC_DIPLO_DEFEAT_FROM_AI_LEADER_RELIC_ENIG_PAKAL_ANY">
+			<Text>How could this have happened? How could I have failed? How?!</Text>
+		</Row>
+		<!--Human is Defeated (will see this in hotseat)-->
+		-<Row Language="en_US" Tag="LOC_DIPLO_DEFEAT_FROM_HUMAN_LEADER_RELIC_ENIG_PAKAL_ANY">
+			<Text>I was right, as I always am. You could never hope to stand against us.</Text>
+		</Row>
+		-<Row Language="en_US" Tag="LOC_DISTRICT_RELIC_ENIG_WHITE_SKIN_SCIENCE_WONDER">
+			<Text>+{1_num} [ICON_SCIENCE] Science from the adjacent Wonder.</Text>
+		</Row>
+		-<Row Language="en_US" Tag="LOC_DISTRICT_RELIC_ENIG_WHITE_SKIN_HOLY_WONDER">
+			<Text>+{1_num} [ICON_FAITH] Faith from the adjacent Wonder.</Text>
+		</Row>
+	</LocalizedText>
 </GameData>

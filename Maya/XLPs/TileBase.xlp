@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<AssetObjects..XLP>
+	<m_Version>
+		<major>4</major>
+		<minor>0</minor>
+		<build>315</build>
+		<revision>805</revision>
+	</m_Version>
+	<m_ClassName text="TileBase"/>
+	<m_PackageName text="TileBase"/>
+	<m_Entries>
+		<Element>
+			<m_EntryID text="DIS_MAYA_OBS_Caracol"/>
+			<m_ObjectName text="DIS_MAYA_OBS_Caracol"/>
+		</Element>
+		<Element>
+			<m_EntryID text="DIS_MAYA_OBS_Bld_01"/>
+			<m_ObjectName text="DIS_MAYA_OBS_Bld_01"/>
+		</Element>
+		<Element>
+			<m_EntryID text="DIS_MAYA_OBS_Bld_02"/>
+			<m_ObjectName text="DIS_MAYA_OBS_Bld_02"/>
+		</Element>
+		<Element>
+			<m_EntryID text="DIS_MAYA_BOS_Classical_02"/>
+			<m_ObjectName text="DIS_MAYA_BOS_Classical_02"/>
+		</Element>
+		<Element>
+			<m_EntryID text="DIS_MAYA_OBS_Bld_011"/>
+			<m_ObjectName text="DIS_MAYA_OBS_Bld_01"/>
+		</Element>
+		<Element>
+			<m_EntryID text="DIS_MAYA_OBS_Bld_021"/>
+			<m_ObjectName text="DIS_MAYA_OBS_Bld_02"/>
+		</Element>
+		<Element>
+			<m_EntryID text="DIS_MAYA_OBS_Caracol1"/>
+			<m_ObjectName text="DIS_MAYA_OBS_Caracol"/>
+		</Element>
+		<Element>
+			<m_EntryID text="DIS_MAYA_OBS_Classical_01"/>
+			<m_ObjectName text="DIS_MAYA_OBS_Classical_01"/>
+		</Element>
+		<Element>
+			<m_EntryID text="DIS_MAYA_OBS_Classical_03"/>
+			<m_ObjectName text="DIS_MAYA_OBS_Classical_03"/>
+		</Element>
+		<Element>
+			<m_EntryID text="DIS_MAYA_OBS_Industrial_01"/>
+			<m_ObjectName text="DIS_MAYA_OBS_Industrial_01"/>
+		</Element>
+		<Element>
+			<m_EntryID text="DIS_MAYA_OBS_Industrial_02"/>
+			<m_ObjectName text="DIS_MAYA_OBS_Industrial_02"/>
+		</Element>
+		<Element>
+			<m_EntryID text="DIS_MAYA_OBS_Modern_01"/>
+			<m_ObjectName text="DIS_MAYA_OBS_Modern_01"/>
+		</Element>
+		<Element>
+			<m_EntryID text="DIS_MAYA_OBS_Modern_02"/>
+			<m_ObjectName text="DIS_MAYA_OBS_Modern_02"/>
+		</Element>
+		<Element>
+			<m_EntryID text="DIS_MAYA_OBS_Modern_03"/>
+			<m_ObjectName text="DIS_MAYA_OBS_Modern_03"/>
+		</Element>
+		<Element>
+			<m_EntryID text="DIS_MAYA_OBS_Modern_04"/>
+			<m_ObjectName text="DIS_MAYA_OBS_Modern_04"/>
+		</Element>
+		<Element>
+			<m_EntryID text="DIS_MAYAS_OBS_Industrial_03"/>
+			<m_ObjectName text="DIS_MAYAS_OBS_Industrial_03"/>
+		</Element>
+	</m_Entries>
+	<m_AllowedPlatforms>
+		<Element>WINDOWS</Element>
+		<Element>LINUX</Element>
+		<Element>MACOS</Element>
+		<Element>IOS</Element>
+	</m_AllowedPlatforms>
+</AssetObjects..XLP>
+

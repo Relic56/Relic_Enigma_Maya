@@ -3,514 +3,209 @@
 <!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by Ed Beach (Firaxis Games) -->
 
 <GameData>
-
-
 	-<LocalizedText>
-
 		<!--LEADER-->
-
-
-
 		-<Row Language="en_US" Tag="LOC_LEADER_RELIC_ENIG_YAXCHIN_NAME">
-
-		<Text>Yaxkin Caan Chac</Text>
-
-	</Row>
-
-
-			<!--Agenda-->
-
-
-
-			-<Row Language="en_US" Tag="LOC_AGENDA_RELIC_ENIG_AJAW_TIKAL_NAME">
-
-				<Text>Ajaw of Tikal</Text>
-
+			<Text>Yaxkin Caan Chac</Text>
+		</Row>
+		<!--Agenda-->
+		-<Row Language="en_US" Tag="LOC_AGENDA_RELIC_ENIG_AJAW_TIKAL_NAME">
+			<Text>Ajaw of Tikal</Text>
+		</Row>
+		-<Row Language="en_US" Tag="LOC_AGENDA_RELIC_ENIG_AJAW_TIKAL_DESCRIPTION">
+			<Text>Likes those who have large militaries and high production.  Dislikes those who choose to focus on Wonders instead.</Text>
+		</Row>
+		-<Row Language="en_US" Tag="LOC_DIPLO_WARNING_LEADER_RELIC_ENIG_AJAW_TIKAL_REASON_WONDER_WHORE">
+			<Text>(You have numerous Wonders.)</Text>
+		</Row>
+		-<Row Language="en_US" Tag="LOC_DIPLO_MODIFIER_AGENDA_RELIC_ENIG_AJAW_TIKAL_WONDER_WHORE">
+			<Text>Yaxkin believes your indulgent construction efforts will lead to your downfall.</Text>
+		</Row>
+		-<Row Language="en_US" Tag="LOC_DIPLO_KUDO_LEADER_RELIC_ENIG_AJAW_TIKAL_REASON_MILITARY_THREAT">
+			<Text>(You have a large military.)</Text>
+		</Row>
+		-<Row Language="en_US" Tag="LOC_DIPLO_MODIFIER_AGENDA_RELIC_ENIG_AJAW_TIKAL_MILITARY_THREAT">
+			<Text>Yaxkin respects your military strength.</Text>
+		</Row>
+		-<Row Language="en_US" Tag="LOC_DIPLO_KUDO_LEADER_RELIC_ENIG_AJAW_TIKAL_REASON_PRODUCTION_LEADER">
+			<Text>(You have high productivity.)</Text>
+		</Row>
+		-<Row Language="en_US" Tag="LOC_DIPLO_MODIFIER_AGENDA_RELIC_ENIG_AJAW_TIKAL_PRODUCTION_LEADER">
+			<Text>Yaxkin thinks your empire is well-suited to military construction.</Text>
+		</Row>
+		<!--DOM-->
+		-<Row Language="en_US" Tag="LOC_LOADING_INFO_LEADER_RELIC_ENIG_YAXCHIN">
+			<Text>Your armies have been mustered and stand ready for battle, Yik’in Chan K’awiil. Your kingdom is strong and your defenses are mighty, while your enemies have grown lax and weak. March your Macuahuitl to crush the foreign kingdoms and puny cities! Carry their people back to Tikal so that they may watch as you tear out their weak king’s heart and cast his body into the dirt where it belongs. No kingdom shall be larger than yours, Yaxkin, for you are the Ajaw of Tikal, and you shall darken the sky!</Text>
+		</Row>
+		<!--Traits-->
+		-<Row Language="en_US" Tag="LOC_TRAIT_LEADER_RELIC_ENIG_DARK_SKY_NAME">
+			<Text>Darkens the Sky</Text>
+		</Row>
+		-<Row Language="en_US" Tag="LOC_TRAIT_LEADER_RELIC_ENIG_DARK_SKY_DESCRIPTION">
+			<Text>Upon conquering an enemy city, production in the capital is boosted, excluding wonders and projects. Conquering a city state provides Great Person Points depending on type upon capture and a passive yield afterwards.</Text>
+		</Row>
+		<!--Civilopedia-->
+		-<Row Language="en_US" Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_RELIC_ENIG_YAXCHIN_TITLE">
+			<Text>
+				Yaxkin Caan Chac</Text>
 			</Row>
-
-
-			-<Row Language="en_US" Tag="LOC_AGENDA_RELIC_ENIG_AJAW_TIKAL_DESCRIPTION">
-
-				<Text>Likes those who have large militaries and high production.  Dislikes those who choose to focus on Wonders instead.</Text>
-
-			</Row>
-
-
-			-<Row Language="en_US" Tag="LOC_DIPLO_WARNING_LEADER_RELIC_ENIG_AJAW_TIKAL_REASON_WONDER_WHORE">
-
-				<Text>(You have numerous Wonders.)</Text>
-
-			</Row>
-
-
-			-<Row Language="en_US" Tag="LOC_DIPLO_MODIFIER_AGENDA_RELIC_ENIG_AJAW_TIKAL_WONDER_WHORE">
-
-				<Text>Yaxkin believes your indulgent construction efforts will lead to your downfall.</Text>
-
-			</Row>
-	
-			-<Row Language="en_US" Tag="LOC_DIPLO_KUDO_LEADER_RELIC_ENIG_AJAW_TIKAL_REASON_MILITARY_THREAT">
-
-				<Text>(You have a large military.)</Text>
-
-			</Row>
-
-
-			-<Row Language="en_US" Tag="LOC_DIPLO_MODIFIER_AGENDA_RELIC_ENIG_AJAW_TIKAL_MILITARY_THREAT">
-
-				<Text>Yaxkin respects your military strength.</Text>
-
-			</Row>
-	
-	
-			-<Row Language="en_US" Tag="LOC_DIPLO_KUDO_LEADER_RELIC_ENIG_AJAW_TIKAL_REASON_PRODUCTION_LEADER">
-
-				<Text>(You have high productivity.)</Text>
-
-			</Row>
-
-
-			-<Row Language="en_US" Tag="LOC_DIPLO_MODIFIER_AGENDA_RELIC_ENIG_AJAW_TIKAL_PRODUCTION_LEADER">
-
-				<Text>Yaxkin thinks your empire is well-suited to military construction.</Text>
-
-			</Row>
-
-			<!--DOM-->
-
-
-
-			-<Row Language="en_US" Tag="LOC_LOADING_INFO_LEADER_RELIC_ENIG_YAXCHIN">
-
-				<Text>Your armies have been mustered and stand ready for battle, Yik’in Chan K’awiil. Your kingdom is strong and your defenses are mighty, while your enemies have grown lax and weak. March your Macuahuitl to crush the foreign kingdoms and puny cities! Carry their people back to Tikal so that they may watch as you tear out their weak king’s heart and cast his body into the dirt where it belongs. No kingdom shall be larger than yours, Yaxkin, for you are the Ajaw of Tikal, and you shall darken the sky!</Text>
-
-			</Row>
-
-			<!--Traits-->
-
-
-
-			-<Row Language="en_US" Tag="LOC_TRAIT_LEADER_RELIC_ENIG_DARK_SKY_NAME">
-
-				<Text>Darkens the Sky</Text>
-
-			</Row>
-
-
-			-<Row Language="en_US" Tag="LOC_TRAIT_LEADER_RELIC_ENIG_DARK_SKY_DESCRIPTION">
-
-				<Text>Upon conquering an enemy city, production in all cities is boosted, excluding wonders and yields. Conquering a city state provides Great Person Points depending on type upon capture and a passive yield afterwards.</Text>
-
-			</Row>
-
-			<!--Civilopedia-->
-
-
-
-			-<Row Language="en_US" Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_RELIC_ENIG_YAXCHIN_TITLE">
-
-				<Text>Yaxkin Caan Chac</Text>
-
-			</Row>
-
-
-			-<Row Language="en_US" Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_RELIC_ENIG_YAXCHIN_SUBTITLE">
-
-				<Text>Ajaw of Tikal</Text>
-
-			</Row>
-
-
-			-<Row Language="en_US" Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_RELIC_ENIG_YAXCHIN_QUOTE">
-
-				<Text>Prepare yourselves to endure the burden of misery which is to come among your villages.</Text>
-
-			</Row>
-
-
-			-<Row Language="en_US" Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_RELIC_ENIG_YAXCHIN_CHAPTER_HISTORY_PARA_1">
-
-				<Text>Yik'in Chan K'awiil also known as Ruler B, Yaxkin Caan Chac and Sun Sky Rain,, was an ajaw of the Maya city of Tikal.  Identified by Mayanist epigraphers as the 27th ruler in Tikal's dynastic succession, Yik'in Chan K'awiil was one of Tikal's most successful and expansionary rulers, consolidating the political gains won by his father, Jasaw Chan K'awiil I. During his reign prolific building works were undertaken at Tikal, with a number of the site's significant still-standing structures commissioned or extended under his direction.  Before advances in the decipherment of the Maya script revealed this reading of his name, this ruler was also known to researchers as Tikal Ruler B. Yik'in K'awiil conquered Calakmul in 736 and two other Calakmul allies in 743 and 744.  His principal wife was a princess of Palenque, her personal name is unknown, but her formal title was Lady Yax Ahau Xoc.  It is unknown exactly where his tomb lies, but strong archaeological parallels between Burial 116 and Burial 196, located in the diminutive pyramid immediately south of Tikal Temple II and referred to as Structure 5D-73, suggest the latter may be the tomb of Yik'in Chan Kawiil.</Text>
-
-			</Row>
-
-
-			-<Row Language="en_US" Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_RELIC_ENIG_YAXCHIN_CHAPTER_CAPSULE_BODY">
-
-				<Text>Yaxkin leads a conquest focused Mayan civilization, especially targeted towards city-states.</Text>
-
-			</Row>
-
-
-			-<Row Language="en_US" Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_RELIC_ENIG_YAXCHIN_CHAPTER_DETAILED_BODY">
-
-				<Text>While the Mayan Civlization's abilities are normally suited towards science and faith, Yaxkin Caan Chac's strength lies in the Hadzab unique unit and his "Darken the Sky" ability. Conquest of citystates and foreign civilizations will drive the Maya forward, not only through production and science bonuses but also acquisition of Great People. Conquests easily lead to more, as taking a city will result in the production necessary to field even greater armies.</Text>
-
-			</Row>
-
-			<!--Diplomacy-->
-
-
-			<!--FIRST MEET-->
-
-
-			<!--First AI line-->
-
-
-
-			-<Row Language="en_US" Tag="LOC_DIPLO_FIRST_MEET_LEADER_RELIC_ENIG_YAXCHIN_ANY">
-
-				<Text>Do you come here for idle greetings? Do not waste breath, and know that I am the chosen of Ek Chuaj! If you have come here in search of peace then perhaps you will be strong enough for it.</Text>
-
-			</Row>
-
-			<!--AI invitation to visit nearby City-->
-
-
-
-			-<Row Language="en_US" Tag="LOC_DIPLO_FIRST_MEET_VISIT_RECIPIENT_LEADER_RELIC_ENIG_YAXCHIN_ANY">
-
-				<Text>I'd like to see the prowess of your warriors for myself. Send some so that I may see how fierce they truly are.</Text>
-
-			</Row>
-
-			<!--AI accepts Human invitation-->
-
-
-
-			-<Row Language="en_US" Tag="LOC_DIPLO_FIRST_MEET_NEAR_INITIATOR_POSITIVE_LEADER_RELIC_ENIG_YAXCHIN_ANY">
-
-				<Text>Good, we shall give a sacrifice to Buluc Chabtan in preparation.</Text>
-
-			</Row>
-
-			<!--AI invitation to exchange Capital Information-->
-
-
-
-			-<Row Language="en_US" Tag="LOC_DIPLO_FIRST_MEET_NO_MANS_INFO_EXCHANGE_LEADER_RELIC_ENIG_YAXCHIN_ANY">
-
-				<Text>Where is your capital? I merely ask out of curiosity. Nothing to worry about.</Text>
-
-			</Row>
-
-			<!--GREETINGS-->
-
-
-
-			-<Row Language="en_US" Tag="LOC_DIPLO_GREETING_LEADER_RELIC_ENIG_YAXCHIN_ANY">
-
-				<Text>Will we be preparing for war?</Text>
-
-			</Row>
-
-			<!--DELEGATION-->
-
-
-			<!--AI Accepts-->
-
-
-
-			-<Row Language="en_US" Tag="LOC_DIPLO_ACCEPT_DELEGATION_FROM_HUMAN_LEADER_RELIC_ENIG_YAXCHIN_ANY">
-
-				<Text>Very good then.</Text>
-
-			</Row>
-
-			<!--AI Rejects-->
-
-
-
-			-<Row Language="en_US" Tag="LOC_DIPLO_REJECT_DELEGATION_FROM_HUMAN_LEADER_RELIC_ENIG_YAXCHIN_ANY">
-
-				<Text>Do not presume so much.</Text>
-
-			</Row>
-
-			<!--AI Requests -->
-
-
-
-			-<Row Language="en_US" Tag="LOC_DIPLO_DELEGATION_FROM_AI_LEADER_RELIC_ENIG_YAXCHIN_ANY">
-
-				<Text>Fine atlatls and spears have been sent to you, as well as figures of the god Chin that I believe you'll enjoy. I recommend you consider returning a gift of your own.</Text>
-
-			</Row>
-
-			<!--OPEN BORDERS-->
-
-
-			<!--AI accepts from human-->
-
-
-
-			-<Row Language="en_US" Tag="LOC_DIPLO_ACCEPT_OPEN_BORDERS_FROM_HUMAN_LEADER_RELIC_ENIG_YAXCHIN_ANY">
-
-				<Text>Perhaps. But do not expect me to let down my guard.</Text>
-
-			</Row>
-
-			<!--AI rejects from human-->
-
-
-
-			-<Row Language="en_US" Tag="LOC_DIPLO_REJECT_OPEN_BORDERS_FROM_HUMAN_LEADER_RELIC_ENIG_YAXCHIN_ANY">
-
-				<Text>Do you think me so foolish?</Text>
-
-			</Row>
-
-			<!--AI requests from human-->
-
-
-
-			-<Row Language="en_US" Tag="LOC_DIPLO_OPEN_BORDERS_FROM_AI_LEADER_RELIC_ENIG_YAXCHIN_ANY">
-
-				<Text>There are some perfect opportunities across your lands. If you don't plan on taking them, then could I?</Text>
-
-			</Row>
-
-			<!--DECLARE FRIENDSHIP-->
-
-
-			<!--AI accepts from human-->
-
-
-
-			-<Row Language="en_US" Tag="LOC_DIPLO_ACCEPT_DECLARE_FRIEND_FROM_HUMAN_LEADER_RELIC_ENIG_YAXCHIN_ANY">
-
-				<Text>Good - we can crush our enemies together.</Text>
-
-			</Row>
-
-			<!--AI Rejects from human -->
-
-
-
-			-<Row Language="en_US" Tag="LOC_DIPLO_REJECT_DECLARE_FRIEND_FROM_HUMAN_LEADER_RELIC_ENIG_YAXCHIN_ANY">
-
-				<Text>Hah! I am a conqueror, the chosen of Ek Chuaj, the Darkness himself! And you, you are weak.</Text>
-
-			</Row>
-
-			<!--AI Requests friendship from human-->
-
-
-
-			-<Row Language="en_US" Tag="LOC_DIPLO_DECLARE_FRIEND_FROM_AI_LEADER_RELIC_ENIG_YAXCHIN_ANY">
-
-				<Text>Our forces would be stronger if we conspired together. Consider it.</Text>
-
-			</Row>
-
-			<!--Human accepts AI requests, AI responds-->
-
-
-
-			-<Row Language="en_US" Tag="LOC_DIPLO_ACCEPT_DECLARE_FRIEND_FROM_AI_LEADER_RELIC_ENIG_YAXCHIN_ANY">
-
-				<Text>Good. Both our kingdoms could use new slaves.</Text>
-
-			</Row>
-
-			<!--Human rejects AI requests, AI responds-->
-
-
-
-			-<Row Language="en_US" Tag="LOC_DIPLO_REJECT_DECLARE_FRIEND_FROM_AI_LEADER_RELIC_ENIG_YAXCHIN_ANY">
-
-				<Text>Then do not consider yourself safe.</Text>
-
-			</Row>
-
-			<!--ALLIANCE-->
-
-
-			<!--AI Requests an alliance from human-->
-
-
-
-			-<Row Language="en_US" Tag="LOC_DIPLO_MAKE_ALLIANCE_FROM_AI_LEADER_RELIC_ENIG_YAXCHIN_ANY">
-
-				<Text>We work together already, but with an alliance we could do so much more.</Text>
-
-			</Row>
-
-			<!--KUDOS & WARNINGS-->
-
-
-			<!--AI Kudos-->
-
-
-
-			-<Row Language="en_US" Tag="LOC_DIPLO_KUDO_EXIT_LEADER_RELIC_ENIG_YAXCHIN_ANY">
-
-				<Text>Your warriors are strong. Not as strong as mine, but they are a deterrent.</Text>
-
-			</Row>
-
-			<!--AI Warnings-->
-
-
-
-			-<Row Language="en_US" Tag="LOC_DIPLO_WARNING_EXIT_LEADER_RELIC_ENIG_YAXCHIN_ANY">
-
-				<Text>...</Text>
-
-			</Row>
-
-			<!--AI warns player for border troops-->
-
-
-
-			-<Row Language="en_US" Tag="LOC_DIPLO_WARNING_TOO_MANY_TROOPS_NEAR_ME_LEADER_RELIC_ENIG_YAXCHIN_ANY">
-
-				<Text>If you thought you could take me unaware, then you will die. Explain yourself!</Text>
-
-			</Row>
-
-			<!--TRADE-->
-
-
-			<!--AI Accepts Deal-->
-
-
-
-			-<Row Language="en_US" Tag="LOC_DIPLO_ACCEPT_MAKE_DEAL_FROM_AI_LEADER_RELIC_ENIG_YAXCHIN_ANY">
-
-				<Text>Good, our warriors shall grow mightier when training against one another.</Text>
-
-			</Row>
-
-			<!--AI Rejects Deal-->
-
-
-
-			-<Row Language="en_US" Tag="LOC_DIPLO_REJECT_MAKE_DEAL_FROM_AI_LEADER_RELIC_ENIG_YAXCHIN_ANY">
-
-				<Text>Did you intend for this to be an insult?</Text>
-
-			</Row>
-
-			<!--DENOUNCE-->
-
-
-			<!--From Human-->
-
-
-
-			-<Row Language="en_US" Tag="LOC_DIPLO_DENOUNCE_FROM_HUMAN_LEADER_RELIC_ENIG_YAXCHIN_ANY">
-
-				<Text>I hope you've made enough spears. You may soon have need of them.</Text>
-
-			</Row>
-
-			<!--From AI-->
-
-
-
-			-<Row Language="en_US" Tag="LOC_DIPLO_DENOUNCE_FROM_AI_LEADER_RELIC_ENIG_YAXCHIN_ANY">
-
-				<Text>Your weakness may soon be an opportunity. It's only sporting that I let all the land know of it. (Denounces You)</Text>
-
-			</Row>
-
-			<!--Rationale-->
-
-
-
-			-<Row Language="en_US" Tag="LOC_DIPLO_DENOUNCE_REASON_FROM_AI_LEADER_ANY_REASON_RELIC_ENIG_AJAW_TIKAL_HIGH_CITY_STATE_AGGRESSION">
-
-				<Text>(You are very aggressive toward City-States.)</Text>
-
-			</Row>
-
-
-			-<Row Language="en_US" Tag="LOC_DIPLO_DENOUNCE_REASON_FROM_AI_LEADER_ANY_REASON_RELIC_ENIG_AJAW_TIKAL_MED_CITY_STATE_AGGRESSION">
-
-				<Text>(You are aggressive toward City-States.)</Text>
-
-			</Row>
-
-			<!--DECLARE WAR-->
-
-
-			<!--Human Declares War-->
-
-
-
-			-<Row Language="en_US" Tag="LOC_DIPLO_DECLARE_WAR_FROM_HUMAN_LEADER_RELIC_ENIG_YAXCHIN_ANY">
-
-				<Text>You dare? After all you have seen? I shall drink the blood from your skull as your enslaved people make me ever-stronger!</Text>
-
-			</Row>
-
-			<!--AI Declares War-->
-
-
-
-			-<Row Language="en_US" Tag="LOC_DIPLO_DECLARE_WAR_FROM_AI_LEADER_RELIC_ENIG_YAXCHIN_ANY">
-
-				<Text>The gods and stars above have foretold my victory! And when I am finished, I will tear out your heart!</Text>
-
-			</Row>
-
-			<!--MAKE PEACE-->
-
-
-			<!--AI accepts from human-->
-
-
-
-			-<Row Language="en_US" Tag="LOC_DIPLO_MAKE_PEACE_AI_ACCEPT_DEAL_LEADER_RELIC_ENIG_YAXCHIN_ANY">
-
-				<Text>Fine, you'll have your tribute. For now.</Text>
-
-			</Row>
-
-			<!--AI refuses human-->
-
-
-
-			-<Row Language="en_US" Tag="LOC_DIPLO_MAKE_PEACE_AI_REFUSE_DEAL_LEADER_RELIC_ENIG_YAXCHIN_ANY">
-
-				<Text>Do not test my patience.</Text>
-
-			</Row>
-
-			<!--AI requests from human-->
-
-
-
-			-<Row Language="en_US" Tag="LOC_DIPLO_MAKE_PEACE_FROM_AI_LEADER_RELIC_ENIG_YAXCHIN_ANY">
-
-				<Text>We should end this war to regain both our strength. Here are my terms.</Text>
-
-			</Row>
-
-			<!--DEFEAT-->
-
-
-			<!--AI is Defeated-->
-
-
-
-			-<Row Language="en_US" Tag="LOC_DIPLO_DEFEAT_FROM_AI_LEADER_RELIC_ENIG_YAXCHIN_ANY">
-
-				<Text>You may have broken my armies, but I will rise again from Xibalba, and I will have my revenge!</Text>
-
-			</Row>
-
-			<!--Human is Defeated (will see this in hotseat)-->
-
-
-
-			-<Row Language="en_US" Tag="LOC_DIPLO_DEFEAT_FROM_HUMAN_LEADER_RELIC_ENIG_YAXCHIN_ANY">
-
-				<Text>Your defence was miserable and your armies were pathetic. Weak! Though that's no matter to you now, the temple is being prepared, and I have sharpened my flint.</Text>
-
-			</Row>
-
-		</LocalizedText>
-
+		-<Row Language="en_US" Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_RELIC_ENIG_YAXCHIN_SUBTITLE">
+			<Text>Ajaw of Tikal</Text>
+		</Row>
+		-<Row Language="en_US" Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_RELIC_ENIG_YAXCHIN_QUOTE">
+			<Text>Prepare yourselves to endure the burden of misery which is to come among your villages.</Text>
+		</Row>
+		-<Row Language="en_US" Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_RELIC_ENIG_YAXCHIN_CHAPTER_HISTORY_PARA_1">
+			<Text>Yik'in Chan K'awiil also known as Ruler B, Yaxkin Caan Chac and Sun Sky Rain,, was an ajaw of the Maya city of Tikal.  Identified by Mayanist epigraphers as the 27th ruler in Tikal's dynastic succession, Yik'in Chan K'awiil was one of Tikal's most successful and expansionary rulers, consolidating the political gains won by his father, Jasaw Chan K'awiil I. During his reign prolific building works were undertaken at Tikal, with a number of the site's significant still-standing structures commissioned or extended under his direction.  Before advances in the decipherment of the Maya script revealed this reading of his name, this ruler was also known to researchers as Tikal Ruler B. Yik'in K'awiil conquered Calakmul in 736 and two other Calakmul allies in 743 and 744.  His principal wife was a princess of Palenque, her personal name is unknown, but her formal title was Lady Yax Ahau Xoc.  It is unknown exactly where his tomb lies, but strong archaeological parallels between Burial 116 and Burial 196, located in the diminutive pyramid immediately south of Tikal Temple II and referred to as Structure 5D-73, suggest the latter may be the tomb of Yik'in Chan Kawiil.</Text>
+		</Row>
+		-<Row Language="en_US" Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_RELIC_ENIG_YAXCHIN_CHAPTER_CAPSULE_BODY">
+			<Text>Yaxkin leads a conquest focused Mayan civilization, especially targeted towards city-states.</Text>
+		</Row>
+		-<Row Language="en_US" Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_RELIC_ENIG_YAXCHIN_CHAPTER_DETAILED_BODY">
+			<Text>While the Mayan Civlization's abilities are normally suited towards science and faith, Yaxkin Caan Chac's strength lies in the Hadzab unique unit and his "Darken the Sky" ability. Conquest of citystates and foreign civilizations will drive the Maya forward, not only through production and science bonuses but also acquisition of Great People. Conquests easily lead to more, as taking a city will result in the production necessary to field even greater armies.</Text>
+		</Row>
+		<!--Diplomacy-->
+		<!--FIRST MEET-->
+		<!--First AI line-->
+		-<Row Language="en_US" Tag="LOC_DIPLO_FIRST_MEET_LEADER_RELIC_ENIG_YAXCHIN_ANY">
+			<Text>Do you come here for idle greetings? Do not waste breath, and know that I am the chosen of Ek Chuaj! If you have come here in search of peace then perhaps you will be strong enough for it.</Text>
+		</Row>
+		<!--AI invitation to visit nearby City-->
+		-<Row Language="en_US" Tag="LOC_DIPLO_FIRST_MEET_VISIT_RECIPIENT_LEADER_RELIC_ENIG_YAXCHIN_ANY">
+			<Text>I'd like to see the prowess of your warriors for myself. Send some so that I may see how fierce they truly are.</Text>
+		</Row>
+		<!--AI accepts Human invitation-->
+		-<Row Language="en_US" Tag="LOC_DIPLO_FIRST_MEET_NEAR_INITIATOR_POSITIVE_LEADER_RELIC_ENIG_YAXCHIN_ANY">
+			<Text>Good, we shall give a sacrifice to Buluc Chabtan in preparation.</Text>
+		</Row>
+		<!--AI invitation to exchange Capital Information-->
+		-<Row Language="en_US" Tag="LOC_DIPLO_FIRST_MEET_NO_MANS_INFO_EXCHANGE_LEADER_RELIC_ENIG_YAXCHIN_ANY">
+			<Text>Where is your capital? I merely ask out of curiosity. Nothing to worry about.</Text>
+		</Row>
+		<!--GREETINGS-->
+		-<Row Language="en_US" Tag="LOC_DIPLO_GREETING_LEADER_RELIC_ENIG_YAXCHIN_ANY">
+			<Text>Will we be preparing for war?</Text>
+		</Row>
+		<!--DELEGATION-->
+		<!--AI Accepts-->
+		-<Row Language="en_US" Tag="LOC_DIPLO_ACCEPT_DELEGATION_FROM_HUMAN_LEADER_RELIC_ENIG_YAXCHIN_ANY">
+			<Text>Very good then.</Text>
+		</Row>
+		<!--AI Rejects-->
+		-<Row Language="en_US" Tag="LOC_DIPLO_REJECT_DELEGATION_FROM_HUMAN_LEADER_RELIC_ENIG_YAXCHIN_ANY">
+			<Text>Do not presume so much.</Text>
+		</Row>
+		<!--AI Requests -->
+		-<Row Language="en_US" Tag="LOC_DIPLO_DELEGATION_FROM_AI_LEADER_RELIC_ENIG_YAXCHIN_ANY">
+			<Text>Fine atlatls and spears have been sent to you, as well as figures of the god Chin that I believe you'll enjoy. I recommend you consider returning a gift of your own.</Text>
+		</Row>
+		<!--OPEN BORDERS-->
+		<!--AI accepts from human-->
+		-<Row Language="en_US" Tag="LOC_DIPLO_ACCEPT_OPEN_BORDERS_FROM_HUMAN_LEADER_RELIC_ENIG_YAXCHIN_ANY">
+			<Text>Perhaps. But do not expect me to let down my guard.</Text>
+		</Row>
+		<!--AI rejects from human-->
+		-<Row Language="en_US" Tag="LOC_DIPLO_REJECT_OPEN_BORDERS_FROM_HUMAN_LEADER_RELIC_ENIG_YAXCHIN_ANY">
+			<Text>Do you think me so foolish?</Text>
+		</Row>
+		<!--AI requests from human-->
+		-<Row Language="en_US" Tag="LOC_DIPLO_OPEN_BORDERS_FROM_AI_LEADER_RELIC_ENIG_YAXCHIN_ANY">
+			<Text>There are some perfect opportunities across your lands. If you don't plan on taking them, then could I?</Text>
+		</Row>
+		<!--DECLARE FRIENDSHIP-->
+		<!--AI accepts from human-->
+		-<Row Language="en_US" Tag="LOC_DIPLO_ACCEPT_DECLARE_FRIEND_FROM_HUMAN_LEADER_RELIC_ENIG_YAXCHIN_ANY">
+			<Text>Good - we can crush our enemies together.</Text>
+		</Row>
+		<!--AI Rejects from human -->
+		-<Row Language="en_US" Tag="LOC_DIPLO_REJECT_DECLARE_FRIEND_FROM_HUMAN_LEADER_RELIC_ENIG_YAXCHIN_ANY">
+			<Text>Hah! I am a conqueror, the chosen of Ek Chuaj, the Darkness himself! And you, you are weak.</Text>
+		</Row>
+		<!--AI Requests friendship from human-->
+		-<Row Language="en_US" Tag="LOC_DIPLO_DECLARE_FRIEND_FROM_AI_LEADER_RELIC_ENIG_YAXCHIN_ANY">
+			<Text>Our forces would be stronger if we conspired together. Consider it.</Text>
+		</Row>
+		<!--Human accepts AI requests, AI responds-->
+		-<Row Language="en_US" Tag="LOC_DIPLO_ACCEPT_DECLARE_FRIEND_FROM_AI_LEADER_RELIC_ENIG_YAXCHIN_ANY">
+			<Text>Good. Both our kingdoms could use new slaves.</Text>
+		</Row>
+		<!--Human rejects AI requests, AI responds-->
+		-<Row Language="en_US" Tag="LOC_DIPLO_REJECT_DECLARE_FRIEND_FROM_AI_LEADER_RELIC_ENIG_YAXCHIN_ANY">
+			<Text>Then do not consider yourself safe.</Text>
+		</Row>
+		<!--ALLIANCE-->
+		<!--AI Requests an alliance from human-->
+		-<Row Language="en_US" Tag="LOC_DIPLO_MAKE_ALLIANCE_FROM_AI_LEADER_RELIC_ENIG_YAXCHIN_ANY">
+			<Text>We work together already, but with an alliance we could do so much more.</Text>
+		</Row>
+		<!--KUDOS & WARNINGS-->
+		<!--AI Kudos-->
+		-<Row Language="en_US" Tag="LOC_DIPLO_KUDO_EXIT_LEADER_RELIC_ENIG_YAXCHIN_ANY">
+			<Text>Your warriors are strong. Not as strong as mine, but they are a deterrent.</Text>
+		</Row>
+		<!--AI Warnings-->
+		-<Row Language="en_US" Tag="LOC_DIPLO_WARNING_EXIT_LEADER_RELIC_ENIG_YAXCHIN_ANY">
+			<Text>...</Text>
+		</Row>
+		<!--AI warns player for border troops-->
+		-<Row Language="en_US" Tag="LOC_DIPLO_WARNING_TOO_MANY_TROOPS_NEAR_ME_LEADER_RELIC_ENIG_YAXCHIN_ANY">
+			<Text>If you thought you could take me unaware, then you will die. Explain yourself!</Text>
+		</Row>
+		<!--TRADE-->
+		<!--AI Accepts Deal-->
+		-<Row Language="en_US" Tag="LOC_DIPLO_ACCEPT_MAKE_DEAL_FROM_AI_LEADER_RELIC_ENIG_YAXCHIN_ANY">
+			<Text>Good, our warriors shall grow mightier when training against one another.</Text>
+		</Row>
+		<!--AI Rejects Deal-->
+		-<Row Language="en_US" Tag="LOC_DIPLO_REJECT_MAKE_DEAL_FROM_AI_LEADER_RELIC_ENIG_YAXCHIN_ANY">
+			<Text>Did you intend for this to be an insult?</Text>
+		</Row>
+		<!--DENOUNCE-->
+		<!--From Human-->
+		-<Row Language="en_US" Tag="LOC_DIPLO_DENOUNCE_FROM_HUMAN_LEADER_RELIC_ENIG_YAXCHIN_ANY">
+			<Text>I hope you've made enough spears. You may soon have need of them.</Text>
+		</Row>
+		<!--From AI-->
+		-<Row Language="en_US" Tag="LOC_DIPLO_DENOUNCE_FROM_AI_LEADER_RELIC_ENIG_YAXCHIN_ANY">
+			<Text>Your weakness may soon be an opportunity. It's only sporting that I let all the land know of it. (Denounces You)</Text>
+		</Row>
+		<!--Rationale-->
+		-<Row Language="en_US" Tag="LOC_DIPLO_DENOUNCE_REASON_FROM_AI_LEADER_ANY_REASON_RELIC_ENIG_AJAW_TIKAL_HIGH_CITY_STATE_AGGRESSION">
+			<Text>(You are very aggressive toward City-States.)</Text>
+		</Row>
+		-<Row Language="en_US" Tag="LOC_DIPLO_DENOUNCE_REASON_FROM_AI_LEADER_ANY_REASON_RELIC_ENIG_AJAW_TIKAL_MED_CITY_STATE_AGGRESSION">
+			<Text>(You are aggressive toward City-States.)</Text>
+		</Row>
+		<!--DECLARE WAR-->
+		<!--Human Declares War-->
+		-<Row Language="en_US" Tag="LOC_DIPLO_DECLARE_WAR_FROM_HUMAN_LEADER_RELIC_ENIG_YAXCHIN_ANY">
+			<Text>You dare? After all you have seen? I shall drink the blood from your skull as your enslaved people make me ever-stronger!</Text>
+		</Row>
+		<!--AI Declares War-->
+		-<Row Language="en_US" Tag="LOC_DIPLO_DECLARE_WAR_FROM_AI_LEADER_RELIC_ENIG_YAXCHIN_ANY">
+			<Text>The gods and stars above have foretold my victory! And when I am finished, I will tear out your heart!</Text>
+		</Row>
+		<!--MAKE PEACE-->
+		<!--AI accepts from human-->
+		-<Row Language="en_US" Tag="LOC_DIPLO_MAKE_PEACE_AI_ACCEPT_DEAL_LEADER_RELIC_ENIG_YAXCHIN_ANY">
+			<Text>Fine, you'll have your tribute. For now.</Text>
+		</Row>
+		<!--AI refuses human-->
+		-<Row Language="en_US" Tag="LOC_DIPLO_MAKE_PEACE_AI_REFUSE_DEAL_LEADER_RELIC_ENIG_YAXCHIN_ANY">
+			<Text>Do not test my patience.</Text>
+		</Row>
+		<!--AI requests from human-->
+		-<Row Language="en_US" Tag="LOC_DIPLO_MAKE_PEACE_FROM_AI_LEADER_RELIC_ENIG_YAXCHIN_ANY">
+			<Text>We should end this war to regain both our strength. Here are my terms.</Text>
+		</Row>
+		<!--DEFEAT-->
+		<!--AI is Defeated-->
+		-<Row Language="en_US" Tag="LOC_DIPLO_DEFEAT_FROM_AI_LEADER_RELIC_ENIG_YAXCHIN_ANY">
+			<Text>You may have broken my armies, but I will rise again from Xibalba, and I will have my revenge!</Text>
+		</Row>
+		<!--Human is Defeated (will see this in hotseat)-->
+		-<Row Language="en_US" Tag="LOC_DIPLO_DEFEAT_FROM_HUMAN_LEADER_RELIC_ENIG_YAXCHIN_ANY">
+			<Text>Your defence was miserable and your armies were pathetic. Weak! Though that's no matter to you now, the temple is being prepared, and I have sharpened my flint.</Text>
+		</Row>
+	</LocalizedText>
 </GameData>

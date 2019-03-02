@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<AssetObjects..XLP>
+	<m_Version>
+		<major>4</major>
+		<minor>0</minor>
+		<build>315</build>
+		<revision>805</revision>
+	</m_Version>
+	<m_ClassName text="StrategicView_Sprite"/>
+	<m_PackageName text="StrategicView_Sprite"/>
+	<m_Entries>
+		<Element>
+			<m_EntryID text="District_Ilbeeb_Revealed"/>
+			<m_ObjectName text="District_Ilbeeb_Revealed"/>
+		</Element>
+		<Element>
+			<m_EntryID text="District_Ilbeeb_Revealed_Pillaged"/>
+			<m_ObjectName text="District_Ilbeeb_Revealed_Pillaged"/>
+		</Element>
+		<Element>
+			<m_EntryID text="District_Ilbeeb_Revealed_UnderConstruction"/>
+			<m_ObjectName text="District_Ilbeeb_Revealed_UnderConstruction"/>
+		</Element>
+		<Element>
+			<m_EntryID text="District_Ilbeeb_Visible"/>
+			<m_ObjectName text="District_Ilbeeb_Visible"/>
+		</Element>
+		<Element>
+			<m_EntryID text="District_Ilbeeb_Visible_Pillaged"/>
+			<m_ObjectName text="District_Ilbeeb_Visible_Pillaged"/>
+		</Element>
+		<Element>
+			<m_EntryID text="District_Ilbeeb_Visible_UnderConstruction"/>
+			<m_ObjectName text="District_Ilbeeb_Visible_UnderConstruction"/>
+		</Element>
+	</m_Entries>
+	<m_AllowedPlatforms>
+		<Element>WINDOWS</Element>
+		<Element>LINUX</Element>
+		<Element>MACOS</Element>
+		<Element>IOS</Element>
+	</m_AllowedPlatforms>
+</AssetObjects..XLP>
+

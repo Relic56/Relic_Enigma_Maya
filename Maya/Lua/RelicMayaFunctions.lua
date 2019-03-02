@@ -136,15 +136,16 @@ function RelicCityCaptureBoostProduction(iVictoriousPlayer)
 	if (not HasLeaderTrait(sLeaderType, sTraitGreatPaw)) then
 		return
 	end
-	tWonders = DB.Query("SELECT BuildingType FROM Buildings WHERE PrereqDistrict IS NULL")
+	tWonders = DB.Query("SELECT BuildingType FROM Buildings WHERE IsWonder IS 1")
 	tProjects = DB.Query("SELECT ProjectType FROM Projects")
-	for key, pCity in pPlayer:GetCities():Members() do
-		sCurrentProduction = pCity:GetBuildQueue():CurrentlyBuilding()
-		if has_value(tWonders, sCurrentProduction) or has_value(tProjects, sCurrentProduction) then
-			--do nothing
-		else
-			pCity:GetBuildQueue():FinishProgress()
-		end
+	pCapital = pPlayer:GetCities():GetCapitalCity()
+	sCurrentProduction = pCapital:GetBuildQueue():CurrentlyBuilding()
+
+	if has_value(tWonders, sCurrentProduction) or has_value(tProjects, sCurrentProduction) then
+		--do nothing
+	else
+		pCapital:GetBuildQueue():FinishProgress()
+		print("completing production!")
 	end
 end
 GameEvents.CityConquered.Add(RelicCityCaptureBoostProduction)
