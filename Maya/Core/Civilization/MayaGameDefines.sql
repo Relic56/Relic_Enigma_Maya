@@ -51,14 +51,16 @@ FROM District_Adjacencies WHERE DistrictType = 'DISTRICT_CAMPUS';
 INSERT INTO District_Adjacencies
 	(DistrictType,				YieldChangeId)
 VALUES	('DISTRICT_RELIC_ENIG_CARACOL',		'Caracol_Holy_Site'),
-	('DISTRICT_RELIC_ENIG_CARACOL',		'Caracol_City_Center');
+	('DISTRICT_RELIC_ENIG_CARACOL',		'Caracol_City_Center'),
+	('DISTRICT_RELIC_ENIG_CARACOL',		'Caracol_Wonder');
 --------------------------------------------------------------------------------------------------------------------------
 -- Adjacency_YieldChanges
 --------------------------------------------------------------------------------------------------------------------------
 INSERT INTO Adjacency_YieldChanges			
 	(ID,					Description,						YieldType,		YieldChange,			TilesRequired,			AdjacentDistrict)
 VALUES	('Caracol_Holy_Site', 			'LOC_DISTRICT_RELIC_ENIG_CARACOL_HOLY_SITE',		'YIELD_SCIENCE', 	1, 				1, 				'DISTRICT_HOLY_SITE'),		
-	('Caracol_City_Center', 		'LOC_DISTRICT_RELIC_ENIG_CARACOL_CITY_CENTER',		'YIELD_SCIENCE', 	1, 				1, 				'DISTRICT_CITY_CENTER');		
+	('Caracol_City_Center', 		'LOC_DISTRICT_RELIC_ENIG_CARACOL_CITY_CENTER',		'YIELD_SCIENCE', 	1, 				1, 				'DISTRICT_CITY_CENTER'),
+	('Caracol_Wonder', 		'LOC_DISTRICT_RELIC_ENIG_CARACOL_WONDER',		'YIELD_SCIENCE', 	1, 				1, 				'DISTRICT_WONDER');		
 --------------------------------------------------------------------------------------------------------------------------
 -- District_CitizenYieldChanges
 --------------------------------------------------------------------------------------------------------------------------
@@ -88,7 +90,7 @@ VALUES	('RELIC_ENIG_CARACOL_FAITH_PURCHASE',	'MODIFIER_PLAYER_CITIES_ENABLE_BUIL
 --------------------------------------------------------------------------------------------------------------------------
 INSERT INTO ModifierArguments
 	(ModifierId,				Name,							Value)
-VALUES	('RELIC_ENIG_CARACOL_FAITH_PURCHASE',	'DistrictType',						'DISTRICT_RELIC_ENIG_CARACOL');
+VALUES	('RELIC_ENIG_CARACOL_FAITH_PURCHASE',	'DistrictType',						'DISTRICT_CAMPUS');
 --==========================================================================================================================
 -- DISTRICTS: TRAITS
 --==========================================================================================================================
@@ -401,11 +403,22 @@ INSERT INTO TraitModifiers
 	(TraitType,										ModifierId)
 VALUES	('TRAIT_CIVILIZATION_RELIC_ENIG_CALENDAR_ROUNDS',					'RELIC_ENIG_CALENDAR_ROUNDS_HOLY_SITE_FREE');
 --------------------------------------------------------------------------------------------------------------------------
+-- DynamicModifiers
+--------------------------------------------------------------------------------------------------------------------------
+INSERT INTO Types
+	(Type, Kind)
+VALUES
+	('MODTYPE_RELIC_ENIG_HOLY_SITE_EXTRA_DISTRICT', 'KIND_MODIFIER');
+INSERT INTO DynamicModifiers 
+	(ModifierType, CollectionType, EffectType)
+VALUES
+	('MODTYPE_RELIC_ENIG_HOLY_SITE_EXTRA_DISTRICT', 'COLLECTION_PLAYER_CITIES', 'EFFECT_ADJUST_CITY_EXTRA_DISTRICTS');
+--------------------------------------------------------------------------------------------------------------------------
 -- Modifiers
 --------------------------------------------------------------------------------------------------------------------------
 INSERT INTO Modifiers	
 	(ModifierId,						ModifierType,								SubjectRequirementSetId)
-VALUES	('RELIC_ENIG_CALENDAR_ROUNDS_HOLY_SITE_FREE',		'MODIFIER_SINGLE_CITY_EXTRA_DISTRICT',					'RELIC_ENIG_CALENDAR_ROUNDS_HOLY_SITE_FREE_REQ_SET');
+VALUES	('RELIC_ENIG_CALENDAR_ROUNDS_HOLY_SITE_FREE',		'MODTYPE_RELIC_ENIG_HOLY_SITE_EXTRA_DISTRICT',		'RELIC_ENIG_CALENDAR_ROUNDS_HOLY_SITE_FREE_REQ_SET');
 --------------------------------------------------------------------------------------------------------------------------
 -- ModifierArguments
 --------------------------------------------------------------------------------------------------------------------------
@@ -446,7 +459,7 @@ SELECT	'RELIC_ENIG_CALENDAR_ROUNDS_'||BuildingType||'_SCIENCE',	'MODIFIER_PLAYER
 FROM Buildings WHERE PrereqDistrict = 'DISTRICT_HOLY_SITE' AND InternalOnly = 0 AND TraitType IS NULL;
 INSERT INTO ModifierArguments
 		(ModifierId,												 Name,			 Value)
-SELECT 'RELIC_ENIG_CALENDAR_ROUNDS_'||b.BuildingType||'_SCIENCE',	'Value',		a.YieldChange/2
+SELECT 'RELIC_ENIG_CALENDAR_ROUNDS_'||b.BuildingType||'_SCIENCE',	'Amount',		a.YieldChange/2
 FROM Buildings AS b, Building_YieldChanges AS a WHERE b.BuildingType = a.BuildingType
 												 AND b.PrereqDistrict = "DISTRICT_HOLY_SITE" 
 												 AND b.TraitType IS NULL
@@ -454,7 +467,7 @@ FROM Buildings AS b, Building_YieldChanges AS a WHERE b.BuildingType = a.Buildin
 												 AND a.YieldType = "YIELD_FAITH";
 INSERT INTO ModifierArguments
 		(ModifierId,	Name,	Value)
-SELECT	'RELIC_ENIG_CALENDAR_ROUNDS_'||BuildingType||'_SCIENCE',	'YieldType',	'Science'
+SELECT	'RELIC_ENIG_CALENDAR_ROUNDS_'||BuildingType||'_SCIENCE',	'YieldType',	'YIELD_SCIENCE'
 FROM Buildings WHERE PrereqDistrict = 'DISTRICT_HOLY_SITE' AND InternalOnly = 0 AND TraitType IS NULL;
 
 INSERT INTO ModifierArguments
@@ -465,18 +478,18 @@ FROM Buildings WHERE PrereqDistrict = 'DISTRICT_HOLY_SITE' AND InternalOnly = 0 
 INSERT INTO TraitModifiers
 		(TraitType,				ModifierId)
 SELECT	'TRAIT_CIVILIZATION_RELIC_ENIG_CALENDAR_ROUNDS',	ModifierId
-FROM Modifiers WHERE ModifierId LIKE 'RELIC_ENIG_CALENDAR_ROUNDS_%';
+FROM Modifiers WHERE ModifierId LIKE 'RELIC_ENIG_CALENDAR_ROUNDS_BUILDING%';
 
 CREATE TRIGGER Relic_Maya_Holy_Site_ScienceTriggerBuildings
 AFTER INSERT ON Buildings
-WHEN NEW.PrereqDistrict = 'DISTRICT_HOLY_SITE' AND NEW.InternalOnly = 0 AND TraitType IS NULL
+WHEN NEW.PrereqDistrict = 'DISTRICT_HOLY_SITE' AND NEW.InternalOnly = 0 AND NEW.TraitType IS NULL
 BEGIN
 		INSERT INTO TraitModifiers
 				(TraitType,				ModifierId)
 		VALUES	('TRAIT_CIVILIZATION_RELIC_ENIG_CALENDAR_ROUNDS',	'RELIC_ENIG_CALENDAR_ROUNDS_'||NEW.BuildingType||'_SCIENCE');
 		INSERT INTO ModifierArguments
 				(ModifierId, Name,	Value)
-		VALUES	('RELIC_ENIG_CALENDAR_ROUNDS_'||NEW.BuildingType||'_SCIENCE',	'YieldType',	'Science'),
+		VALUES	('RELIC_ENIG_CALENDAR_ROUNDS_'||NEW.BuildingType||'_SCIENCE',	'YieldType',	'YIELD_SCIENCE'),
 				('RELIC_ENIG_CALENDAR_ROUNDS_'||NEW.BuildingType||'_SCIENCE',	'BuildingType',	NEW.BuildingType);
 		INSERT INTO Modifiers
 				(ModifierId, ModifierType)
@@ -492,5 +505,5 @@ WHEN NEW.BuildingType = (SELECT b.BuildingType FROM Buildings AS b, Building_Yie
 BEGIN
 		INSERT INTO ModifierArguments
 				(ModifierId, Name,	Value)
-		VALUES	('RELIC_ENIG_CALENDAR_ROUNDS_'||NEW.BuildingType||'_SCIENCE',	'Value',	NEW.YieldChange/2);
+		VALUES	('RELIC_ENIG_CALENDAR_ROUNDS_'||NEW.BuildingType||'_SCIENCE',	'Amount',	NEW.YieldChange/2);
 END;

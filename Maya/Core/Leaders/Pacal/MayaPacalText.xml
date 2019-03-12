@@ -40,7 +40,7 @@
 			<Text>White Skin House</Text>
 		</Row>
 		-<Row Language="en_US" Tag="LOC_TRAIT_LEADER_RELIC_ENIG_WHITE_SKIN_DESCRIPTION">
-			<Text>The Holy Site and Kuuchil Ah Ek Districts grant additional Wonder [ICON_PRODUCTION] Production in their cities.  Cities with a Wonder gain additional [ICON_FOOD] Growth, and Kuuchil Ah Eks and Holy Sites gain a standard adjacency bonus from Wonders.</Text>
+			<Text>The Holy Site and Kuuchil Ah Ek Districts grant additional +10% Wonder [ICON_PRODUCTION] Production each in their cities.  Cities with a Wonder gain additional +20% [ICON_FOOD] Growth.</Text>
 		</Row>
 		<!--Civilopedia-->
 		-<Row Language="en_US" Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_RELIC_ENIG_PAKAL_TITLE">
